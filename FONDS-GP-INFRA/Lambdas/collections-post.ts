@@ -1,4 +1,6 @@
-import * as AWS from 'aws-sdk';
+import * as AWS from 'aws-sdk';;
+import { L } from '../models/traductions/fr';
+
 // Récupérer la variable d'environnement créée par le CDK
 const DB_T_NAME = process.env.DB_T_NAME || '';
 const PRIMARY_KEY = process.env.PRIMARY_KEY || '';
@@ -11,7 +13,7 @@ export const handler = async (event: any = {}): Promise<any> => {
 
   /** Vérifier que des données ont été envoyées */
   if (!event.body) {
-    return { statusCode: 400, body: 'invalid request, you are missing the parameter body' };
+    return { statusCode: 400, body: L.ER_BODY };
   } else {
     body = JSON.parse(event.body);
   }
@@ -38,7 +40,7 @@ export const handler = async (event: any = {}): Promise<any> => {
   // Requête vers DynamoDB
   try {
     const response = await db.update(params).promise();
-    return { statusCode: 204, body: 'Données modifiées' };
+    return { statusCode: 204, body: L.UPDATE };
   } catch (er: any) {
     // const errorResponse = er.code === 'ValidationException' && er.message.includes('reserved keyword') ?
     // DYNAMODB_EXECUTION_ERROR : RESERVED_RESPONSE;
