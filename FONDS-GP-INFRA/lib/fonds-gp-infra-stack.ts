@@ -5,7 +5,7 @@ import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-node
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
 import { join } from 'path';
 
-import { collectionsStack, LambdaI } from '../models/lambdas';
+import { collectionsStack, LambdaI, noticesStack } from '../models/lambdas';
 
 /** Generical properties for cors */
 const fnURL = {
@@ -22,19 +22,34 @@ export class FondsGpInfraStack extends cdk.Stack {
 
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
+    // List needed collections
     collectionsStack.lambdas.forEach((l, i) => {
       if (!collectionsStack.db) collectionsStack.db = this.setDBTable(l.table);
       // Lambda created
-      l.lambda = new NodejsFunction(this, l.name, {
-        entry: join(__dirname, '../Lambdas', l.file),
-        ...this.setParams(l.table, collectionsStack.db)
-      });
+      l.lambda = this.setLambda(l, collectionsStack.db);
       // Create function URL for the Lambda
       l.lambda.addFunctionUrl(this.setFnUrl(l));
       // Give right to accessing database
       collectionsStack.db.grantReadWriteData(l.lambda);
     });
+    // List needed notices
+    noticesStack.lambdas.forEach((l, i) => {
+      if (!collectionsStack.db) collectionsStack.db = this.setDBTable(l.table);
+      // Lambda created
+      l.lambda = this.setLambda(l, collectionsStack.db);
+      // Create function URL for the Lambda
+      l.lambda.addFunctionUrl(this.setFnUrl(l));
+      // Give right to accessing database
+      collectionsStack.db.grantReadWriteData(l.lambda);
+    });
+  }
+  /** Create a lambda */
+  setLambda(l:any, db:any){
+    const lambda = new NodejsFunction(this, l.name, {
+      entry: join(__dirname, '../Lambdas', l.file),
+      ...this.setParams(l.table, db)
+    });
+    return lambda;
   }
   /** Set DynamoDB table */
   setDBTable(table: string): Table {

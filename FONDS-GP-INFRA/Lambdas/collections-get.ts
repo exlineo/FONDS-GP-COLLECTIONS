@@ -1,5 +1,4 @@
-import * as AWS from 'aws-sdk';;
-import { L } from '../models/traductions/fr';
+import * as AWS from 'aws-sdk';
 
 // Récupérer la variable d'environnement créée par le CDK
 const DB_T_NAME = process.env.DB_T_NAME || '';
