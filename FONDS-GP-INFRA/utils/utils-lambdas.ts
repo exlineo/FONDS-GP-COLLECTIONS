@@ -1,51 +1,34 @@
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
-import * as s3 from 'aws-cdk-lib/aws-s3';
 
 import { NodejsFunction, NodejsFunctionProps } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
 import { join } from 'path';
 
-import { collectionsStack, LambdaI, noticesStack } from '../models/lambdas';
+import { LambdaI } from '../models/lambdas';
 
 /** Generical properties for cors */
 const fnURL = {
-  authType: lambda.FunctionUrlAuthType.NONE,
-  cors: {
-    // Tableau de chaînes listant les domaines accessibles
-    allowedOrigins: ['*'],
-    // Méthodes autorisées
-    allowedMethods: [lambda.HttpMethod.GET, lambda.HttpMethod.HEAD]
-  }
-};
+    authType: lambda.FunctionUrlAuthType.NONE,
+    cors: {
+      // Tableau de chaînes listant les domaines accessibles
+      allowedOrigins: ['*'],
+      // Méthodes autorisées
+      allowedMethods: [lambda.HttpMethod.GET, lambda.HttpMethod.HEAD]
+    }
+  };
+  
+export class UtilsLambdas{
 
-export class FondsGpInfraStack extends cdk.Stack {
+    scope:Construct;
 
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
-    // LAMBDAS
-    // List needed collections
-    collectionsStack.lambdas.forEach((l, i) => {
-      if (!collectionsStack.db) collectionsStack.db = this.setDBTable(l.table);
-      // Lambda created
-      l.lambda = this.setLambda(l, collectionsStack.db);
-      // Create function URL for the Lambda
-      l.lambda.addFunctionUrl(this.setFnUrl(l));
-      // Give right to accessing database
-      collectionsStack.db.grantReadWriteData(l.lambda);
-    });
-    // List needed notices
-    noticesStack.lambdas.forEach((l, i) => {
-      if (!noticesStack.db) noticesStack.db = this.setDBTable(l.table);
-      l.lambda = this.setLambda(l, noticesStack.db);
-      l.lambda.addFunctionUrl(this.setFnUrl(l));
-      noticesStack.db.grantReadWriteData(l.lambda);
-    });
-  }
-  /** Create a lambda */
+    constructor(scope:Construct){
+        this.scope = scope;
+    }
+    /** Create a lambda */
   setLambda(l:any, db:any){
-    const lambda = new NodejsFunction(this, l.name, {
+    const lambda = new NodejsFunction(this.scope, l.name, {
       entry: join(__dirname, '../Lambdas', l.file),
       ...this.setParams(l.table, db)
     });
@@ -53,7 +36,7 @@ export class FondsGpInfraStack extends cdk.Stack {
   }
   /** Set DynamoDB table */
   setDBTable(table: string): Table {
-    const db = new Table(this, table + 'id', {
+    const db = new Table(this.scope, table + 'id', {
       partitionKey: {
         name: 'id' + table,
         type: AttributeType.STRING
