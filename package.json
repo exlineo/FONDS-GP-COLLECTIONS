@@ -1,0 +1,29 @@
+{
+  "name": "fonds-gp-collections",
+  "version": "1.0.0",
+  "description": "Site de mise en valeur des collections du site du fonds de dotation Gérard Perrier",
+  "main": "src/init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exlineo/FONDS-GP-COLLECTIONS.git"
+  },
+  "keywords": [
+    "Typescript",
+    "AWS"
+  ],
+  "author": "exlineo - Gérald Abbadie",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/exlineo/FONDS-GP-COLLECTIONS/issues"
+  },
+  "homepage": "https://github.com/exlineo/FONDS-GP-COLLECTIONS#readme",
+  "devDependencies": {
+    "@types/node": "^18.7.14"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1206.0"
+  }
+}
