@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
  * Lancer l'application
  */
 function launch() {
-    let persiste = new Persistance(document.querySelector('body>aside>nav')!, document.querySelector('body>main')!);
+    let persiste = new Persistance(document.querySelector('body>aside')!, document.querySelector('body>main')!);
     persiste.getCollections();
 
     let c = new Collection(document.querySelector('.notices>section'), document.querySelector('.series'), document.querySelector('.collection>section'), document.querySelector('.notice'), document.querySelector('#look'));

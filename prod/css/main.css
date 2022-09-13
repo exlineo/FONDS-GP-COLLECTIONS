@@ -1,8 +1,17 @@
-/* @font-face {
-    font-family: "Raleway";
-    src: url("assets/fonts/Raleway-VariableFont_wght.ttf") format("ttf")
-} */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,600&display=swap');
 
+:root{
+  /* Variables */
+  --clair:white;
+  --fonce:black;
+  --s:#17456B;
+  --p:#0F1D2B;
+  --t:#FFB000;
+  --q:#F24E1E;
+  --v:rgb(10, 159, 10);
+  --r:red;
+  --w:75px;
+}
 html,
 body {
     padding: 0;
@@ -14,28 +23,23 @@ body {
     overflow: hidden;
     font-size: 16px;
 }
-
 body {
     display: flex;
     flex-flow: row nowrap;
-    font-family: 'Economica', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
 }
-
 body>* {
     padding: 0;
     margin: 0;
-    display: flex;
+    /* display: flex; */
     height: 100vh;
     border-right: dashed black 1px;
     scroll-behavior: smooth;
 }
-
 body>main>section {
     padding: 0;
     margin: 0;
-    display: flex;
 }
-
 body>main>header {
     height: 60px;
     display: flex;
@@ -45,53 +49,49 @@ body>main>header {
     margin-top: -60px;
     transition: margin .3s ease;
 }
-
 body>main>header a {
     width: calc(100vw - 40px);
 }
-
 body>main>header img {
     width: 200px;
 }
-
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'ZCOOL XiaoWei', serif;
+    font-family: 'Raleway', sans-serif;
     font-variation-settings: 'wght' 100;
     font-weight: 100;
 }
-
 h1 {
     font-size: 24px;
     width: 100%;
     text-align: center;
 }
-
 h2 {
     font-size: 21px;
     width: 100%;
     text-align: center;
 }
-
 h3 {
     font-size: 18px;
     margin: 0 5px;
 }
-
+section{
+    display: flex;
+}
 body>aside {
-    width: 20vw;
+    width: var(--w);
     display: flex;
     flex-flow: column nowrap;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
 }
 
 body>main {
     display: flex;
     flex-flow: column nowrap;
-    width: 80vw;
+    width: calc(100vw - var(--w));
     transition: width .3s ease;
 }
 
@@ -116,20 +116,79 @@ em {
 
 /* NAVIGATION PRINCIPALE */
 
-body>aside>section {
+aside > section {
     justify-content: space-around;
     width: 100%;
-    height: 35vh;
+    height: calc(100vh - var(--w));
 }
-aside>header{
+aside > header{
     display:flex;
     flex-flow:column nowrap;
-}
-nav {
-    width: 100%;
-    min-height: 40vh;
+    width:100%;
+    height:var(--w);
 }
 
+aside > section > nav {
+    display: flex;
+    flex-flow:column nowrap;
+    margin:auto;
+}
+aside > section > nav a img, aside > section > nav a svg {
+    width:50%;
+}
+aside > section > nav a {
+    margin:15px auto;
+    text-align:center;
+    position:relative;
+}
+aside > section > nav span{
+    position:absolute;
+    padding:10px 16px;
+    background-color: var(--s);
+    color:var(--clair);
+    opacity:0;
+    width:0;
+    margin-left:15px;
+    font-size:12px;
+}
+aside nav a:hover {
+    transform:scale(1.2);
+}
+aside nav a:hover .cls-2 {
+    fill : var(--t);
+}
+aside > section > nav a:hover span{
+    width:max-content;
+    opacity:1;
+}
+.cls-1{
+    fill:var(--clair);
+}
+.cls-2{
+    fill:var(--s);
+    transition: fill .3s ease;
+}
+
+aside > footer{
+    height:max-content;
+    padding:0 8px;
+    width:100%;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+aside > footer > nav {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+}
+aside > footer > nav > a{
+    padding:3px;
+    width:auto;
+    height:auto;
+}
+aside > footer svg{
+    width:100%;
+}
 nav>ul>li {
     width: 100%;
     list-style: none;
@@ -163,21 +222,19 @@ aside>input {
     margin: 10px auto 40px;
     opacity: 1;
 }
-.na{
-    margin-left:10px;
-    display: block;
-}
-.na img{
-    float:right;
-}
 
 /* CLASSES GENERIQUES */
 
 .logo {
-    width: 80%;
-    margin: 10px;
+    width: var(--w);
+    margin: 10px 0;
+    display:flex;
+    justify-content: flex-end;
 }
-
+.logo > img{
+    max-width: 80%;
+    margin: 0;
+}
 section>header {
     min-height: 60px;
     height: auto;
@@ -209,7 +266,7 @@ input {
 
 .notices {
     flex-flow: column nowrap;
-    width: 80vw;
+    width: calc(100vw - var(--w));
     overflow: hidden;
 }
 

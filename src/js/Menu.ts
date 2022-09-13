@@ -2,20 +2,25 @@ import { Donnees } from './data/Donnees.js';
 
 export class Menu {
 
-    nav:HTMLElement;
-    corps:HTMLElement;
-    data:Array<any> = [];
+    aside:HTMLElement; // La colonne de gauche avec le menu
+    nav:HTMLElement; // La navigation dans la colone aside
+    corps:HTMLElement; // où écrire le contenu
+    data:Array<any> = []; // Données de navigation
     collecEvent:CustomEvent;
 
     constructor(el:HTMLElement, c:HTMLElement) {
-        this.nav = el;
+        this.aside = el;
+        this.nav = this.aside.querySelector('section > nav')!;
         this.corps = c;
         this.collecEvent = new CustomEvent('collection');
     };
 
     // Ecrire le menu dans le HTML
     setMenu() {
-        this.setMenuItems();
+        // this.setMenuItems();
+        for(let i in this.nav){
+            console.log(i);
+        }
     };
     /**
      * Lister les collections et créer les liens de menu

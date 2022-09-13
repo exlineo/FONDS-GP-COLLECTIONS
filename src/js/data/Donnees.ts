@@ -1,3 +1,4 @@
+import { ConfigI } from "../models/ModelesI.js";
 import { BDD } from "./BDD.js";
 
 export class Donnees extends BDD {
@@ -5,6 +6,8 @@ export class Donnees extends BDD {
     static notices: Array<any> = [];
     static page: any = {};
     static menu: Array<any> = [];
+
+    config:ConfigI = <ConfigI>{}; // Stocker les données de configuration comme les adresses de connexion
 
     contact = {
         mail: "contact@exlineo.com",

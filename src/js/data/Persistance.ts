@@ -2,7 +2,7 @@ import PARAMS from './params.js';
 import { Donnees } from './Donnees.js';
 import { Menu } from '../Menu.js';
 
-export class Persistance {
+export class Persistance extends Donnees{
 
     static racine: string; // Racine des fichiers
     static contexte: any;
@@ -12,6 +12,8 @@ export class Persistance {
     donnees: Donnees;
 
     constructor(nav: HTMLElement, corps: HTMLElement) {
+        super();
+        this.getConfig();
         // Création du menu (pourquoi c'est là, on sait pas)
         this.menu = new Menu(nav, corps);
         // Récupération des données d'AWS
@@ -45,12 +47,19 @@ export class Persistance {
     getData(i: string) {
         return localStorage.getItem(i) ? JSON.parse(localStorage.getItem(i)!) : null;
     }
+    /** Récupérer les liens d'accès aux bases de données */
+    getConfig(){
+        fetch(PARAMS.CONFIG)
+        .then(d => d.json())
+        .then(d => this.config.g = d.json())
+        .catch(er => console.log(er));
+    }
     /**
      * Get Collections
      */
     getCollections() {
         // fetch(PARAMS.SERV + 'collections', PARAMS.HEAD)
-        fetch(PARAMS.COLLECTIONS.GET)
+        fetch(this.config.g.collections)
             .then(d => d.json())
             .then(j => {
                 this.setData('collections', j);

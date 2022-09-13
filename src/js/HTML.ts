@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 export class CustomHTML {
     constructor() { }
 
