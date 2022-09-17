@@ -101,7 +101,9 @@ body>main>section {
     height: 100%;
     background-color: white;
 }
-
+article{
+    display:flex;
+}
 a {
     color: green;
     text-decoration: none;
@@ -161,6 +163,7 @@ aside > section > nav section {
     width:0;
     opacity:0;
     transition:all .4s ease;
+    overflow-x:hidden;
     overflow-y:auto;
     display: flex;
     flex-flow:column nowrap;
@@ -168,7 +171,8 @@ aside > section > nav section {
 aside > section > nav section article {
     width:100%;
     padding:5px 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    flex-flow: column nowrap;
 }
 aside nav a:hover {
     transform:scale(1.2);
@@ -193,19 +197,25 @@ aside > section > nav a:hover span{
 }
 #collections > article hr{
     width:40%;
+    margin:0 0 10px 0;
     border:none;
     border-top:1px solid var(--t);
-    float:right;
+    align-self: flex-end;
+}
+#collections > article hr:first-child{
+    align-self: flex-start;
+}
+#collections > article:first-child{
+    float:none;
 }
 #collections > article div{
     display:flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    padding:0 10px;
 }
-#collections > article div{
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+#collections a{
+    margin:5px;
 }
 #collections a > img{
     width:75%;

@@ -79,6 +79,7 @@ export class CustomHTML {
     /** Ecrire un article des collections */
     setCollectionArticle(c:CollectionI){
         const hr = document.createElement('hr');
+        const hrb = document.createElement('hr');
         const a = document.createElement('article');
         const titre = document.createElement('h3');
         titre.textContent = c.titre;
@@ -136,7 +137,7 @@ export class CustomHTML {
 
         a.appendChild(ul);
         a.appendChild(div);
-        a.appendChild(hr);
+        a.appendChild(hrb);
         return a;
     }
 }
