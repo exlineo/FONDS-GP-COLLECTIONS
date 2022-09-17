@@ -1,4 +1,5 @@
 import { gsap } from "gsap";
+import { CollectionI } from "./models/ModelesI";
 
 export class CustomHTML {
     constructor() { }
@@ -74,5 +75,68 @@ export class CustomHTML {
 
         ar.appendChild(frame);
         return ar;
+    }
+    /** Ecrire un article des collections */
+    setCollectionArticle(c:CollectionI){
+        const hr = document.createElement('hr');
+        const a = document.createElement('article');
+        const titre = document.createElement('h3');
+        titre.textContent = c.titre;
+
+        const descr = document.createElement('p');
+        descr.textContent = c.description.length > 200 ? c.description.substring(0, 200)+'...' : c.description;
+
+        a.appendChild(hr);
+        a.appendChild(titre);
+        a.appendChild(descr);
+
+        // Images
+        
+        const div = document.createElement('div');
+        const aF = document.createElement('a');
+        const imgF = document.createElement('img');
+        imgF.src = './assets/img/icones/favoris-add.png';
+        aF.setAttribute('title', 'Ajouter la collection aux favoris');
+        aF.appendChild(imgF);
+        div.appendChild(aF);
+
+        const aN = document.createElement('a');
+        const imgN = document.createElement('img');
+        imgN.src = './assets/img/icones/notices.png';
+        aN.setAttribute('title', 'Afficher les notices de cette collection');
+        aN.appendChild(imgN);
+        div.appendChild(aN);
+
+        aN.addEventListener('click', (e)=>{
+            console.log(e.target);
+        })
+        
+        // const aH = document.createElement('a');
+        // const img = document.createElement('img');
+        // img.src = './assets/img/icones/fleche-haute.png';
+        // img.setAttribute('title', 'plus de détail ?');
+        // aH.appendChild(img);
+        // div.appendChild(aH);
+
+        // Infos
+        const ul = document.createElement('ul');
+        const li = document.createElement('li');
+        if(c.type) {
+            li.textContent = "Type : " + c.type;
+            ul.appendChild(li);
+        }
+        if(c.fonds) {
+            li.textContent = "Fonds : " + c.fonds;
+            ul.appendChild(li);
+        }
+        if(c.createur) {
+            li.textContent = "Créateur : " + c.createur;
+            ul.appendChild(li);
+        }
+
+        a.appendChild(ul);
+        a.appendChild(div);
+        a.appendChild(hr);
+        return a;
     }
 }

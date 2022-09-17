@@ -21,6 +21,6 @@ const PARAMS = {
         }
     },
     // Liste des liens pour la gestion des collections et des notices (on gardera que le get à la fin, c'est pour garder)
-    CONFIG : 'https://g7xgiofn44fwuwpcvo352mzqdq0ikjoa.lambda-url.eu-west-3.on.aws/'
+    CONFIG : './assets/data/config.json'
 };
 export default PARAMS;

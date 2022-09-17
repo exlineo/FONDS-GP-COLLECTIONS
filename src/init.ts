@@ -1,4 +1,4 @@
-import { Collection } from './js/Collection.js';
+import { Collections } from './js/Collections.js';
 import { Persistance } from './js/data/Persistance.js';
 
 /**
@@ -18,12 +18,12 @@ window.addEventListener("load", function() {
  */
 function launch() {
     let persiste = new Persistance(document.querySelector('body>aside')!, document.querySelector('body>main')!);
-    persiste.getCollections();
+    // persiste.getCollections();
 
-    let c = new Collection(document.querySelector('.notices>section'), document.querySelector('.series'), document.querySelector('.collection>section'), document.querySelector('.notice'), document.querySelector('#look'));
+    let c = new Collections(document.querySelector('.notices>section'), document.querySelector('.series'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
 };
 /** Gestion du bouton de recherche */
-document.querySelector('#cherche')!.addEventListener('click', () => {
-    console.log()
-    document.querySelector('#look')!.classList.toggle('invisible');
-});
+// document.querySelector('#cherche')!.addEventListener('click', () => {
+//     console.log()
+//     document.querySelector('#look')!.classList.toggle('invisible');
+// });

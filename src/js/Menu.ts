@@ -54,16 +54,19 @@ export class Menu {
     loadTemplate() {
         console.log("template load");
     };
+    /** Créer  */
+    setMenuCollections(){
+        
+    }
     /**
-     * 
+     * Avertir les collections qu'il faut s'afficher
      * @param {Event} e Evénement reçu
      * @param {Object} m Collection à gérer
      */
     setCollection(i:any) {
             i.preventDefault();
             // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
-            const colEv = new CustomEvent('collection', { detail: i.currentTarget.dataset.index });
-            dispatchEvent(colEv);
+            dispatchEvent(new CustomEvent('collection', { detail: i.currentTarget.dataset.index }));
         }
         // Ecrire un template dans le DOM
     getTemplate(p:any, i:number) {

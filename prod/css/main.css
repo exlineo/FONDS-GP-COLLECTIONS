@@ -16,8 +16,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-variation-settings: 'wght' 500;
-    font-weight: 500;
+    font-variation-settings: 'wght' 400;
+    font-weight: 400;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -71,6 +71,7 @@ h1 {
 h2 {
     font-size: 21px;
     width: 100%;
+    font-weight: bold;
     text-align: center;
 }
 h3 {
@@ -115,7 +116,6 @@ em {
 
 
 /* NAVIGATION PRINCIPALE */
-
 aside > section {
     justify-content: space-around;
     width: 100%;
@@ -127,7 +127,6 @@ aside > header{
     width:100%;
     height:var(--w);
 }
-
 aside > section > nav {
     display: flex;
     flex-flow:column nowrap;
@@ -139,7 +138,7 @@ aside > section > nav a img, aside > section > nav a svg {
 aside > section > nav a {
     margin:15px auto;
     text-align:center;
-    position:relative;
+    /* position:relative; */
 }
 aside > section > nav span{
     position:absolute;
@@ -150,12 +149,36 @@ aside > section > nav span{
     width:0;
     margin-left:15px;
     font-size:12px;
+    z-index:10;
+}
+aside > section > nav section {
+    position:absolute;
+    top:0;
+    left:var(--w);
+    z-index:9;
+    border-right:1px solid var(--t);
+    height:100vh;
+    width:0;
+    opacity:0;
+    transition:all .4s ease;
+    overflow-y:auto;
+    display: flex;
+    flex-flow:column nowrap;
+}
+aside > section > nav section article {
+    width:100%;
+    padding:5px 10px;
+    margin-bottom: 20px;
 }
 aside nav a:hover {
     transform:scale(1.2);
 }
 aside nav a:hover .cls-2 {
     fill : var(--t);
+}
+aside > section > nav a:hover + section, aside > section > nav a + section:hover{
+    width:20vw;
+    opacity: 1;
 }
 aside > section > nav a:hover span{
     width:max-content;
@@ -168,7 +191,25 @@ aside > section > nav a:hover span{
     fill:var(--s);
     transition: fill .3s ease;
 }
-
+#collections > article hr{
+    width:40%;
+    border:none;
+    border-top:1px solid var(--t);
+    float:right;
+}
+#collections > article div{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+#collections > article div{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+#collections a > img{
+    width:75%;
+}
 aside > footer{
     height:max-content;
     padding:0 8px;

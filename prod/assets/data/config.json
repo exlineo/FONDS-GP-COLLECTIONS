@@ -1,0 +1,8 @@
+{
+    "getters":{
+        "collections":"./assets/data/collections.json",
+        "notices":"./assets/data/collections.json",
+        "oaipmh":"./assets/data/collections.json",
+        "s3":"./assets/data/collections.json"
+    }
+}

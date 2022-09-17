@@ -1,8 +1,10 @@
 import PARAMS from './params.js';
 import { Donnees } from './Donnees.js';
 import { Menu } from '../Menu.js';
+import { BDD } from './BDD.js';
+import { ConfigI } from '../models/ModelesI.js';
 
-export class Persistance extends Donnees{
+export class Persistance extends BDD{
 
     static racine: string; // Racine des fichiers
     static contexte: any;
@@ -10,6 +12,7 @@ export class Persistance extends Donnees{
     menu: Menu;
     racine: string = '';
     donnees: Donnees;
+    config:ConfigI = <ConfigI>{}; // Stocker les données de configuration comme les adresses de connexion
 
     constructor(nav: HTMLElement, corps: HTMLElement) {
         super();
@@ -35,23 +38,25 @@ export class Persistance extends Donnees{
      * @param {string} i nom de la donnée à sauvegarder
      * @param {any} d données à sauvegarder
      */
-    setData(i: string, d: any) {
+    setLocalData(i: string, d: any) {
         localStorage.setItem(i, JSON.stringify(d));
-        // Donnees[i] = d;
-        // Donnees.getStatic(i, d);
+        Donnees.setStatic(i, d);
     }
     /**
      * Renvoyer des données du localStorage
      * @param {string} i nom de la donnée à récupérer
      */
-    getData(i: string) {
+    getLocalData(i: string) {
         return localStorage.getItem(i) ? JSON.parse(localStorage.getItem(i)!) : null;
     }
     /** Récupérer les liens d'accès aux bases de données */
     getConfig(){
         fetch(PARAMS.CONFIG)
         .then(d => d.json())
-        .then(d => this.config.g = d.json())
+        .then(d => {
+            this.config.g = d.getters;
+            this.getCollections();
+        })
         .catch(er => console.log(er));
     }
     /**
@@ -59,16 +64,15 @@ export class Persistance extends Donnees{
      */
     getCollections() {
         // fetch(PARAMS.SERV + 'collections', PARAMS.HEAD)
+        console.log(this.config.g.collection);
         fetch(this.config.g.collections)
             .then(d => d.json())
             .then(j => {
-                this.setData('collections', j);
-                this.setMenuData();
+                this.setLocalData('collections', j);
+                dispatchEvent(new CustomEvent('collections', { detail:j }));
+                console.log(j);
             })
             .catch(er => console.log(er));
-    }
-    getNotices(c: any) {
-
     }
     /**
      * Paramétrer le menu des collections à partir des données reçues

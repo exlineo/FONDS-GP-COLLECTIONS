@@ -7,8 +7,6 @@ export class Donnees extends BDD {
     static page: any = {};
     static menu: Array<any> = [];
 
-    config:ConfigI = <ConfigI>{}; // Stocker les données de configuration comme les adresses de connexion
-
     contact = {
         mail: "contact@exlineo.com",
         sujet: "Merci de remplir les champs requis",
@@ -16,7 +14,25 @@ export class Donnees extends BDD {
         ok: "Message envoyé"
     }
     /** Set data statics from index */
-    getStatic(i: string, data: any) {
+    static getStatic(i: string, data: any) {
+        switch (i) {
+            case ('collections'):
+                return Donnees.collections;
+                break;
+            case ('notices'):
+                return Donnees.notices;
+                break;
+            case ('page'):
+                return Donnees.page;
+                break;
+            case ('menu'):
+                return Donnees.menu;
+                break;
+            default:
+                break;
+        }
+    }
+    static setStatic(i: string, data: any){
         switch (i) {
             case ('collections'):
                 Donnees.collections = data;
