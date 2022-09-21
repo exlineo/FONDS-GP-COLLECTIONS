@@ -12,7 +12,7 @@ export class Menu {
         this.aside = el;
         this.nav = this.aside.querySelector('section > nav')!;
         this.corps = c;
-        this.collecEvent = new CustomEvent('collection');
+        this.collecEvent = new CustomEvent('SET-COLLECTIONS');
     };
 
     // Ecrire le menu dans le HTML
@@ -66,7 +66,7 @@ export class Menu {
     setCollection(i:any) {
             i.preventDefault();
             // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
-            dispatchEvent(new CustomEvent('collection', { detail: i.currentTarget.dataset.index }));
+            dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: i.currentTarget.dataset.index }));
         }
         // Ecrire un template dans le DOM
     getTemplate(p:any, i:number) {

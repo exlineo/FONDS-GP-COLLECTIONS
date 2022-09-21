@@ -3,10 +3,11 @@ import { BDD } from "./BDD.js";
 
 export class Donnees extends BDD {
     static collections: Array<any> = [];
-    static notices: Array<any> = [];
+    static notices: any = <{idcollections:Array<any>}>{};
     static page: any = {};
     static menu: Array<any> = [];
-
+    static config: ConfigI = <ConfigI>{};
+    
     contact = {
         mail: "contact@exlineo.com",
         sujet: "Merci de remplir les champs requis",

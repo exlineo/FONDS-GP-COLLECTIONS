@@ -1,7 +1,6 @@
 [
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2581,
                     "ImageSize": "664x675",
@@ -60,13 +59,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47b5"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47b5"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2633,
                     "ImageSize": "675x657",
@@ -128,13 +125,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47b6"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47b6"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2589,
                     "ImageSize": "675x660",
@@ -192,13 +187,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47b7"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47b7"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3639,
                     "ImageSize": "675x650",
@@ -252,13 +245,11 @@
                         "editeur_oeuvre_source": "Gérard Perrier"
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47b8"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47b8"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2659,
                     "ImageSize": "675x675",
@@ -317,13 +308,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47b9"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47b9"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2764,
                     "ImageSize": "668x675",
@@ -384,13 +373,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ba"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ba"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -450,13 +437,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47bb"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47bb"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -515,13 +500,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47bc"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47bc"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2761,
                     "ImageSize": "675x647",
@@ -576,13 +559,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47bd"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47bd"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2676,
                     "ImageSize": "672x675",
@@ -637,13 +618,11 @@
                         "editeur_oeuvre_source": "Gérard Perrier"
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47be"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47be"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3840,
                     "ImageSize": "675x667",
@@ -698,13 +677,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47bf"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47bf"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -764,13 +741,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c0"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c0"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -830,13 +805,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c1"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c1"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2544,
                     "ImageSize": "616x675",
@@ -891,13 +864,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c2"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c2"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -957,13 +928,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c3"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c3"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1024,13 +993,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c4"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c4"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3849,
                     "ImageSize": "675x673",
@@ -1088,13 +1055,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c5"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c5"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1154,13 +1119,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c6"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c6"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1220,13 +1183,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c7"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c7"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1286,13 +1247,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c8"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c8"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2730,
                     "ImageSize": "675x632",
@@ -1347,13 +1306,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47c9"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47c9"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2815,
                     "ImageSize": "675x663",
@@ -1408,13 +1365,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ca"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ca"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1474,13 +1429,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47cb"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47cb"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3919,
                     "ImageSize": "641x675",
@@ -1534,13 +1487,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47cc"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47cc"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3937,
                     "ImageSize": "675x675",
@@ -1598,13 +1549,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47cd"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47cd"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1665,13 +1614,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ce"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ce"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1731,13 +1678,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47cf"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47cf"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1797,13 +1742,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d0"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d0"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2532,
                     "ImageSize": "675x652",
@@ -1858,13 +1801,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d1"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d1"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1926,13 +1867,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d2"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d2"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -1992,13 +1931,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d3"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d3"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2688,
                     "ImageSize": "675x632",
@@ -2053,13 +1990,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d4"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d4"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2120,13 +2055,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d5"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d5"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2186,13 +2119,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d6"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d6"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2253,13 +2184,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d7"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d7"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2320,13 +2249,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d8"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d8"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2386,13 +2313,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47d9"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47d9"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2703,
                     "ImageSize": "675x662",
@@ -2447,13 +2372,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47da"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47da"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3798,
                     "ImageSize": "675x657",
@@ -2507,13 +2430,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47db"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47db"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2720,
                     "ImageSize": "675x657",
@@ -2573,13 +2494,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47dc"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47dc"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2640,13 +2559,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47dd"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47dd"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2708,13 +2625,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47de"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47de"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -2773,13 +2688,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47df"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47df"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2788,
                     "ImageSize": "675x640",
@@ -2834,13 +2747,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e0"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e0"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 4217,
                     "ImageSize": "675x646",
@@ -2894,13 +2805,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e1"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e1"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2754,
                     "ImageSize": "662x675",
@@ -2958,13 +2867,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e2"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e2"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2568,
                     "ImageSize": "675x645",
@@ -3019,13 +2926,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e3"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e3"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3085,13 +2990,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e4"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e4"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3152,13 +3055,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e5"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e5"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2736,
                     "ImageSize": "675x652",
@@ -3216,13 +3117,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e6"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e6"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3283,13 +3182,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e7"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e7"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3891,
                     "ImageSize": "675x673",
@@ -3349,13 +3246,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e8"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e8"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2704,
                     "ImageSize": "675x632",
@@ -3410,13 +3305,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47e9"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47e9"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2720,
                     "ImageSize": "675x653",
@@ -3476,13 +3369,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ea"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ea"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2718,
                     "ImageSize": "675x618",
@@ -3537,13 +3428,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47eb"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47eb"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3604,13 +3493,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ec"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ec"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2717,
                     "ImageSize": "675x657",
@@ -3669,13 +3556,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ed"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ed"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2550,
                     "ImageSize": "659x675",
@@ -3730,13 +3615,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ee"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ee"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2724,
                     "ImageSize": "675x654",
@@ -3795,13 +3678,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47ef"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47ef"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3861,13 +3742,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f0"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f0"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -3927,13 +3806,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f1"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f1"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2593,
                     "ImageSize": "675x664",
@@ -3988,13 +3865,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f2"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f2"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -4055,13 +3930,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f3"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f3"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 2811,
                     "ImageSize": "675x675",
@@ -4121,13 +3994,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f4"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f4"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 3717,
                     "ImageSize": "675x669",
@@ -4185,13 +4056,11 @@
                         "ordre_serie": 0
                     }
                 }
-            }
-        ],
-        "_id": "601eb9c5fb52c91f1f1f47f5"
+            ,
+        "idnotices": "601eb9c5fb52c91f1f1f47f5"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 540,
                     "ImageSize": "960x540",
@@ -4258,13 +4127,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558a"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558a"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 674,
                     "ImageSize": "1280x674",
@@ -4331,13 +4198,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558b"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558b"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 540,
                     "ImageSize": "960x540",
@@ -4394,13 +4259,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558c"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558c"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1366x720",
@@ -4467,13 +4330,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558d"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558d"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1280x720",
@@ -4540,13 +4401,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558e"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558e"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 674,
                     "ImageSize": "1280x674",
@@ -4613,13 +4472,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f558f"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f558f"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1280x720",
@@ -4686,13 +4543,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5590"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5590"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 540,
                     "ImageSize": "960x540",
@@ -4759,13 +4614,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5591"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5591"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1280x720",
@@ -4832,13 +4685,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5592"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5592"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1280x720",
@@ -4905,13 +4756,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5593"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5593"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 674,
                     "ImageSize": "1280x674",
@@ -4978,13 +4827,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5594"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5594"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 540,
                     "ImageSize": "960x540",
@@ -5051,13 +4898,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5595"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5595"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 720,
                     "ImageSize": "1280x720",
@@ -5124,13 +4969,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5596"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5596"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 1440,
                     "ImageSize": "2560x1440",
@@ -5197,13 +5040,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5597"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5597"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageHeight": 540,
                     "ImageSize": "960x540",
@@ -5270,13 +5111,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6043ebaddcb9f435d90f5598"
+            ,
+        "idnotices": "6043ebaddcb9f435d90f5598"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "Format": "application/pdf",
                     "url": "http://vps550598.ovh.net/collections/Baudelaire/baudelaire_poeme_prose.pdf",
@@ -5324,13 +5163,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "60491433dcb9f435d90f55a2"
+            ,
+        "idnotices": "60491433dcb9f435d90f55a2"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "Format": "application/pdf",
                     "url": "http://vps550598.ovh.net/collections/Baudelaire/baudelaire_charles_-_les_fleurs_du_mal.pdf",
@@ -5378,13 +5215,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "60491433dcb9f435d90f55a3"
+            ,
+        "idnotices": "60491433dcb9f435d90f55a3"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "Format": "application/pdf",
                     "url": "http://vps550598.ovh.net/collections/Baudelaire/Les_paradis_artificiels_opium_et_[...]Baudelaire_Charles_bpt6k5832770f.pdf",
@@ -5432,13 +5267,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "60491433dcb9f435d90f55a4"
+            ,
+        "idnotices": "60491433dcb9f435d90f55a4"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "602x1566",
                     "Format": "image/jpeg",
@@ -5481,13 +5314,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55b6"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55b6"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "608x1566",
                     "Format": "image/jpeg",
@@ -5530,13 +5361,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55b7"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55b7"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "831x1566",
                     "Format": "image/jpeg",
@@ -5579,13 +5408,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55b8"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55b8"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "1024x1485",
                     "Format": "image/jpeg",
@@ -5632,13 +5459,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55b9"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55b9"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "1024x1557",
                     "Format": "image/jpeg",
@@ -5681,13 +5506,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55ba"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55ba"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "619x1566",
                     "Format": "image/jpeg",
@@ -5730,13 +5553,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55bb"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55bb"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "587x1566",
                     "Format": "image/jpeg",
@@ -5783,13 +5604,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55bc"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55bc"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "606x1566",
                     "Format": "image/jpeg",
@@ -5832,13 +5651,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55be"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55be"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "568x1567",
                     "Format": "image/jpeg",
@@ -5881,13 +5698,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55bf"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55bf"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "816x1566",
                     "Format": "image/jpeg",
@@ -5933,13 +5748,11 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55c0"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55c0"
     },
     {
-        "metadonnees": [
-            {
+        
                 "media": {
                     "ImageSize": "1024x1449",
                     "Format": "image/jpeg",
@@ -5982,8 +5795,7 @@
                     "oai_dc",
                     "oai_nema"
                 ]
-            }
-        ],
-        "_id": "6059133fdcb9f435d90f55c1"
+            ,
+        "idnotices": "6059133fdcb9f435d90f55c1"
     }
 ]

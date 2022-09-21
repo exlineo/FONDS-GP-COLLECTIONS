@@ -72,15 +72,15 @@
             "02 - Châteaux",
             "03 - Ville"
         ],
-        "_id": "601eb9c5fb52c91f1f1f47f6",
-        "titre": "Cassel",
+        "idcollections": "601eb9c5fb52c91f1f1f47f6",
+        "title": "Cassel",
         "alias": "cassel",
         "description": "Set composé pour la collection Cassel",
         "type": "images",
-        "createur": "Gérard Perrier",
+        "creator": "Gérard Perrier",
         "date": "2021-02-06T13:08:32.619Z",
-        "fonds": "Gérard Perrier",
-        "langue": "fr"
+        "funds": "Gérard Perrier",
+        "language": "fr"
     },
     {
         "notices": [
@@ -107,15 +107,15 @@
             "Océan",
             "plage"
         ],
-        "_id": "6043ebaddcb9f435d90f5599",
-        "titre": "Ocean",
+        "idcollections": "6043ebaddcb9f435d90f5599",
+        "title": "Ocean",
         "alias": "ocean",
         "description": "Set de vidéos de démo",
         "type": "multimedia",
-        "createur": "Gérald Abbadie",
+        "creator": "Gérald Abbadie",
         "date": "2021-03-06T20:42:34.287Z",
-        "fonds": "inconnu",
-        "langue": "fr"
+        "funds": "inconnu",
+        "language": "fr"
     },
     {
         "notices": [
@@ -124,15 +124,15 @@
             "60491433dcb9f435d90f55a4"
         ],
         "series": [],
-        "_id": "60491433dcb9f435d90f55a5",
-        "titre": "Baudelaire",
+        "idcollections": "60491433dcb9f435d90f55a5",
+        "title": "Baudelaire",
         "alias": "baudelaire",
         "description": "Set des oeuvres de Charles Baudelaire",
         "type": "multimedia",
-        "createur": "Gérald Abbadie",
+        "creator": "Gérald Abbadie",
         "date": "2021-03-10T18:46:27.498Z",
-        "fonds": "inconnu",
-        "langue": "fr"
+        "funds": "inconnu",
+        "language": "fr"
     },
     {
         "notices": [
@@ -154,14 +154,14 @@
             "Saisons",
             "Affiches"
         ],
-        "_id": "60591340dcb9f435d90f55c2",
-        "titre": "Mucha",
+        "idcollections": "60591340dcb9f435d90f55c2",
+        "title": "Mucha",
         "alias": "mucha",
         "description": "Numérisations d'estampes d'Alphonse Mucha",
         "type": "multimedia",
-        "createur": "Gérald Abbadie",
+        "creator": "Gérald Abbadie",
         "date": "2021-03-11T09:43:19.702Z",
-        "fonds": "Gallica",
-        "langue": "fr"
+        "funds": "Gallica",
+        "language": "fr"
     }
 ]

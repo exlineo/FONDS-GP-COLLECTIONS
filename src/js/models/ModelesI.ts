@@ -15,16 +15,16 @@ export interface NoticeI {
 }
 /** Modèle d'une collection */
 export interface CollectionI{
-    _id?: any;
-    titre: string;
+    idcollections?: any;
+    title: string;
     alias: string;
     description: string;
     type: string;
-    createur: string;
-    fonds?:string;
-    langue?: string;
+    creator: string;
+    fund?:string;
+    language?: string;
     date?:string | number;
-    groupe?: Array<string>;
+    group?: Array<string>;
     notices?:Array<string>;
     series?:Array<NemaSerieI>;
     selected?:boolean;

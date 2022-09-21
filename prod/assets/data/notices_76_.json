@@ -1,0 +1,1072 @@
+[
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1280x720",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayVague_1.mp4",
+            "file": "PixabayVague_1.mp4"
+        },
+        "dublincore": {
+            "title": "Vague en mer",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443243",
+            "coverage": "Ocean/vignettes/PixabayVague_1.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443243,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0015",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayVague_1.mp4",
+                "URL": "Ocean/PixabayVague_1.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Surf",
+                "ordre_serie": 1
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayVague_1.jpg",
+                "liens_docs_internes": "vignettes/PixabayVague_1.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5593"
+    },
+    {
+        "media": {
+            "ImageHeight": 674,
+            "ImageSize": "1280x674",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayCote_3.mp4",
+            "file": "PixabayCote_3.mp4"
+        },
+        "dublincore": {
+            "title": "ïle",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443245",
+            "coverage": "Ocean/vignettes/PixabayCote_3.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443245,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0003",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_3.mp4",
+                "URL": "Ocean/PixabayCote_3.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 3
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_3.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_3.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5594"
+    },
+    {
+        "media": {
+            "ImageHeight": 540,
+            "ImageSize": "960x540",
+            "ImageWidth": 960,
+            "url": "Ocean/PixabayOcean_2.mp4",
+            "file": "PixabayOcean_2.mp4"
+        },
+        "dublincore": {
+            "title": "L'été landais",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443246",
+            "coverage": "Ocean/vignettes/PixabayOcean_2.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443246,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0008",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayOcean_2.mp4",
+                "URL": "Ocean/PixabayOcean_2.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 2
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayOcean_2.jpg",
+                "liens_docs_internes": "vignettes/PixabayOcean_2.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5595"
+    },
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1280x720",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayCote_2.mp4",
+            "file": "PixabayCote_2.mp4"
+        },
+        "dublincore": {
+            "title": "Canal en mer",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443247",
+            "coverage": "Ocean/vignettes/PixabayCote_2.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443247,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0002",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_2.mp4",
+                "URL": "Ocean/PixabayCote_2.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 2
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_2.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_2.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5596"
+    },
+    {
+        "media": {
+            "ImageHeight": 1440,
+            "ImageSize": "2560x1440",
+            "ImageWidth": 2560,
+            "url": "Ocean/PixabaySurfeurs_2.mp4",
+            "file": "PixabaySurfeurs_2.mp4"
+        },
+        "dublincore": {
+            "title": "Trip sur vague",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443249",
+            "coverage": "Ocean/vignettes/PixabaySurfeurs_2.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443249,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0013",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabaySurfeurs_2.mp4",
+                "URL": "Ocean/PixabaySurfeurs_2.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Surf",
+                "ordre_serie": 1
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabaySurfeurs_2.jpg",
+                "liens_docs_internes": "vignettes/PixabaySurfeurs_2.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5597"
+    },
+    {
+        "media": {
+            "ImageHeight": 540,
+            "ImageSize": "960x540",
+            "ImageWidth": 960,
+            "url": "Ocean/PixabayCote_6.mp4",
+            "file": "PixabayCote_6.mp4"
+        },
+        "dublincore": {
+            "title": "Méditerranée",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443250",
+            "coverage": "Ocean/vignettes/PixabayCote_6.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443250,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0006",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_6.mp4",
+                "URL": "Ocean/PixabayCote_6.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 6
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_6.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_6.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5598"
+    },
+    {
+        "media": {
+            "Format": "application/pdf",
+            "url": "Baudelaire/baudelaire_poeme_prose.pdf",
+            "file": "baudelaire_poeme_prose.pdf"
+        },
+        "dublincore": {
+            "title": "Petits poêmes en prose",
+            "creator": "Charles Baudelaire",
+            "subject": "poésie, XIXe ",
+            "description": "Les Fleurs du mal est un recueil de poèmes de Charles Baudelaire, englobant la quasi-totalité de sa production en vers, de 1840 jusqu'à sa mort survenue fin août 1867.",
+            "publisher": "Auguste Poulet-Malassis",
+            "contributor": "Galica (BNF)",
+            "date": 1615402001726,
+            "type": "Document PDF",
+            "format": "application/pdf",
+            "identifier": "oai:nemateria.net/1615402001726",
+            "rights": "Creative Commons"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "BAU-T-0002",
+                "sourceFile": "/var/www/html/collections/Baudelaire/baudelaire_poeme_prose.pdf",
+                "URL": "Baudelaire/baudelaire_poeme_prose.pdf",
+                "date_creation_original": "23 août 1857",
+                "nature_support_original": "Livre broché",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Baudelaire",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_originaux": "Galica",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "\tAuguste Poulet-Malassis",
+                "producteurs": "BNF"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "60491433dcb9f435d90f55a2"
+    },
+    {
+        "media": {
+            "Format": "application/pdf",
+            "url": "Baudelaire/baudelaire_charles_-_les_fleurs_du_mal.pdf",
+            "file": "baudelaire_charles_-_les_fleurs_du_mal.pdf"
+        },
+        "dublincore": {
+            "title": "Les fleurs du mal",
+            "creator": "Charles Baudelaire",
+            "subject": "poésie, XIXe ",
+            "description": "poesie,Europe,France",
+            "publisher": "Auguste Poulet-Malassis",
+            "contributor": "Galica (BNF)",
+            "date": 1615402001750,
+            "type": "Document PDF",
+            "format": "application/pdf",
+            "identifier": "oai:nemateria.net/1615402001750",
+            "rights": "Creative Commons"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "BAU-T-0001",
+                "sourceFile": "/var/www/html/collections/Baudelaire/baudelaire_charles_-_les_fleurs_du_mal.pdf",
+                "URL": "Baudelaire/baudelaire_charles_-_les_fleurs_du_mal.pdf",
+                "date_creation_original": "23 août 1857",
+                "nature_support_original": "Livre broché",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Baudelaire",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_originaux": "Galica",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "\tAuguste Poulet-Malassis",
+                "producteurs": "BNF"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "60491433dcb9f435d90f55a3"
+    },
+    {
+        "media": {
+            "Format": "application/pdf",
+            "url": "Baudelaire/Les_paradis_artificiels_opium_et_[...]Baudelaire_Charles_bpt6k5832770f.pdf",
+            "file": "Les_paradis_artificiels_opium_et_[...]Baudelaire_Charles_bpt6k5832770f.pdf"
+        },
+        "dublincore": {
+            "title": "Les paradis artificiels, opium et haschisch / par Charles Baudelaire",
+            "creator": "Baudelaire, Charles (1821-1867)",
+            "subject": "poésie, XIXe ",
+            "description": "Les Fleurs du mal est un recueil de poèmes de Charles Baudelaire, englobant la quasi-totalité de sa production en vers, de 1840 jusqu'à sa mort survenue fin août 1867.",
+            "publisher": "Auguste Poulet-Malassis",
+            "contributor": "Galica (BNF)",
+            "date": 1615402001779,
+            "type": "Document PDF",
+            "format": "application/pdf",
+            "identifier": "oai:nemateria.net/1615402001779",
+            "rights": "Creative Commons"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "BAU-T-0003",
+                "sourceFile": "/var/www/html/collections/Baudelaire/Les_paradis_artificiels_opium_et_[...]Baudelaire_Charles_bpt6k5832770f.pdf",
+                "URL": "Baudelaire/Les_paradis_artificiels_opium_et_[...]Baudelaire_Charles_bpt6k5832770f.pdf",
+                "date_creation_original": "23 août 1857",
+                "nature_support_original": "Livre broché",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Baudelaire",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_originaux": "Galica",
+                "conservateur_fichiers": "BNF",
+                "detenteur_droits": "Creative Commons",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "\tAuguste Poulet-Malassis",
+                "producteurs": "BNF"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "60491433dcb9f435d90f55a4"
+    },
+    {
+        "media": {
+            "ImageSize": "602x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/La_Tosca_drame_btv1b90052684_1.jpeg",
+            "file": "La_Tosca_drame_btv1b90052684_1.jpeg"
+        },
+        "dublincore": {
+            "title": "La tosca",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823122,
+            "type": "Affiche théâtre de la rnaissance avec Sarah Bernhardt",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823122",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0006",
+                "sourceFile": "/var/www/html/collections/Mucha/La_Tosca_drame_btv1b90052684_1.jpeg",
+                "URL": "Mucha/La_Tosca_drame_btv1b90052684_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Théâtre",
+                "ordre_serie": 2
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55b6"
+    },
+    {
+        "media": {
+            "ImageSize": "608x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/Lorenzaccio_btv1b9016295m_1.jpeg",
+            "file": "Lorenzaccio_btv1b9016295m_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Lorenzaccio",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture, affiche",
+            "description": "Affiche d'une pièce en V actes d'Alfred de Musset (théâtre de la renaissance)",
+            "publisher": "(Paris)",
+            "date": 1615455823123,
+            "type": "Affiche théâtre de la rnaissance",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823123",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0007",
+                "sourceFile": "/var/www/html/collections/Mucha/Lorenzaccio_btv1b9016295m_1.jpeg",
+                "URL": "Mucha/Lorenzaccio_btv1b9016295m_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Théâtre",
+                "ordre_serie": 3
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55b7"
+    },
+    {
+        "media": {
+            "ImageSize": "831x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/Les_Saisons_btv1b9005200j_1.jpeg",
+            "file": "Les_Saisons_btv1b9005200j_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Les saisons",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823124,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823124",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0002",
+                "sourceFile": "/var/www/html/collections/Mucha/Les_Saisons_btv1b9005200j_1.jpeg",
+                "URL": "Mucha/Les_Saisons_btv1b9005200j_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Saisons",
+                "ordre_serie": 2
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55b8"
+    },
+    {
+        "media": {
+            "ImageSize": "1024x1485",
+            "Format": "image/jpeg",
+            "url": "Mucha/Monaco-Monte-Carlo_btv1b9016307c_1.jpeg",
+            "file": "Monaco-Monte-Carlo_btv1b9016307c_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Monaco -Monté-carlo",
+            "creator": "Alphonse Mucha",
+            "subject": "affiche, estampe",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823126,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823126",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0009",
+                "sourceFile": "/var/www/html/collections/Mucha/Monaco-Monte-Carlo_btv1b9016307c_1.jpeg",
+                "URL": "Mucha/Monaco-Monte-Carlo_btv1b9016307c_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "nom_collection": "Mucha",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_originaux": "BNF",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Affiches",
+                "ordre_serie": 3
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55b9"
+    },
+    {
+        "media": {
+            "ImageSize": "1024x1557",
+            "Format": "image/jpeg",
+            "url": "Mucha/Chemins_de_fer_btv1b90055366_1.jpeg",
+            "file": "Chemins_de_fer_btv1b90055366_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Luchon (Pyrénées)",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823128,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823128",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0004",
+                "sourceFile": "/var/www/html/collections/Mucha/Chemins_de_fer_btv1b90055366_1.jpeg",
+                "URL": "Mucha/Chemins_de_fer_btv1b90055366_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Affiches",
+                "ordre_serie": 2
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55ba"
+    },
+    {
+        "media": {
+            "ImageSize": "619x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/La_Dame_aux_Camélias_btv1b90163452_1.jpeg",
+            "file": "La_Dame_aux_Camélias_btv1b90163452_1.jpeg"
+        },
+        "dublincore": {
+            "title": "La dame auxcamélias",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Affiche théatre de la renaissance avec Sarah Bernhardt",
+            "publisher": "(Paris)",
+            "date": 1615455823130,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823130",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0005",
+                "sourceFile": "/var/www/html/collections/Mucha/La_Dame_aux_Camélias_btv1b90163452_1.jpeg",
+                "URL": "Mucha/La_Dame_aux_Camélias_btv1b90163452_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Théâtre",
+                "ordre_serie": 1
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55bb"
+    },
+    {
+        "media": {
+            "ImageSize": "587x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/Medee_btv1b531874126_1.jpeg",
+            "file": "Medee_btv1b531874126_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Médée",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture, affiche",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823132,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823132",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0008",
+                "sourceFile": "/var/www/html/collections/Mucha/Medee_btv1b531874126_1.jpeg",
+                "URL": "Mucha/Medee_btv1b531874126_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "nom_collection": "Mucha",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_originaux": "BNF",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Théâtre",
+                "ordre_serie": 4
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55bc"
+    },
+    {
+        "media": {
+            "ImageSize": "606x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/Hamlet_btv1b531874289_1.jpeg",
+            "file": "Hamlet_btv1b531874289_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Hamlet",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Tragique histoire d'Hamlet, prince de Danemark (affiche) avec Sarah Bernhardt",
+            "publisher": "(Paris)",
+            "date": 1615455823138,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823138",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0011",
+                "sourceFile": "/var/www/html/collections/Mucha/Hamlet_btv1b531874289_1.jpeg",
+                "URL": "Mucha/Hamlet_btv1b531874289_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Théâtre",
+                "ordre_serie": 5
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55be"
+    },
+    {
+        "media": {
+            "ImageSize": "568x1567",
+            "Format": "image/jpeg",
+            "url": "Mucha/Samaritaine_btv1b9016333v_1.jpeg",
+            "file": "Samaritaine_btv1b9016333v_1.jpeg"
+        },
+        "dublincore": {
+            "title": "La Samaritaine",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823140,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823140",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0003",
+                "sourceFile": "/var/www/html/collections/Mucha/Samaritaine_btv1b9016333v_1.jpeg",
+                "URL": "Mucha/Samaritaine_btv1b9016333v_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Affiches",
+                "ordre_serie": 1
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55bf"
+    },
+    {
+        "media": {
+            "ImageSize": "816x1566",
+            "Format": "image/jpeg",
+            "url": "Mucha/Les_Saisons_btv1b9005131r_1.jpeg",
+            "file": "Les_Saisons_btv1b9005131r_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Les saisons",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture",
+            "description": "Figures allégoriques, 4 est. : lithographie, coul. ; 104 x 54 cm",
+            "publisher": "(Paris)",
+            "date": 1615455823141,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823141",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0001",
+                "sourceFile": "/var/www/html/collections/Mucha/Les_Saisons_btv1b9005131r_1.jpeg",
+                "URL": "Mucha/Les_Saisons_btv1b9005131r_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "nom_collection": "Mucha",
+                "qui_numerise": "BNF",
+                "proprietaire_originaux": "BNF",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Saisons",
+                "ordre_serie": 1
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55c0"
+    },
+    {
+        "media": {
+            "ImageSize": "1024x1449",
+            "Format": "image/jpeg",
+            "url": "Mucha/Societe-populaire_btv1b90050990_1.jpeg",
+            "file": "Societe-populaire_btv1b90050990_1.jpeg"
+        },
+        "dublincore": {
+            "title": "Société populaire des beaux arts",
+            "creator": "Alphonse Mucha",
+            "subject": "peinture, affiche",
+            "description": "Education ppopulaire (affiche)",
+            "publisher": "(Paris)",
+            "date": 1615455823143,
+            "type": "Panneau décoratif, estampe",
+            "format": "image/jpeg",
+            "identifier": "oai:nemateria.net/1615455823143",
+            "source": "Bibliothèque nationale de France, ENT DN-1 (MUCHA,Alphonse)-FT6"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "MUC-I-0010",
+                "sourceFile": "/var/www/html/collections/Mucha/Societe-populaire_btv1b90050990_1.jpeg",
+                "URL": "Mucha/Societe-populaire_btv1b90050990_1.jpeg",
+                "reference_original": "ark:/12148/btv1b9005131r",
+                "date_creation_original": 1896,
+                "nature_support_original": "4 est. : lithographie, coul. ; 104 x 54 cm",
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "collection": {
+                "conservateur_fichiers": "Gallica (BNF)",
+                "detenteur_droits": "Gallica (BNF)"
+            },
+            "serie": {
+                "serie": "Saisons",
+                "ordre_serie": 1
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6059133fdcb9f435d90f55c1"
+    }
+]

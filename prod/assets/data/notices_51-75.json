@@ -1,0 +1,1582 @@
+[
+    {
+        "media": {
+            "ImageHeight": 2736,
+            "ImageSize": "675x652",
+            "ImageWidth": 2833,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0076_Normandie_Cassel_1931_003.jpg",
+            "file": "CAA-I-0076_Normandie_Cassel_1931_003.jpg"
+        },
+        "dublincore": {
+            "title": "Le manoir d'Ango",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "manoir",
+                "Ango"
+            ],
+            "description": "Le manoir d'Ango à Varengeville en Normandie édifier par des artistes italiens de 1530 à 1544 édifier par des artistes italiens de 1530 à 1544 pour Jean Ango, armateur, gouverneur de Dieppe et conseiller maritime de François Ier.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778611",
+            "date": 1612621778611
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0076",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0076_Normandie_Cassel_1931_003.jpg",
+                "URL": "Cassel/CAA-I-0076_Normandie_Cassel_1931_003.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47e6"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0072_Defiles_20_juillet_1930_019.jpg",
+            "file": "CAA-I-0072_Defiles_20_juillet_1930_019.jpg"
+        },
+        "dublincore": {
+            "title": "Fêtes de Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Bruges",
+                "procession",
+                "Saint Sang",
+                "fête costumée",
+                "défillé"
+            ],
+            "description": "Défilé en costumes médiévaux, probablement lors de la fête du Saint Sang, à Bruges en 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778611",
+            "date": 1612621778611
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0072",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0072_Defiles_20_juillet_1930_019.jpg",
+                "URL": "Cassel/CAA-I-0072_Defiles_20_juillet_1930_019.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47e7"
+    },
+    {
+        "media": {
+            "ImageHeight": 3891,
+            "ImageSize": "675x673",
+            "ImageWidth": 3902,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0009_Cassel_Deneux_architecte_de_la_cathedrale_010.jpg",
+            "file": "CAA-I-0009_Cassel_Deneux_architecte_de_la_cathedrale_010.jpg"
+        },
+        "dublincore": {
+            "title": "Henri DENEUX, architecte",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Henri DENEUX",
+                "architecte",
+                "cathédrale",
+                "Reims"
+            ],
+            "description": "Henri DENEUX, architecte en chef de la cathédrale de Reims. Il assure sa restauration après la guerre de 1914-1918  jusqu'à 1938. Décédé en 1969",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778612",
+            "date": 1612621778612
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0009",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0009_Cassel_Deneux_architecte_de_la_cathedrale_010.jpg",
+                "URL": "Cassel/CAA-I-0009_Cassel_Deneux_architecte_de_la_cathedrale_010.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47e8"
+    },
+    {
+        "media": {
+            "ImageHeight": 2704,
+            "ImageSize": "675x632",
+            "ImageWidth": 2886,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0028_La_Rochelle_sept_1930.jpg",
+            "file": "CAA-I-0028_La_Rochelle_sept_1930.jpg"
+        },
+        "dublincore": {
+            "title": "La Rochelle",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "La Rochelle",
+            "description": "La Rochelle",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778612",
+            "date": 1612621778612
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0028",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0028_La_Rochelle_sept_1930.jpg",
+                "URL": "Cassel/CAA-I-0028_La_Rochelle_sept_1930.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47e9"
+    },
+    {
+        "media": {
+            "ImageHeight": 2720,
+            "ImageSize": "675x653",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0048_Famille_Cassel_1939_014.jpg",
+            "file": "CAA-I-0048_Famille_Cassel_1939_014.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778612",
+            "date": 1612621778612
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0048",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0048_Famille_Cassel_1939_014.jpg",
+                "URL": "Cassel/CAA-I-0048_Famille_Cassel_1939_014.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ea"
+    },
+    {
+        "media": {
+            "ImageHeight": 2718,
+            "ImageSize": "675x618",
+            "ImageWidth": 2970,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0023_Nuremberg_1933-001.jpg",
+            "file": "CAA-I-0023_Nuremberg_1933-001.jpg"
+        },
+        "dublincore": {
+            "title": "Nuremberg",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Nuremberg",
+            "description": "Nuremberg",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778613",
+            "date": 1612621778613
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0023",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0023_Nuremberg_1933-001.jpg",
+                "URL": "Cassel/CAA-I-0023_Nuremberg_1933-001.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47eb"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0068_Defiles_20_juillet_1930_015.jpg",
+            "file": "CAA-I-0068_Defiles_20_juillet_1930_015.jpg"
+        },
+        "dublincore": {
+            "title": "Fêtes de Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Bruges",
+                "procession",
+                "Saint Sang",
+                "fête costumée",
+                "défillé"
+            ],
+            "description": "Défilé en costumes médiévaux, probablement lors de la fête du Saint Sang, à Bruges en 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778613",
+            "date": 1612621778613
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0068",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0068_Defiles_20_juillet_1930_015.jpg",
+                "URL": "Cassel/CAA-I-0068_Defiles_20_juillet_1930_015.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ec"
+    },
+    {
+        "media": {
+            "ImageHeight": 2717,
+            "ImageSize": "675x657",
+            "ImageWidth": 2792,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0060_Defiles_20_juillet_1930_007.jpg",
+            "file": "CAA-I-0060_Defiles_20_juillet_1930_007.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "défilé",
+                "fête costumée"
+            ],
+            "description": "Fête médiévale de Cassel le 20 juillet 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778614",
+            "date": 1612621778614
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0060",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0060_Defiles_20_juillet_1930_007.jpg",
+                "URL": "Cassel/CAA-I-0060_Defiles_20_juillet_1930_007.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ed"
+    },
+    {
+        "media": {
+            "ImageHeight": 2550,
+            "ImageSize": "659x675",
+            "ImageWidth": 2490,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0014_Villes_nord_005.jpg",
+            "file": "CAA-I-0014_Villes_nord_005.jpg"
+        },
+        "dublincore": {
+            "title": "Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Bruges",
+            "description": "Bruges",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778615",
+            "date": 1612621778615
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0014",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0014_Villes_nord_005.jpg",
+                "URL": "Cassel/CAA-I-0014_Villes_nord_005.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ee"
+    },
+    {
+        "media": {
+            "ImageHeight": 2724,
+            "ImageSize": "675x654",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0059_Defiles_20_juillet_1930_006.jpg",
+            "file": "CAA-I-0059_Defiles_20_juillet_1930_006.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "défilé",
+                "fête costumée"
+            ],
+            "description": "Fête médiévale de Cassel le 20 juillet 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778616",
+            "date": 1612621778616
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0059",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0059_Defiles_20_juillet_1930_006.jpg",
+                "URL": "Cassel/CAA-I-0059_Defiles_20_juillet_1930_006.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ef"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0051_Famille_Cassel_1939_017.jpg",
+            "file": "CAA-I-0051_Famille_Cassel_1939_017.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778616",
+            "date": 1612621778616
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0051",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0051_Famille_Cassel_1939_017.jpg",
+                "URL": "Cassel/CAA-I-0051_Famille_Cassel_1939_017.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f0"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0041_Famille_Cassel_1939_007.jpg",
+            "file": "CAA-I-0041_Famille_Cassel_1939_007.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778617",
+            "date": 1612621778617
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0041",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0041_Famille_Cassel_1939_007.jpg",
+                "URL": "Cassel/CAA-I-0041_Famille_Cassel_1939_007.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f1"
+    },
+    {
+        "media": {
+            "ImageHeight": 2593,
+            "ImageSize": "675x664",
+            "ImageWidth": 2634,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0015_Villes_nord_006.jpg",
+            "file": "CAA-I-0015_Villes_nord_006.jpg"
+        },
+        "dublincore": {
+            "title": "Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Bruges",
+            "description": "Bruges",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778618",
+            "date": 1612621778618
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0015",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0015_Villes_nord_006.jpg",
+                "URL": "Cassel/CAA-I-0015_Villes_nord_006.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f2"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0062_Defiles_20_juillet_1930_009.jpg",
+            "file": "CAA-I-0062_Defiles_20_juillet_1930_009.jpg"
+        },
+        "dublincore": {
+            "title": "Fêtes de Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Bruges",
+                "procession",
+                "Saint Sang",
+                "fête costumée",
+                "défillé"
+            ],
+            "description": "Défilé en costumes médiévaux, probablement lors de la fête du Saint Sang, à Bruges en 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778619",
+            "date": 1612621778619
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0062",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0062_Defiles_20_juillet_1930_009.jpg",
+                "URL": "Cassel/CAA-I-0062_Defiles_20_juillet_1930_009.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f3"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0052_Famille_Cassel_1939_018.jpg",
+            "file": "CAA-I-0052_Famille_Cassel_1939_018.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778619",
+            "date": 1612621778619
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0052",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0052_Famille_Cassel_1939_018.jpg",
+                "URL": "Cassel/CAA-I-0052_Famille_Cassel_1939_018.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f4"
+    },
+    {
+        "media": {
+            "ImageHeight": 3717,
+            "ImageSize": "675x669",
+            "ImageWidth": 3752,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0002_Cassel_003.jpg",
+            "file": "CAA-I-0002_Cassel_003.jpg"
+        },
+        "dublincore": {
+            "title": "Tenis club",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Rreims",
+                "groupe"
+            ],
+            "description": "Tenis club, Reims, 1925",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778620",
+            "date": 1612621778620
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0002",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0002_Cassel_003.jpg",
+                "URL": "Cassel/CAA-I-0002_Cassel_003.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47f5"
+    },
+    {
+        "media": {
+            "ImageHeight": 540,
+            "ImageSize": "960x540",
+            "ImageWidth": 960,
+            "url": "Ocean/PixabayPoissons_1.mp4",
+            "file": "PixabayPoissons_1.mp4"
+        },
+        "dublincore": {
+            "title": "Côte morcelée",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443231",
+            "coverage": "Ocean/vignettes/PixabayPoissons_1.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443231,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0012",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayPoissons_1.mp4",
+                "URL": "Ocean/PixabayPoissons_1.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Poissons",
+                "ordre_serie": 1
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayPoissons_1.jpg",
+                "liens_docs_internes": "vignettes/PixabayPoissons_1.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558a"
+    },
+    {
+        "media": {
+            "ImageHeight": 674,
+            "ImageSize": "1280x674",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayCote_4.mp4",
+            "file": "PixabayCote_4.mp4"
+        },
+        "dublincore": {
+            "title": "ïle",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443232",
+            "coverage": "Ocean/vignettes/PixabayCote_4.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443232,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0004",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_4.mp4",
+                "URL": "Ocean/PixabayCote_4.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 4
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_4.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_4.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558b"
+    },
+    {
+        "media": {
+            "ImageHeight": 540,
+            "ImageSize": "960x540",
+            "ImageWidth": 960,
+            "url": "Ocean/PixabayCote_1.mp4",
+            "file": "PixabayCote_1.mp4"
+        },
+        "dublincore": {
+            "title": "Mer laiteuse",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443233",
+            "coverage": "Ocean/vignettes/PixabayCote_1.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443233,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0001",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_1.mp4",
+                "URL": "Ocean/PixabayCote_1.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Common"
+            },
+            "collection": {
+                "qui_numerise": "Pixabay",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "nom_collection": "Ocean",
+                "fonds": "inconnu"
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_1.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_1.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558c"
+    },
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1366x720",
+            "ImageWidth": 1366,
+            "url": "Ocean/PixabaySurfeurs.mp4",
+            "file": "PixabaySurfeurs.mp4"
+        },
+        "dublincore": {
+            "title": "Surfeurs à la mer",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443234",
+            "coverage": "Ocean/vignettes/PixabaySurfeurs.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443234,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0014",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabaySurfeurs.mp4",
+                "URL": "Ocean/PixabaySurfeurs.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Surf",
+                "ordre_serie": 2
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabaySurfeurs.jpg",
+                "liens_docs_internes": "vignettes/PixabaySurfeurs.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558d"
+    },
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1280x720",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayOcean_3.mp4",
+            "file": "PixabayOcean_3.mp4"
+        },
+        "dublincore": {
+            "title": "Tumulte",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443236",
+            "coverage": "Ocean/vignettes/PixabayOcean_3.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443236,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0009",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayOcean_3.mp4",
+                "URL": "Ocean/PixabayOcean_3.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Océan",
+                "ordre_serie": 1
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayOcean_3.jpg",
+                "liens_docs_internes": "vignettes/PixabayOcean_3.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558e"
+    },
+    {
+        "media": {
+            "ImageHeight": 674,
+            "ImageSize": "1280x674",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayCote_5.mp4",
+            "file": "PixabayCote_5.mp4"
+        },
+        "dublincore": {
+            "title": "Côte morcelée",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443237",
+            "coverage": "Ocean/vignettes/PixabayCote_5.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443237,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0005",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayCote_5.mp4",
+                "URL": "Ocean/PixabayCote_5.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "côte",
+                "ordre_serie": 5
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayCote_5.jpg",
+                "liens_docs_internes": "vignettes/PixabayCote_5.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f558f"
+    },
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1280x720",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayOcean_4.mp4",
+            "file": "PixabayOcean_4.mp4"
+        },
+        "dublincore": {
+            "title": "Une échelle à la mer",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443239",
+            "coverage": "Ocean/PixabayCote_1.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443239,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0010",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayOcean_4.mp4",
+                "URL": "Ocean/PixabayOcean_4.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Océan",
+                "ordre_serie": 3
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayOcean_4.jpg",
+                "liens_docs_internes": "vignettes/PixabayOcean_4.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5590"
+    },
+    {
+        "media": {
+            "ImageHeight": 540,
+            "ImageSize": "960x540",
+            "ImageWidth": 960,
+            "url": "Ocean/PixabayOcean_1.mp4",
+            "file": "PixabayOcean_1.mp4"
+        },
+        "dublincore": {
+            "title": "Vagues",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443240",
+            "coverage": "Ocean/vignettes/PixabayOcean_1.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443240,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0007",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayOcean_1.mp4",
+                "URL": "Ocean/PixabayOcean_1.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "plage",
+                "ordre_serie": 1
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayOcean_1.jpg",
+                "liens_docs_internes": "vignettes/PixabayOcean_1.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5591"
+    },
+    {
+        "media": {
+            "ImageHeight": 720,
+            "ImageSize": "1280x720",
+            "ImageWidth": 1280,
+            "url": "Ocean/PixabayOcean_5.mp4",
+            "file": "PixabayOcean_5.mp4"
+        },
+        "dublincore": {
+            "title": "Côte morcelée",
+            "creator": "Pixabay",
+            "subject": "côte, mer, océan, vagues",
+            "description": "Vidéo d'une côte marine",
+            "publisher": "Pixabay",
+            "type": "video/mp4",
+            "identifier": "oai:nemateria.net/1615063443241",
+            "coverage": "Ocean/vignettes/PixabayOcean_5.jpg",
+            "rights": "Creative Common",
+            "date": 1615063443241,
+            "format": "video/mp4"
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "OCE-V-0011",
+                "sourceFile": "/var/www/html/collections/Ocean/PixabayOcean_5.mp4",
+                "URL": "Ocean/PixabayOcean_5.mp4",
+                "date_creation_original": "23/07/2017",
+                "nature_support_original": "Vidéo AVI",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "date_numerisation": "23/07/2017",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Ocean",
+                "qui_numerise": "Pixabay",
+                "proprietaire_originaux": "Gérald Abbadie",
+                "conservateur_originaux": "Pixabay",
+                "conservateur_fichiers": "Pixabay",
+                "detenteur_droits": "Pixabay",
+                "gestionnaire_collection": "Gérald Abbadie",
+                "fonds": "inconnu"
+            },
+            "participants": {
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Pixabay"
+            },
+            "serie": {
+                "serie": "Océan",
+                "ordre_serie": 4
+            },
+            "sequences": {
+                "sequence": "01",
+                "time_code": "2000, 2500, 2850, 5185, 8250",
+                "duree_sequence": "2s,0.5s,0.350s,2.325s,3.075s",
+                "resume_sequence": "Une vague fend la surface, une autre vague, puis une autre, un clapotis, pouf, encore une vague",
+                "mots_cles_sequences": "océan, côte, marine, vagues"
+            },
+            "relations": {
+                "requiert_documents": "vignettes/PixabayOcean_5.jpg",
+                "liens_docs_internes": "vignettes/PixabayOcean_5.jpg"
+            }
+        },
+        "prefix": [
+            "oai_dc",
+            "oai_nema"
+        ],
+        "idnotices": "6043ebaddcb9f435d90f5592"
+    }
+]

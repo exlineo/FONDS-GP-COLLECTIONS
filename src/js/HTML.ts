@@ -2,7 +2,16 @@ import { gsap } from "gsap";
 import { CollectionI } from "./models/ModelesI";
 
 export class CustomHTML {
-    constructor() { }
+
+    noticesEl!:HTMLElement;
+    noticeEl!:HTMLElement;
+    notice:any;
+    indexN:any;
+
+    constructor(n?:HTMLElement, o?:HTMLElement) {
+        if(n) this.noticesEl = n; // HTML des notices 
+        if(o) this.noticeEl = o; // Notice à afficher
+    }
 
     /**
          * Décomposer un objet et ses enfants
@@ -21,6 +30,18 @@ export class CustomHTML {
             }
         };
         return el ? ul : el!.appendChild(ul);
+    }
+    /** Créer un élément HTML dans le DOM */
+    setTextEl(el:string, text?:string){
+        const e = document.createElement(el);
+        if(text) e.textContent = text;
+        return e;
+    }
+    /** Créer un élément HTML dans le DOM */
+    setHtmlEl(el:string, html?:string){
+        const e = document.createElement(el);
+        if(html) e.innerHTML = html;
+        return e;
     }
     /**
      * Afficher une vidéo
@@ -50,11 +71,17 @@ export class CustomHTML {
         ar.innerHTML = aud;
         return ar;
     }
+    /** Créer une image */
+    setImgEl(src:string){
+        const i = new Image();
+        i.src = src;
+        return i;
+    }
     /**
      * Afficher une image
      * @param {string} url Lien vers le document
      */
-    setImageEl(url: string) {
+    setNoticeImageEl(url: string) {
         const ar = document.createElement('article');
         let img = new Image();
         img.src = url;
@@ -66,9 +93,8 @@ export class CustomHTML {
      * Afficher un fichier PDF
      * @param {string} url Lien vers le document
      */
-    setPdfEL(url: string) {
+    setPdfEl(url: string) {
         const ar = document.createElement('article');
-
         const frame = document.createElement('iframe');
         frame.className = 'media';
         frame.src = url;
@@ -76,68 +102,37 @@ export class CustomHTML {
         ar.appendChild(frame);
         return ar;
     }
-    /** Ecrire un article des collections */
-    setCollectionArticle(c:CollectionI){
-        const hr = document.createElement('hr');
-        const hrb = document.createElement('hr');
-        const a = document.createElement('article');
-        const titre = document.createElement('h3');
-        titre.textContent = c.titre;
-
-        const descr = document.createElement('p');
-        descr.textContent = c.description.length > 200 ? c.description.substring(0, 200)+'...' : c.description;
-
-        a.appendChild(hr);
-        a.appendChild(titre);
-        a.appendChild(descr);
-
-        // Images
-        
-        const div = document.createElement('div');
-        const aF = document.createElement('a');
-        const imgF = document.createElement('img');
-        imgF.src = './assets/img/icones/favoris-add.png';
-        aF.setAttribute('title', 'Ajouter la collection aux favoris');
-        aF.appendChild(imgF);
-        div.appendChild(aF);
-
-        const aN = document.createElement('a');
-        const imgN = document.createElement('img');
-        imgN.src = './assets/img/icones/notices.png';
-        aN.setAttribute('title', 'Afficher les notices de cette collection');
-        aN.appendChild(imgN);
-        div.appendChild(aN);
-
-        aN.addEventListener('click', (e)=>{
-            console.log(e.target);
-        })
-        
-        // const aH = document.createElement('a');
-        // const img = document.createElement('img');
-        // img.src = './assets/img/icones/fleche-haute.png';
-        // img.setAttribute('title', 'plus de détail ?');
-        // aH.appendChild(img);
-        // div.appendChild(aH);
-
-        // Infos
-        const ul = document.createElement('ul');
-        const li = document.createElement('li');
-        if(c.type) {
-            li.textContent = "Type : " + c.type;
-            ul.appendChild(li);
-        }
-        if(c.fonds) {
-            li.textContent = "Fonds : " + c.fonds;
-            ul.appendChild(li);
-        }
-        if(c.createur) {
-            li.textContent = "Créateur : " + c.createur;
-            ul.appendChild(li);
-        }
-
-        a.appendChild(ul);
-        a.appendChild(div);
-        a.appendChild(hrb);
-        return a;
+    
+    /**
+         * Afficher une vidéo
+         * @param {string} url Lien de la vidéo
+         * @param {string} f Format de la vidéo
+         */
+     setVideo(url: string, f: string) {
+        return `<video class="media">
+                <source src="${url}" type="${f}">
+                Votre navigateur ne supporte pas ce format vidéo
+        </video>`;
+    }
+    /**
+     * 
+     * @param {string} url Adresse du média
+     * @param {string} f Format de l'audio
+     */
+    setAudio(url: string, f: string) {
+        return `<audio src="${url}" class="media">
+                        Votre navigateur ne supporte pas ce format audio
+                </audio>`;
+    }
+    /**
+     * Afficher un fichier PDF
+     * @param {string} url Lien vers le document
+     */
+    setPdf(url: string) {
+        return ``;
+    }
+    
+    slide() {
+        this.noticeEl.classList.toggle('vu');
     }
 }

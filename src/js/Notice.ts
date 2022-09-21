@@ -1,4 +1,6 @@
 import { CustomHTML } from "./HTML.js";
+import { gsap } from "gsap";
+
 
 export class Notice extends CustomHTML {
     metas: any; // Métadonnées de la notice
@@ -26,13 +28,13 @@ export class Notice extends CustomHTML {
 
         let f = this.metas.dublincore.format;
         if (f.indexOf('image') != -1) {
-            this.setImage(this.metas.media.url);
+            this.setNoticeImageEl(this.metas.media.url);
         } else if (f.indexOf('video') != -1) {
-            this.setVideo(this.metas.media.url, f);
+            this.setVideoEl(this.metas.media.url, f);
         } else if (f.indexOf('audio') != -1) {
-            this.setAudio(this.metas.media.url, f)
+            this.setAudioEl(this.metas.media.url, f)
         } else {
-            this.setPdf(this.metas.media.url);
+            this.setPdfEl(this.metas.media.url);
         }
 
         // Affichage de la description après le média 
@@ -46,7 +48,6 @@ export class Notice extends CustomHTML {
             this.setDatas(this.metas.nemateria[n], "Nemateria : " + n);
         }
         this.setAccordeon();
-        // console.log(this.parent, parent, Object.getPrototypeOf(this.constructor).name);
     }
     /**
      * Afficher les informations du document
@@ -113,36 +114,36 @@ export class Notice extends CustomHTML {
      * Afficher une vidéo
      * @param {string} url Lien de la vidéo
      * @param {string} f Format de la vidéo
-     */
+     
     setVideo(url: string, f: string) {
         this.media.appendChild(this.setVideoEl(url, f));
         this.setSequences();
         this.va = document.querySelector('#va');
-    }
+    }*/
     /**
      * 
      * @param {string} url Adresse du média
      * @param {string} f Format de l'audio
-     */
+     
     setAudio(url: string, f: string) {
         this.media.appendChild(this.setAudioEl(url, f));
         this.setSequences();
         this.va = document.querySelector('#va');
-    }
+    }*/
     /**
      * Afficher une image
      * @param {string} url Lien vers le document
-     */
+     
     setImage(url: string) {
-        this.media.appendChild(this.setImageEl(url));
-    }
+        this.media.appendChild(this.setNoticeImageEl(url));
+    }*/
     /**
      * Afficher un fichier PDF
      * @param {string} url Lien vers le document
-     */
+     
     setPdf(url: string) {
         this.media.appendChild(this.setPdfEL(url));
-    }
+    }*/
     jumpSequence() {
 
     }

@@ -1,0 +1,1505 @@
+[
+    {
+        "media": {
+            "ImageHeight": 2581,
+            "ImageSize": "664x675",
+            "ImageWidth": 2538,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0012_Villes_nord_003.jpg",
+            "file": "CAA-I-0012_Villes_nord_003.jpg"
+        },
+        "dublincore": {
+            "title": "Église, vue d'intérieur",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Église",
+                "vue d'intérieur",
+                "grille"
+            ],
+            "description": "Église, vue d'intérieur, grille",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND",
+            "identifier": "oai:nemateria.net/1612621778586",
+            "date": 1612621778586
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0012",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0012_Villes_nord_003.jpg",
+                "URL": "Cassel/CAA-I-0012_Villes_nord_003.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47b5"
+    },
+    {
+        "media": {
+            "ImageHeight": 2633,
+            "ImageSize": "675x657",
+            "ImageWidth": 2704,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0054_Defiles_20_juillet_1930_001.jpg",
+            "file": "CAA-I-0054_Defiles_20_juillet_1930_001.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "procession",
+                "fête costumée",
+                "défillé",
+                "confrérie",
+                "archers"
+            ],
+            "description": "La confrérie des archers lors de la fête médiévale de Cassel le 20 juillet 1930.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND",
+            "identifier": "oai:nemateria.net/1612621778587",
+            "date": 1612621778587
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0054",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0054_Defiles_20_juillet_1930_001.jpg",
+                "URL": "Cassel/CAA-I-0054_Defiles_20_juillet_1930_001.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47b6"
+    },
+    {
+        "media": {
+            "ImageHeight": 2589,
+            "ImageSize": "675x660",
+            "ImageWidth": 2647,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0018_Villes_nord_009.jpg",
+            "file": "CAA-I-0018_Villes_nord_009.jpg"
+        },
+        "dublincore": {
+            "title": "Relicaire",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Relicaire",
+                "Cassel"
+            ],
+            "description": "Relicaire, Cassel",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778587",
+            "date": 1612621778587
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0018",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0018_Villes_nord_009.jpg",
+                "URL": "Cassel/CAA-I-0018_Villes_nord_009.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47b7"
+    },
+    {
+        "media": {
+            "ImageHeight": 3639,
+            "ImageSize": "675x650",
+            "ImageWidth": 3782,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0001_Cassel_002.jpg",
+            "file": "CAA-I-0001_Cassel_002.jpg"
+        },
+        "dublincore": {
+            "title": "Reims",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Reims",
+                "groupe"
+            ],
+            "description": "Vue de famille, Reims",
+            "publisher": "SM - GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND",
+            "identifier": "oai:nemateria.net/1612621778588",
+            "date": 1612621778588
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0001",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0001_Cassel_002.jpg",
+                "URL": "Cassel/CAA-I-0001_Cassel_002.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47b8"
+    },
+    {
+        "media": {
+            "ImageHeight": 2659,
+            "ImageSize": "675x675",
+            "ImageWidth": 2658,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0055_Defiles_20_juillet_1930_002.jpg",
+            "file": "CAA-I-0055_Defiles_20_juillet_1930_002.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "défilé",
+                "fête costumée"
+            ],
+            "description": "Fête médiévale de Cassel le 20 juillet 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778588",
+            "date": 1612621778588
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0055",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0055_Defiles_20_juillet_1930_002.jpg",
+                "URL": "Cassel/CAA-I-0055_Defiles_20_juillet_1930_002.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47b9"
+    },
+    {
+        "media": {
+            "ImageHeight": 2764,
+            "ImageSize": "668x675",
+            "ImageWidth": 2736,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0073_Defiles_20_juillet_1930_020.jpg",
+            "file": "CAA-I-0073_Defiles_20_juillet_1930_020.jpg"
+        },
+        "dublincore": {
+            "title": "Fêtes de Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Bruges",
+                "procession",
+                "Saint Sang",
+                "fête costumée",
+                "défillé"
+            ],
+            "description": "Défilé en costumes médiévaux, probablement lors de la fête du Saint Sang, à Bruges en 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778589",
+            "date": 1612621778589
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0073",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0073_Defiles_20_juillet_1930_020.jpg",
+                "URL": "Cassel/CAA-I-0073_Defiles_20_juillet_1930_020.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ba"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0042_Famille_Cassel_1939_008.jpg",
+            "file": "CAA-I-0042_Famille_Cassel_1939_008.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778589",
+            "date": 1612621778589
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0042",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0042_Famille_Cassel_1939_008.jpg",
+                "URL": "Cassel/CAA-I-0042_Famille_Cassel_1939_008.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47bb"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0056_Defiles_20_juillet_1930_003.jpg",
+            "file": "CAA-I-0056_Defiles_20_juillet_1930_003.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "défilé",
+                "fête costumée"
+            ],
+            "description": "Fête médiévale de Cassel le 20 juillet 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778590",
+            "date": 1612621778590
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0056",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0056_Defiles_20_juillet_1930_003.jpg",
+                "URL": "Cassel/CAA-I-0056_Defiles_20_juillet_1930_003.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47bc"
+    },
+    {
+        "media": {
+            "ImageHeight": 2761,
+            "ImageSize": "675x647",
+            "ImageWidth": 2881,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0034_La_Rochelle_sept_1930-002.jpg",
+            "file": "CAA-I-0034_La_Rochelle_sept_1930-002.jpg"
+        },
+        "dublincore": {
+            "title": "La Rochelle",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "La Rochelle",
+            "description": "La Rochelle",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778590",
+            "date": 1612621778590
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0034",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0034_La_Rochelle_sept_1930-002.jpg",
+                "URL": "Cassel/CAA-I-0034_La_Rochelle_sept_1930-002.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47bd"
+    },
+    {
+        "media": {
+            "ImageHeight": 2676,
+            "ImageSize": "672x675",
+            "ImageWidth": 2664,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0057_Defiles_20_juillet_1930_004.jpg",
+            "file": "CAA-I-0057_Defiles_20_juillet_1930_004.jpg"
+        },
+        "dublincore": {
+            "title": "Fête médiévale de Cassel",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Cassel",
+                "défilé",
+                "fête costumée"
+            ],
+            "description": "Fête médiévale de Cassel le 20 juillet 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778591",
+            "date": 1612621778591
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0057",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0057_Defiles_20_juillet_1930_004.jpg",
+                "URL": "Cassel/CAA-I-0057_Defiles_20_juillet_1930_004.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47be"
+    },
+    {
+        "media": {
+            "ImageHeight": 3840,
+            "ImageSize": "675x667",
+            "ImageWidth": 3887,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0004_Cassel_Ypres_1925_005.jpg",
+            "file": "CAA-I-0004_Cassel_Ypres_1925_005.jpg"
+        },
+        "dublincore": {
+            "title": "Ypres",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Reims, groupe",
+            "description": "Ypres, ruines de guerre, en 1925",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778591",
+            "date": 1612621778591
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0004",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0004_Cassel_Ypres_1925_005.jpg",
+                "URL": "Cassel/CAA-I-0004_Cassel_Ypres_1925_005.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47bf"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0039_Famille_Cassel_1939_005.jpg",
+            "file": "CAA-I-0039_Famille_Cassel_1939_005.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778592",
+            "date": 1612621778592
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0039",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0039_Famille_Cassel_1939_005.jpg",
+                "URL": "Cassel/CAA-I-0039_Famille_Cassel_1939_005.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c0"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0049_Famille_Cassel_1939_015.jpg",
+            "file": "CAA-I-0049_Famille_Cassel_1939_015.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778592",
+            "date": 1612621778592
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0049",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0049_Famille_Cassel_1939_015.jpg",
+                "URL": "Cassel/CAA-I-0049_Famille_Cassel_1939_015.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c1"
+    },
+    {
+        "media": {
+            "ImageHeight": 2544,
+            "ImageSize": "616x675",
+            "ImageWidth": 2322,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0016_Villes_nord_007.jpg",
+            "file": "CAA-I-0016_Villes_nord_007.jpg"
+        },
+        "dublincore": {
+            "title": "Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Bruges",
+            "description": "Bruges",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778593",
+            "date": 1612621778593
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0016",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0016_Villes_nord_007.jpg",
+                "URL": "Cassel/CAA-I-0016_Villes_nord_007.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c2"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0045_Famille_Cassel_1939_011.jpg",
+            "file": "CAA-I-0045_Famille_Cassel_1939_011.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778593",
+            "date": 1612621778593
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0045",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0045_Famille_Cassel_1939_011.jpg",
+                "URL": "Cassel/CAA-I-0045_Famille_Cassel_1939_011.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c3"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0071_Defiles_20_juillet_1930_018.jpg",
+            "file": "CAA-I-0071_Defiles_20_juillet_1930_018.jpg"
+        },
+        "dublincore": {
+            "title": "Fêtes de Bruges",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Bruges",
+                "procession",
+                "Saint Sang",
+                "fête costumée",
+                "défillé"
+            ],
+            "description": "Défilé en costumes médiévaux, probablement lors de la fête du Saint Sang, à Bruges en 1930",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778594",
+            "date": 1612621778594
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0071",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0071_Defiles_20_juillet_1930_018.jpg",
+                "URL": "Cassel/CAA-I-0071_Defiles_20_juillet_1930_018.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c4"
+    },
+    {
+        "media": {
+            "ImageHeight": 3849,
+            "ImageSize": "675x673",
+            "ImageWidth": 3861,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0008_Cassel_009.jpg",
+            "file": "CAA-I-0008_Cassel_009.jpg"
+        },
+        "dublincore": {
+            "title": "Epave d'un char blindé",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Char blindé",
+                "Marck II"
+            ],
+            "description": "Epave d'un char blindé Marck II",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778594",
+            "date": 1612621778594
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0008",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0008_Cassel_009.jpg",
+                "URL": "Cassel/CAA-I-0008_Cassel_009.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c5"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0044_Famille_Cassel_1939_010.jpg",
+            "file": "CAA-I-0044_Famille_Cassel_1939_010.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778595",
+            "date": 1612621778595
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0044",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0044_Famille_Cassel_1939_010.jpg",
+                "URL": "Cassel/CAA-I-0044_Famille_Cassel_1939_010.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c6"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0043_Famille_Cassel_1939_009.jpg",
+            "file": "CAA-I-0043_Famille_Cassel_1939_009.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778595",
+            "date": 1612621778595
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0043",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0043_Famille_Cassel_1939_009.jpg",
+                "URL": "Cassel/CAA-I-0043_Famille_Cassel_1939_009.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c7"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0040_Famille_Cassel_1939_006.jpg",
+            "file": "CAA-I-0040_Famille_Cassel_1939_006.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778596",
+            "date": 1612621778596
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0040",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0040_Famille_Cassel_1939_006.jpg",
+                "URL": "Cassel/CAA-I-0040_Famille_Cassel_1939_006.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c8"
+    },
+    {
+        "media": {
+            "ImageHeight": 2730,
+            "ImageSize": "675x632",
+            "ImageWidth": 2916,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0035_La_Rochelle_sept_1930-001.jpg",
+            "file": "CAA-I-0035_La_Rochelle_sept_1930-001.jpg"
+        },
+        "dublincore": {
+            "title": "La Rochelle",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "La Rochelle",
+            "description": "La Rochelle",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778596",
+            "date": 1612621778596
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0035",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0035_La_Rochelle_sept_1930-001.jpg",
+                "URL": "Cassel/CAA-I-0035_La_Rochelle_sept_1930-001.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47c9"
+    },
+    {
+        "media": {
+            "ImageHeight": 2815,
+            "ImageSize": "675x663",
+            "ImageWidth": 2867,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0022_Prague_1933.jpg",
+            "file": "CAA-I-0022_Prague_1933.jpg"
+        },
+        "dublincore": {
+            "title": "Prague",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": "Prague",
+            "description": ", vue des toits de la ville, 1933",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778597",
+            "date": 1612621778597
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-00202",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0022_Prague_1933.jpg",
+                "URL": "Cassel/CAA-I-0022_Prague_1933.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47ca"
+    },
+    {
+        "media": {
+            "ImageHeight": 2811,
+            "ImageSize": "675x675",
+            "ImageWidth": 2811,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0036_Famille_Cassel_1939_002.jpg",
+            "file": "CAA-I-0036_Famille_Cassel_1939_002.jpg"
+        },
+        "dublincore": {
+            "title": "La famille à Cassel",
+            "creator": [
+                "DESCAMPS Henri ou Gustave",
+                "attribué à"
+            ],
+            "subject": [
+                "Descamps",
+                "photos de famille",
+                "jardin",
+                "parc"
+            ],
+            "description": "Photographies de la famille à Cassel dans le parc d'une maison, à l'occasion d'une réunion ou d'un événement famillial.",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778597",
+            "date": 1612621778597
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0036",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0036_Famille_Cassel_1939_002.jpg",
+                "URL": "Cassel/CAA-I-0036_Famille_Cassel_1939_002.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47cb"
+    },
+    {
+        "media": {
+            "ImageHeight": 3919,
+            "ImageSize": "641x675",
+            "ImageWidth": 3719,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0006_Cassel_Rheims_juin_1925_007.jpg",
+            "file": "CAA-I-0006_Cassel_Rheims_juin_1925_007.jpg"
+        },
+        "dublincore": {
+            "title": "Cathédrale de Reims",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "description": "Cathédrale de Reims",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778598",
+            "date": 1612621778598
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0006",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0006_Cassel_Rheims_juin_1925_007.jpg",
+                "URL": "Cassel/CAA-I-0006_Cassel_Rheims_juin_1925_007.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47cc"
+    },
+    {
+        "media": {
+            "ImageHeight": 3937,
+            "ImageSize": "675x675",
+            "ImageWidth": 3937,
+            "Format": "image/jpeg",
+            "url": "Cassel/CAA-I-0003_Cassel_004.jpg",
+            "file": "CAA-I-0003_Cassel_004.jpg"
+        },
+        "dublincore": {
+            "title": "Tenis club",
+            "creator": [
+                "DESCAMPS Henri",
+                "attribué à"
+            ],
+            "subject": [
+                "Rreims",
+                "groupe"
+            ],
+            "description": "Tenis club, Reims, 1925",
+            "publisher": "SM-GP",
+            "format": "image/jpeg",
+            "rights": "Sous licence Creative Commons CC BY NC ND\n",
+            "identifier": "oai:nemateria.net/1612621778598",
+            "date": 1612621778598
+        },
+        "nemateria": {
+            "document": {
+                "identifiant_unique": "CAA-I-0003",
+                "sourceFile": "/var/www/html/collections/Cassel/CAA-I-0003_Cassel_004.jpg",
+                "URL": "Cassel/CAA-I-0003_Cassel_004.jpg",
+                "date_creation_original": "01/09/1930",
+                "nature_support_original": "Photographie",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "date_numerisation": "01/01/2001",
+                "conditions_acces": "Creative Commons"
+            },
+            "collection": {
+                "nom_collection": "Cassel",
+                "qui_numerise": "Gérard Perrier",
+                "proprietaire_originaux": "Fonds Gérard Perrier",
+                "conservateur_originaux": "Fonds Gérard Perrier",
+                "conservateur_fichiers": "Fonds Gérard Perrier",
+                "detenteur_droits": "Fonds Gérard Perrier",
+                "gestionnaire_collection": "Fonds Gérard Perrier",
+                "fonds": "Gérard Perrier"
+            },
+            "participants": {
+                "participants": "Gérard Perrier (numérisation, édition), Sabine Millecamp (recueil)",
+                "editeur_site": "Gérald Abbadie",
+                "editeur_oeuvre_source": "Gérard Perrier"
+            },
+            "serie": {
+                "serie": "01 - ",
+                "ordre_serie": 0
+            }
+        },
+        "idnotices": "601eb9c5fb52c91f1f1f47cd"
+    }
+]
