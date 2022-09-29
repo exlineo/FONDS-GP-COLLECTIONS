@@ -318,7 +318,22 @@ i {
     margin: 20px;
     cursor: pointer;
 }
-
+form{
+    display:flex;
+    flex-flow:column nowrap;
+    padding:10px;
+}
+fieldset{
+    border:none;
+    display: flex;
+    flex-flow: column nowrap;
+    margin:10px 0;
+}
+form > div{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 input {
     transition: all .3s ease;
     border: 1px solid yellowgreen;
@@ -326,8 +341,27 @@ input {
     padding: 10px 16px;
     margin: auto;
 }
-
-
+input[type=submit]{
+    border:none;
+    background-color: var(--v);
+    color:white;
+    transition:all .3s ease;
+}
+input[type=reset]{
+    border:none;
+    background-color: var(--t);
+    color:white;
+    transition:all .3s ease;
+}
+input[type=submit]:hover{
+    background-color: var(--p);
+}
+input[type=reset]:hover{
+    background-color: var(--p);
+}
+input[type=checkbox]{
+    margin:0 5px;
+}
 /* NOTICES */
 
 .notices {
@@ -611,41 +645,36 @@ input {
 
 
 /* DIVERS */
-
+.lazy {
+    background-image: none !important;
+ }
 .metas {
     height: auto;
     width: 100%;
 }
-
 img.media {
     max-width: 100%;
 }
-
 video.media {
     max-width: 100%;
 }
-
 audio.media {
     max-width: 100%;
 }
-
 .icone {
     width: 24px;
     height: 24px;
     margin: auto;
     transition: transform .3s ease;
 }
-
 .icone:hover {
     transform: rotate(30deg);
 }
-
 .jaune {
     transition: all .3s ease;
     background-color: yellow;
     color: black;
 }
-
 .jaune:hover {
     background-color: yellowgreen;
 }

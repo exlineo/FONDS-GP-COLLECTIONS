@@ -1,12 +1,14 @@
-import { ConfigI } from "../models/ModelesI.js";
+import { CollectionI, NoticeI, ConfigI } from "../models/ModelesI.js";
 import { BDD } from "./BDD.js";
 
 export class Donnees extends BDD {
-    static collections: Array<any> = [];
-    static notices: any = <{idcollections:Array<any>}>{};
+    static collections: Array<CollectionI> = [];
+    static fonds:Array<any> = [];
+    static notices: Array<NoticeI> = [];
     static page: any = {};
     static menu: Array<any> = [];
     static config: ConfigI = <ConfigI>{};
+    static lazyObserv:Array<HTMLElement> = [];
     
     contact = {
         mail: "contact@exlineo.com",
@@ -50,5 +52,8 @@ export class Donnees extends BDD {
             default:
                 break;
         }
+    }
+    setFonds(){
+        
     }
 }

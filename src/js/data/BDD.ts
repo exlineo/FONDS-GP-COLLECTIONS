@@ -2,13 +2,13 @@ import { Donnees } from './Donnees.js';
 import PARAMS from "./params.js";
 import { CollectionI, NoticeI, ConfigI } from "../models/ModelesI.js";
 import { Collections } from '../Collections.js';
+import { Recherche } from '../Recherche.js';
 
-export class BDD {
+export abstract class BDD {
 
     racine!: string; // Racine pour le chargement des données
     /** Les des données chargées depuis la base de données */
     listeNotices: any = <{ idcollections: Array<NoticeI> }>{};
-    listeCollections: Array<CollectionI> = [];
     collection: CollectionI = <CollectionI>{};
     notice: NoticeI = <NoticeI>{};
 
@@ -33,7 +33,6 @@ export class BDD {
      */
     setLocalData(i: string, d: any) {
         localStorage.setItem(i, JSON.stringify(d));
-        this.listeCollections = d;
         Donnees.setStatic(i, d);
     }
     /**
@@ -61,9 +60,12 @@ export class BDD {
             .then(d => d.json())
             .then(j => {
                 this.setLocalData('collections', j);
-                this.listeCollections = j;
+                Donnees.collections = j;
+                // Gérer la liste des collections
                 new Collections(document.querySelector('.notices>section'), document.querySelector('.series'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
                 dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
+                // Classe pour faire des recherches
+                new Recherche(document.querySelector('#recherche > form')!);
             })
             .catch(er => console.log(er));
     }

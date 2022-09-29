@@ -12,7 +12,8 @@ export class Collections extends CustomHTML {
     sEl; // L'entête des notices pour ecrires les séries
     cEl: HTMLElement; // Collection HTML
     f: any; // Champ de filter pour rechercher dans les notices
-    // notices:Notice = new Notice();
+    lazyImages:Array<HTMLElement> = []; // Liste des éléments HTML recevant un lazyloading
+    imagesObserver:any;
 
     constructor(n: any, s: any, c: any, o: any, f: any) {
         super(n, o);
@@ -40,18 +41,38 @@ export class Collections extends CustomHTML {
             } else {
                 this.setNotices(Donnees.notices);
             }
-        })
+        });
+        if ("IntersectionObserver" in window) {
+            this.imagesObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const image = entry.target;
+                        image.classList.remove("lazy");
+                        this.imagesObserver.unobserve(image);
+                    }
+                });
+            });
+        }
+    }
+    /** Boucler les éléments HTML pour activer le lazy loading des arrières plans */
+    setLazy(){
+        this.lazyImages.forEach((image: any) => {
+            console.log(image);
+            this.imagesObserver.observe(image);
+        });
     }
     /**
      * Créer les notices à la volée
      */
      setNotices(notices: Array<any>) {
+        this.lazyImages = []; // Initialisation de la liste des images à suivre dans le load
         this.noticesEl!.innerHTML = '';
         let i = 0;
         notices.forEach((n:any) => {
             const db = n.dublincore;
             const media = n.media;
             const ar = document.createElement('article');
+            ar.className = 'lazy';
             ar.dataset.i = String(i);
             ++i;
             // this.listeObjet(n.metadonnees);
@@ -97,7 +118,10 @@ export class Collections extends CustomHTML {
                 this.slide();
                 this.indexN = parseInt(ar.dataset.i!);
                 this.notice = new Notice(this.noticeEl, n);
-            })
+            });
+            /** Lazy loading sur les images */
+            this.lazyImages.push(ar);
+            this.setLazy();
         });
         // Activer le diaporama des notices
         this.setDiaporama();

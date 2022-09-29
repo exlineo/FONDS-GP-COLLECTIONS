@@ -26,7 +26,7 @@ export class Persistance extends BDD{
         this.menu.data = new Array();
         Donnees.collections.forEach(
             m => this.menu.data.push({
-                titre: m.titre,
+                titre: m.title,
                 alias: m.alias,
                 lien: "collection.html",
                 infos: "Voir la collection",
@@ -35,4 +35,6 @@ export class Persistance extends BDD{
         );
         this.menu.setMenu();
     }
+
+    
 }
