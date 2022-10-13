@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600');
 
-:root{
-  /* Variables */
-  --clair:white;
-  --fonce:black;
-  --s:#17456B;
-  --p:#0F1D2B;
-  --t:#FFB000;
-  --q:#F24E1E;
-  --v:rgb(10, 159, 10);
-  --r:red;
-  --w:75px;
+:root {
+    /* Variables */
+    --clair: white;
+    --fonce: black;
+    --s: #17456B;
+    --p: #0F1D2B;
+    --t: #FFB000;
+    --q: #F24E1E;
+    --v: rgb(10, 159, 10);
+    --r: red;
+    --w: 75px;
 }
+
 html,
 body {
     padding: 0;
@@ -23,11 +24,13 @@ body {
     overflow: hidden;
     font-size: 16px;
 }
+
 body {
     display: flex;
     flex-flow: row nowrap;
     font-family: 'Raleway', sans-serif;
 }
+
 body>* {
     padding: 0;
     margin: 0;
@@ -36,10 +39,12 @@ body>* {
     border-right: 1px solid var(--t);
     scroll-behavior: smooth;
 }
+
 body>main>section {
     padding: 0;
     margin: 0;
 }
+
 body>main>header {
     height: 60px;
     display: flex;
@@ -49,41 +54,51 @@ body>main>header {
     margin-top: -60px;
     transition: margin .3s ease;
 }
+
 body>main>header a {
     width: calc(100vw - 40px);
 }
+
 body>main>header img {
     width: 200px;
 }
+
 h2,
-h3{
+h3 {
     font-variation-settings: 'wght' 400;
     font-weight: 400;
     text-transform: uppercase;
 }
-h1, h4 {
+
+h1,
+h4 {
     font-variation-settings: 'wght' 100;
     font-weight: 100;
 }
+
 h1 {
     font-size: 32px;
     width: 100%;
     text-align: center;
 }
+
 h2 {
     font-size: 26px;
     width: 100%;
     font-weight: bold;
     text-align: center;
 }
+
 h3 {
     font-size: 21px;
     margin: 0 5px;
     text-align: center;
 }
-section{
+
+section {
     display: flex;
 }
+
 body>aside {
     width: var(--w);
     display: flex;
@@ -104,9 +119,11 @@ body>main>section {
     height: 100%;
     background-color: white;
 }
-article{
-    display:flex;
+
+article {
+    display: flex;
 }
+
 a {
     color: green;
     text-decoration: none;
@@ -121,140 +138,168 @@ em {
 
 
 /* NAVIGATION PRINCIPALE */
-aside > section {
+aside>section {
     justify-content: space-around;
     width: 100%;
     height: calc(100vh - var(--w));
 }
-aside > header{
-    display:flex;
-    flex-flow:column nowrap;
-    width:100%;
-    height:var(--w);
-}
-aside > section > nav {
+
+aside>header {
     display: flex;
-    flex-flow:column nowrap;
-    margin:auto;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: var(--w);
 }
-aside > section > nav a img, aside > section > nav a svg {
-    width:50%;
+
+aside>section>nav {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
 }
-aside > section > nav a {
-    margin:15px auto;
-    text-align:center;
+
+aside>section>nav a img,
+aside>section>nav a svg {
+    width: 50%;
+}
+
+aside>section>nav a {
+    margin: 15px auto;
+    text-align: center;
     /* position:relative; */
 }
-aside > section > nav span{
-    position:absolute;
-    padding:10px 16px;
+
+aside>section>nav span {
+    position: absolute;
+    padding: 10px 16px;
     background-color: var(--s);
-    color:var(--clair);
-    opacity:0;
-    width:0;
-    margin-left:15px;
-    font-size:12px;
-    z-index:10;
+    color: var(--clair);
+    opacity: 0;
+    width: 0;
+    margin-left: 15px;
+    font-size: 12px;
+    z-index: 10;
 }
-aside > section > nav section {
-    position:absolute;
-    top:0;
-    left:var(--w);
-    z-index:999;
-    border-left:1px solid var(--t);
+
+aside>section>nav section {
+    position: absolute;
+    top: 0;
+    left: var(--w);
+    z-index: 999;
+    border-left: 1px solid var(--t);
     border-right: 1px solid var(--t);
-    height:100vh;
-    width:0;
-    opacity:0;
-    transition:all .4s ease;
-    overflow-x:hidden;
-    overflow-y:auto;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all .4s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
     background-color: var(--clair);
 }
-aside > section > nav section article {
-    width:100%;
-    padding:5px 10px;
+
+aside>section>nav section article {
+    width: 100%;
+    padding: 5px 10px;
     margin-bottom: 10px;
     flex-flow: column nowrap;
     box-sizing: border-box;
 }
+
 aside nav a:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
+
 aside nav a:hover .cls-2 {
-    fill : var(--t);
+    fill: var(--t);
 }
-aside > section > nav a:hover + section, aside > section > nav a + section:hover{
-    width:20vw;
+
+aside>section>nav a:hover+section,
+aside>section>nav a+section:hover {
+    width: 20vw;
     opacity: 1;
 }
-aside > section > nav a:hover span{
-    width:max-content;
-    opacity:1;
+
+aside>section>nav a:hover span {
+    width: max-content;
+    opacity: 1;
 }
-.cls-1{
-    fill:var(--clair);
+
+.cls-1 {
+    fill: var(--clair);
 }
-.cls-2{
-    fill:var(--s);
+
+.cls-2 {
+    fill: var(--s);
     transition: fill .3s ease;
 }
-#collections > article hr{
-    width:40%;
-    margin:0 -10px 10px;
-    border:none;
-    border-top:1px solid var(--t);
+
+#collections>article hr {
+    width: 40%;
+    margin: 0 -10px 10px;
+    border: none;
+    border-top: 1px solid var(--t);
     align-self: flex-end;
 }
-#collections > article hr:first-child{
+
+#collections>article hr:first-child {
     align-self: flex-start;
 }
-#collections > article:first-child{
-    float:none;
+
+#collections>article:first-child {
+    float: none;
 }
-#collections > article div{
-    display:flex;
+
+#collections>article div {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    padding:0 10px;
+    padding: 0 10px;
 }
-#collections > article div > a {
-    display:flex;
+
+#collections>article div>a {
+    display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
 }
-#collections a > p{
+
+#collections a>p {
     font-size: 11px;
 }
-#collections a{
-    margin:5px;
+
+#collections a {
+    margin: 5px;
 }
-#collections a > img{
-    width:auto;
-    height:100%;
+
+#collections a>img {
+    width: auto;
+    height: 100%;
 }
-aside > footer{
-    height:max-content;
-    padding:0 8px;
-    width:100%;
+
+aside>footer {
+    height: max-content;
+    padding: 0 8px;
+    width: 100%;
     align-items: flex-end;
     box-sizing: border-box;
 }
-aside > footer > nav {
-    display:flex;
-    flex-flow:row nowrap;
+
+aside>footer>nav {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-around;
 }
-aside > footer > nav > a{
-    padding:3px;
-    width:auto;
-    height:auto;
+
+aside>footer>nav>a {
+    padding: 3px;
+    width: auto;
+    height: auto;
 }
-aside > footer svg{
-    width:100%;
+
+aside>footer svg {
+    width: 100%;
 }
+
 nav>ul>li {
     width: 100%;
     list-style: none;
@@ -294,13 +339,15 @@ aside>input {
 .logo {
     width: var(--w);
     margin: 10px 0;
-    display:flex;
+    display: flex;
     justify-content: flex-end;
 }
-.logo > img{
+
+.logo>img {
     max-width: 80%;
     margin: 0;
 }
+
 section>header {
     min-height: 60px;
     height: auto;
@@ -318,22 +365,26 @@ i {
     margin: 20px;
     cursor: pointer;
 }
-form{
-    display:flex;
-    flex-flow:column nowrap;
-    padding:10px;
-}
-fieldset{
-    border:none;
+
+form {
     display: flex;
     flex-flow: column nowrap;
-    margin:10px 0;
+    padding: 10px;
 }
-form > div{
-    display:flex;
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px 0;
+}
+
+form>div {
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
 input {
     transition: all .3s ease;
     border: 1px solid yellowgreen;
@@ -341,27 +392,36 @@ input {
     padding: 10px 16px;
     margin: auto;
 }
-input[type=submit]{
-    border:none;
+
+input[type=submit] {
+    border: none;
     background-color: var(--v);
-    color:white;
-    transition:all .3s ease;
+    color: white;
+    transition: all .3s ease;
+    text-transform: uppercase;
 }
-input[type=reset]{
-    border:none;
+
+input[type=reset] {
+    border: none;
     background-color: var(--t);
-    color:white;
-    transition:all .3s ease;
+    color: white;
+    transition: all .3s ease;
+    text-transform: uppercase;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
     background-color: var(--p);
 }
-input[type=reset]:hover{
+
+input[type=reset]:hover {
     background-color: var(--p);
 }
-input[type=checkbox]{
-    margin:0 5px;
+
+input[type=checkbox],
+input[type=radio] {
+    margin: 0 5px;
 }
+
 /* NOTICES */
 
 .notices {
@@ -448,7 +508,7 @@ input[type=checkbox]{
     padding: 0;
 }
 
-.notices a > p > span {
+.notices a>p>span {
     display: flex;
     margin: auto;
     padding: 20px 25px;
@@ -476,6 +536,7 @@ input[type=checkbox]{
     z-index: 30;
     pointer-events: none;
 }
+
 .notices article>p>h3 {
     text-align: left;
 }
@@ -592,29 +653,6 @@ input[type=checkbox]{
     width: 100%;
     height: 100%;
 }
-
-.notice .fleche:hover {
-    box-shadow: 2px 0px 5px black;
-    transform: scale(1.05);
-}
-
-.notice .fleche.gauche {
-    left: 0px;
-}
-
-.notice .fleche.droite {
-    right: 35%;
-}
-
-.notice .fleche.gauche:hover {
-    left: -5px;
-}
-
-.notice .fleche.droite:hover {
-    right: calc(35% - 5px);
-}
-
-
 /* ARTICLE DU MEDIA */
 
 .notice #media>article:nth-child(1) {
@@ -647,34 +685,42 @@ input[type=checkbox]{
 /* DIVERS */
 .lazy {
     background-image: none !important;
- }
+}
+
 .metas {
     height: auto;
     width: 100%;
 }
+
 img.media {
     max-width: 100%;
 }
+
 video.media {
     max-width: 100%;
 }
+
 audio.media {
     max-width: 100%;
 }
+
 .icone {
     width: 24px;
     height: 24px;
     margin: auto;
     transition: transform .3s ease;
 }
+
 .icone:hover {
     transform: rotate(30deg);
 }
+
 .jaune {
     transition: all .3s ease;
     background-color: yellow;
     color: black;
 }
+
 .jaune:hover {
     background-color: yellowgreen;
 }
@@ -766,6 +812,75 @@ audio.media {
     background-color: yellowgreen;
 }
 
+/* Créer des fléches */
+.arrow {
+    position:absolute;
+    top:50%;
+    transform:translate(-50%);
+    border: solid var(--t);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    width:30px;
+    height:30px;
+    transition: all .3s ease;
+}
+.arrow:hover{
+    border-color:var(--s);
+}
+.arrowright {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 35%;
+}
+.arrowleft {
+    left: 0px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.arrowright:hover {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: calc(35% - 5px);
+}
+.arrowleft:hover {
+    left: -5px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+/* Croix de fermeture */
+.close {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    z-index: 1002;
+}
+
+.close:hover {
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: var(--s);
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
 
 /* ACCORDEON CLASSIQUE */
 
@@ -814,29 +929,36 @@ audio.media {
     body {
         overflow-y: auto;
     }
+
     body>main {
         width: 100vw;
     }
+
     body>aside {
         width: 60vw;
     }
+
     body>main>header {
         margin-top: 0px;
     }
+
     body>main>section:nth-child(1),
     body>main>section:nth-child(2) {
         width: 100vw;
     }
+
     .notice {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
     }
+
     .notices,
     .notices>header,
     .notices>section {
         width: 100vw;
     }
+
     .notice #media,
     .notice #donnees {
         width: 100vw;
@@ -844,15 +966,19 @@ audio.media {
         padding: 0 20px;
         border-right: 0;
     }
+
     .notices>section>article {
         width: 50%;
     }
+
     .notice .fleche.droite {
         right: 0;
     }
+
     .vu {
         left: 0;
     }
+
     .burger {
         display: inline-block;
     }
@@ -889,20 +1015,20 @@ audio.media {
 
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
 
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: yellow;
 }
 
 
 /* Handle on hover */
 
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: yellowgreen;
 }

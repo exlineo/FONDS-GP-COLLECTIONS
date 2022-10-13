@@ -1,4 +1,3 @@
-import { Donnees } from './js/data/Donnees.js';
 import { Persistance } from './js/data/Persistance.js';
 
 /**

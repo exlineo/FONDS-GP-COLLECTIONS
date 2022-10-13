@@ -30,7 +30,7 @@ export class Collections extends CustomHTML {
         /**
          * Fermer la notice avec la croix
          */
-        this.noticeEl.querySelector('.notice>i')!.addEventListener('click', () => {
+        this.noticeEl.querySelector('.close')!.addEventListener('click', () => {
             this.noticeEl.classList.toggle('vu');
             this.notice = null;
         });
@@ -57,7 +57,6 @@ export class Collections extends CustomHTML {
     /** Boucler les éléments HTML pour activer le lazy loading des arrières plans */
     setLazy(){
         this.lazyImages.forEach((image: any) => {
-            console.log(image);
             this.imagesObserver.observe(image);
         });
     }
@@ -68,6 +67,7 @@ export class Collections extends CustomHTML {
         this.lazyImages = []; // Initialisation de la liste des images à suivre dans le load
         this.noticesEl!.innerHTML = '';
         let i = 0;
+        // Créer les notices sur l'interface
         notices.forEach((n:any) => {
             const db = n.dublincore;
             const media = n.media;
@@ -75,7 +75,6 @@ export class Collections extends CustomHTML {
             ar.className = 'lazy';
             ar.dataset.i = String(i);
             ++i;
-            // this.listeObjet(n.metadonnees);
             const a = document.createElement('a');
 
             // Adapter l'affichage en fonction du format du document
@@ -85,14 +84,12 @@ export class Collections extends CustomHTML {
                 } else if (db.format.indexOf('application') != -1) {
                     ar.style.backgroundImage = `url(assets/img/icones/picto_docs.png)`;
                 } else {
-                    // Ajouter des éléments au 
                     // let c = document.createElement('div');
                     if (db.format.indexOf('video') != -1) {
                         a.innerHTML = this.setVideo(`${Donnees.config.g.s3}media.url`, db.format);
                     } else if (db.format.indexOf('audio') != -1) {
                         a.innerHTML = this.setAudio(`${Donnees.config.g.s3}media.url`, db.format);
                     }
-                    // a.appendChild(c);
                     a.addEventListener('mouseenter', (e: any) => {
                         e.currentTarget.childNodes[0].play();
                     });
