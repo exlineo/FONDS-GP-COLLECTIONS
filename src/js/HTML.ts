@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
-import { CollectionI } from "./models/ModelesI";
+import { CollectionI, NoticeI } from "./models/ModelesI";
+import { Donnees } from './data/Donnees.js';
 
 export abstract class CustomHTML {
 
@@ -16,19 +17,19 @@ export abstract class CustomHTML {
          * Décomposer un objet et ses enfants
          * @param {Object} o Objet présumé à décortiquer
          */
-    decortiqueObj(o: any, el: HTMLElement | null = null) {
+    decortiqueObj(o: any, el: HTMLElement) {
         const ul = document.createElement('ul');
         ul.className = 'panneau';
         for (let i in o) {
             let li = document.createElement('li');
-            if (typeof o[i] == 'object') {
-                this.decortiqueObj(o[i], li);
-            } else {
+            if (typeof o[i] == 'string') {
                 li.innerHTML = `${i} : <strong>${o[i].toString()}</strong>`;
                 ul.appendChild(li);
-            }
+            }else if(Array.isArray(o[i])){
+                this.decortiqueObj(o[i], li);
+            }            
         };
-        return el ? ul : el!.appendChild(ul);
+        el.appendChild(ul);
     }
     /** Créer un élément HTML dans le DOM */
     setTextEl(el: string, text?: string) {
@@ -127,10 +128,10 @@ export abstract class CustomHTML {
      * Afficher une image
      * @param {string} url Lien vers le document
      */
-    setNoticeImageEl(url: string) {
+    setNoticeImageEl(n: NoticeI) {
         const ar = document.createElement('article');
         let img = new Image();
-        img.src = url;
+        img.src = n.media.url.indexOf('https://') != -1 ? n.media.url : `${Donnees.config.g.s3}${n.nema.set_name}/${n.media.file}`;;
         img.className = 'media';
         img.setAttribute('loading', 'lazy');
         ar.appendChild(img);

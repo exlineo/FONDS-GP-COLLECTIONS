@@ -1,52 +1,52 @@
 import { CustomHTML } from "./HTML.js";
 import { gsap } from "gsap";
+import { NoticeI } from "./models/ModelesI.js";
 
 
 export class Notice extends CustomHTML {
     metas: any; // Métadonnées de la notice
     n; // Elément HTML
     va: any; // Au cas ou des médias de type vidéo ou audio soient créés
-    media: HTMLElement;
-    donnees: HTMLElement;
+    mediaEl: HTMLElement;
+    donneesEl: HTMLElement;
+    notice:NoticeI;
 
     constructor(n: HTMLElement, metas: any) {
+        console.log(metas);
         super();
         this.n = n;
-        this.media = n.querySelector('#media')!; // Element HTML pour afficher le média
-        this.media.innerHTML = '';
+        this.mediaEl = n.querySelector('#media')!; // Element HTML pour afficher le média
+        this.mediaEl.innerHTML = '';
 
-        this.donnees = n.querySelector('#donnees')!; // Element HTML pour lister les données
-        this.donnees.innerHTML = '';
+        this.donneesEl = n.querySelector('#donnees')!; // Element HTML pour lister les données
+        this.donneesEl.innerHTML = '';
 
-        this.metas = metas; // Métadonnées de la notice
+        this.notice = metas; // Métadonnées de la notice
         // Affichage du titre du document
         const titre = document.createElement('h1');
-        titre.textContent = this.metas.dublincore.title;
-        this.media.appendChild(titre);
+        titre.textContent = this.notice.dc.title;
+        this.mediaEl.appendChild(titre);
         const description = document.createElement('blockquote');
-        description.textContent = this.metas.dublincore.description;
+        description.textContent = this.notice.dc.description;
 
-        let f = this.metas.dublincore.format;
+        let f = this.notice.dc.format;
         if (f.indexOf('image') != -1) {
-            this.setNoticeImageEl(this.metas.media.url);
+            this.mediaEl.appendChild(this.setNoticeImageEl(this.notice));
         } else if (f.indexOf('video') != -1) {
-            this.setVideoEl(this.metas.media.url, f);
+            this.mediaEl.appendChild(this.setVideoEl(this.notice.media.url, f));
         } else if (f.indexOf('audio') != -1) {
-            this.setAudioEl(this.metas.media.url, f)
+            this.mediaEl.appendChild(this.setAudioEl(this.notice.media.url, f));
         } else {
-            this.setPdfEl(this.metas.media.url);
+            this.mediaEl.appendChild(this.setPdfEl(this.notice.media.url));
         }
 
         // Affichage de la description après le média 
-        this.media.appendChild(description);
+        this.mediaEl.appendChild(description);
         // Afficher les données du média
         this.setMedia();
         // Ecrire les données dans les médias
-        this.setDatas(this.metas.dublincore, "Métadonnées du média");
-
-        for (let n in this.metas.nemateria) {
-            this.setDatas(this.metas.nemateria[n], "Nemateria : " + n);
-        }
+        this.setDatas(this.notice.dc, "Métadonnées normalisées (Dublin Core)");
+        this.setDatas(this.notice.nema, "Métadonnées du document");
         this.setAccordeon();
     }
     /**
@@ -59,29 +59,30 @@ export class Notice extends CustomHTML {
         btn.className = 'accordeon';
         btn.textContent = "Informations sur le média";
         ar.appendChild(btn);
-        ar.appendChild(this.decortiqueObj(this.metas.media));
-        this.media.appendChild(ar);
+        this.decortiqueObj(this.notice.media, ar);
+        this.mediaEl.appendChild(ar);
     }
     /**
      * Afficher les métadonnées
      */
     setDatas(o: any, t: string) {
+        console.log(o, t);
         const ar = document.createElement('article');
         // const h3 = document.createElement('h3');
         const h3 = document.createElement('button');
         h3.className = 'accordeon';
         h3.textContent = t;
         ar.appendChild(h3);
-        ar.appendChild(this.decortiqueObj(o));
-        this.donnees.appendChild(ar);
+        this.decortiqueObj(o, ar);
+        this.donneesEl.appendChild(ar);
     }
     /**
      * Afficher les séquences d'un document multimédia
      */
     setSequences() {
-        console.log(this.metas.nemateria.sequences);
-        if (this.metas.nemateria.sequences) {
-            const s = this.metas.nemateria.sequences;
+        console.log(this.notice.nema.sequences);
+        if (this.notice.nema.sequences) {
+            const s = this.notice.nema.sequences;
 
             const ar = document.createElement('article');
             const h3 = document.createElement('h3');
@@ -107,7 +108,7 @@ export class Notice extends CustomHTML {
                     this.va.play();
                 })
             }
-            this.media.appendChild(ar);
+            this.mediaEl.appendChild(ar);
         }
     }
     /**

@@ -62,14 +62,14 @@ export abstract class BDD {
                 this.setLocalData('collections', j);
                 Donnees.collections = j;
                 // Gérer la liste des collections
-                new Collections(document.querySelector('.notices>section'), document.querySelector('.series'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
+                new Collections(document.querySelector('.notices>section'), document.querySelector('article#filtres'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
                 dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
                 // Classe pour faire des recherches
                 new Recherche(document.querySelector('#recherche > form')!);
             })
             .catch(er => console.log(er));
     }
-    /** Get notices */
+    /** Récupérer les notices dans la base de données à partir  */
     getNotices(e: any) {
         this.collection = e.detail;
         if (!this.listeNotices[this.collection.idcollections]) {

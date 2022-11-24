@@ -6,13 +6,13 @@ export class Menu {
     nav:HTMLElement; // La navigation dans la colone aside
     corps:HTMLElement; // où écrire le contenu
     data:Array<any> = []; // Données de navigation
-    collecEvent:CustomEvent;
+    // collecEvent:CustomEvent; // Evenement déclenché lorsque la liste des collections a été chargée
 
     constructor(el:HTMLElement, c:HTMLElement) {
         this.aside = el;
         this.nav = this.aside.querySelector('section > nav')!;
         this.corps = c;
-        this.collecEvent = new CustomEvent('SET-COLLECTIONS');
+        // this.collecEvent = new CustomEvent('SET-COLLECTIONS');
     };
 
     // Ecrire le menu dans le HTML
@@ -64,11 +64,11 @@ export class Menu {
      * @param {Object} m Collection à gérer
      */
     setCollection(i:any) {
-            i.preventDefault();
-            // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
-            dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: i.currentTarget.dataset.index }));
-        }
-        // Ecrire un template dans le DOM
+        i.preventDefault();
+        // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
+        dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: i.currentTarget.dataset.index }));
+    }
+    // Ecrire un template dans le DOM
     getTemplate(p:any, i:number) {
         fetch('./pages/' + p.lien)
             .then(h => h.text())

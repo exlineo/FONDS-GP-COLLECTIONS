@@ -10,7 +10,9 @@ export interface NoticeI {
     _id?:any;
     date?:any;
     prefix?:string | Array<string>;
-    metadonnees:any;
+    dc:any;
+    nema:any;
+    media:any;
     selected?:boolean;
 }
 /** Modèle d'une collection */
@@ -21,10 +23,9 @@ export interface CollectionI{
     description: string;
     type: string;
     creator: string;
-    fund?:string;
+    funds?:string;
     language?: string;
     date?:string | number;
-    group?: Array<string>;
     notices?:Array<string>;
     series?:Array<NemaSerieI>;
     selected?:boolean;
@@ -42,4 +43,31 @@ export interface SetI {
     gestionnaire?:string;
     documents:Array<DocumentI>;
     prefix:Array<string>;
+}
+
+/** Forattage d'un document Dublin Core (c'est normé, on peut) */
+export interface DublinI {
+    contributor?: string | Array<string>;
+    coverage?: string;
+    creator:string | Array<string>;
+    date?: string;
+    description?:string | Array<string>;
+    format?: string;
+    identifier?: string;
+    language?: string;
+    publisher?: string;
+    relation?: string | Array<string>;
+    rights?: string | Array<string>;
+    source?: string;
+    subject?:string | Array<string>;
+    title?: string;
+    type?: string;
+}
+/** Données sur les médias */
+export interface MediaI{
+    size?:number; // Poids du fichier
+    ImageWidth:number;
+    ImageHeight:number;
+    url:string; // Lien HTTP vers le média
+    file:string; // Le nom du fichier
 }
