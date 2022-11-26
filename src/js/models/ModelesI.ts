@@ -27,7 +27,7 @@ export interface CollectionI{
     language?: string;
     date?:string | number;
     notices?:Array<string>;
-    series?:Array<NemaSerieI>;
+    series?:Array<string>;
     selected?:boolean;
 }
 /** Modèle d'un Set de données */
@@ -70,4 +70,9 @@ export interface MediaI{
     ImageHeight:number;
     url:string; // Lien HTTP vers le média
     file:string; // Le nom du fichier
+}
+
+export interface FiltreI{
+    libre:string;
+    series:Array<string>;
 }

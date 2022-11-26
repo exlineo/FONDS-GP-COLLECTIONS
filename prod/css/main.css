@@ -11,6 +11,7 @@
     --v: rgb(10, 159, 10);
     --r: red;
     --w: 75px;
+    --head:75px;
 }
 
 html,
@@ -22,13 +23,14 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
     display: flex;
     flex-flow: row nowrap;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 body>* {
@@ -41,13 +43,14 @@ body>* {
 }
 
 h2,
-h3 {
+h3, h4 {
     font-variation-settings: 'wght' 400;
     font-weight: 400;
     text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
 }
-h1,
-h4 {
+h1 {
+    font-family: 'Poppins', sans-serif;
     font-variation-settings: 'wght' 100;
     font-weight: 100;
 }
@@ -87,14 +90,6 @@ body>main>section {
     padding: 0;
     margin: 0;
 }
-body>main>header a {
-    width: calc(100vw - 40px);
-}
-
-body>main>header img {
-    width: 200px;
-}
-
 body>main {
     display: flex;
     flex-flow: column nowrap;
@@ -103,21 +98,31 @@ body>main {
 }
 body>main>header{
     width:100%;
-    height:75px;
     display:flex;
     flex-flow: column nowrap;
     transition:all .3s ease;
+    /* height: var(--head); */
+    box-sizing: border-box;
+    padding:0 10%;
 }
 body>main>header.open{
     margin-top:0;
+}
+body>main>header>a {
+    width: calc(100vw - 40px);
+}
+
+body>main>header img {
+    width: 200px;
 }
 body>main>header>article{
     display:flex;
     flex-flow: row nowrap;
     padding : 0 10px;
+    /* height:var(--head); */
 }
-body>main>header>article>div{
-    width: calc(100% - 50px);
+body>main>header>article>*{
+    text-align: center;
 }
 body>main>header>article>a.search{
     position:absolute;
@@ -388,7 +393,6 @@ i {
 form {
     display: flex;
     flex-flow: column nowrap;
-    padding: 10px;
 }
 
 fieldset {
@@ -573,13 +577,27 @@ input[type=radio] {
 .collection>section {
     padding: 10px 30px;
 }
-
-
-/* SERIES */
-.series {
-    margin-bottom: 30px;
+/* FILTRES ET SERIES */
+#filtres{
+    display:flex;
+    flex-flow:column nowrap;
 }
-
+#filtres .accordeon{
+    width:max-content;
+    background-color: var(--t);
+    border-radius: 5px;
+    color:var(--clair);
+    margin:auto;
+}
+#filtres .accordeon:after{
+    color:var(--clair);
+}
+#filtres .panneau{
+    padding:0;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
 .series button {
     background-color: yellow;
     padding: 8px 12px;
@@ -587,28 +605,44 @@ input[type=radio] {
     color: black;
     transition: background-color .3s ease;
 }
-
 .series button:hover {
     background-color: yellowgreen;
 }
-
-
+.series {
+    display:flex;
+    flex-flow:row wrap;
+}
+.series > li {
+    list-style: none;
+    background-color: var(--t);
+    color:var(--clair);
+    border-radius: 5%;
+    width:max-content;
+    transition: all .3s ease;
+    padding:4px 8px;
+    margin:5px;
+    cursor: pointer;
+}
+.series > li:hover {
+    background-color: var(--s);
+}
 /* NOTICE */
 .notice {
     visibility: hidden;
     position: absolute;
     left: 100vw;
-    width: 80vw;
-    height: calc(100vh - 60px);
-    top: 60px;
+    width: calc(100vw - var(--w));
+    height: calc(100vh - 50px);
+    top: 50px;
     background-color: rgb(255, 255, 255);
     transition: all .3s ease;
     z-index: 100;
     overflow-x: hidden;
-    overflow-y: auto;
     padding-left:40px;
-    padding-right:20%;
+    padding-right:80px;
     box-sizing: border-box;
+    display:flex;
+    flex-flow:row nowrap;
 }
 
 .notice h1,
@@ -626,14 +660,18 @@ input[type=radio] {
     /* box-shadow: 0px 0px 4px black; */
     filter: drop-shadow(0px 0px 3px black);
 }
-
-.notice>section {
+.notice>div {
+    display: flex;
+    flex-flow:row nowrap;
+    width:100%;
+    overflow-y:auto;
+}
+.notice>div>section {
     display: flex;
     flex-flow: column nowrap;
-    width: 50%;
 }
 
-.notice>section>article {
+.notice>div>section>article {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -647,8 +685,7 @@ input[type=radio] {
 .notice #media {
     padding: 20px;
     border-right: black dashed 1px;
-    width: auto;
-    width: 100%;
+    width: 70%;
     position: relative;
     box-sizing: border-box;
 }
@@ -692,24 +729,20 @@ input[type=radio] {
 
 .notice #donnees {
     padding: 20px;
-    width: 100%;
-    border-right: 10px solid yellowgreen;
+    width: 30%;
     box-sizing: border-box;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
 }
 
 .notice #donnees>article {
     padding: 0;
-    width:50%;
+    width:100%;
     box-sizing: border-box;
 }
-
-
 /* DIVERS */
 .lazy {
     background-image: none !important;
 }
-
 .metas {
     height: auto;
     width: 100%;
@@ -738,25 +771,6 @@ audio.media {
     transform: rotate(30deg);
 }
 
-.series {
-    display:flex;
-    flex-flow:row wrap;
-}
-.series > li {
-    list-style: none;
-    background-color: var(--t);
-    color:var(--clair);
-    border-radius: 5%;
-    width:max-content;
-    transition: all .3s ease;
-    padding:4px 8px;
-    margin:5px;
-    cursor: pointer;
-}
-.series > li:hover {
-    background-color: var(--s);
-}
-
 .noir {
     transition: all .3s ease;
     background-color: black;
@@ -768,7 +782,7 @@ audio.media {
 }
 
 .vu {
-    left: 20vw;
+    left: var(--w);
     visibility: visible;
 }
 
@@ -782,7 +796,10 @@ audio.media {
     opacity: 0;
     transition: all .3s ease;
 }
-
+.actif{
+    background-color: var(--s) !important;
+    color: var(--clair) !important;
+}
 .ouvert {
     width: 40vw;
 }
@@ -863,7 +880,7 @@ audio.media {
 .arrowright {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    right: 20%;
+    right: 10px;
 }
 .arrowleft {
     left: 0px;
@@ -873,7 +890,7 @@ audio.media {
 .arrowright:hover {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    right: calc(20% - 5px);
+    right: 5px;
 }
 .arrowleft:hover {
     left: -5px;
@@ -925,8 +942,9 @@ audio.media {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 18px;
     transition: 0.4s;
+    position:relative;
+    text-transform: uppercase;
 }
 
 .active,
@@ -939,7 +957,7 @@ audio.media {
     color: #777;
     font-weight: bold;
     float: right;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .active:after {
@@ -953,7 +971,6 @@ audio.media {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
 
 /* MEDIA QUERIES */
 

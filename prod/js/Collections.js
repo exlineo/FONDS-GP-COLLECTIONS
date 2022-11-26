@@ -9,9 +9,10 @@ export class Collections extends CustomHTML {
         this.collection = {};
         this.notice = {};
         this.lazyImages = []; // Liste des éléments HTML recevant un lazyloading
+        this.filtres = { libre: '', series: [] };
         this.seriesEl = s;
-        this.cEl = c;
-        this.f = f;
+        this.cEl = c; // HTML pour écrire la liste des collections
+        this.f = f; // Formulaire de recherche
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e) => {
             e.detail.forEach((c, i) => {
@@ -22,7 +23,7 @@ export class Collections extends CustomHTML {
             dispatchEvent(new CustomEvent('GET-NOTICES', { detail: e.detail[0] }));
         });
         /** Créer les notices une fois les données reçues */
-        addEventListener("SET-NOTICES", (e) => this.setNotices(e.detail));
+        addEventListener("SET-NOTICES", (e) => this.setNotices());
         /**
          * Fermer la notice avec la croix
          */
@@ -32,12 +33,9 @@ export class Collections extends CustomHTML {
         });
         // Filtrer les notices
         this.f.addEventListener('input', () => {
-            if (this.f.value.length > 3) {
-                this.setNotices(this.filtreNotices(this.f.value));
-            }
-            else {
-                this.setNotices(Donnees.notices);
-            }
+            this.filtres.libre = this.f.value;
+            console.log("Données insérées");
+            this.filtreNotices();
         });
         /** Ecouteur sur le focus des contenus pour charger ou pas les médias */
         if ("IntersectionObserver" in window) {
@@ -61,12 +59,12 @@ export class Collections extends CustomHTML {
     /**
      * Créer les notices à la volée dans le DOM
      */
-    setNotices(notices) {
+    setNotices() {
         this.lazyImages = []; // Initialisation de la liste des images à suivre dans le load
         this.noticesEl.innerHTML = '';
         let i = 0;
         // Créer les notices sur l'interface
-        notices.forEach((n) => {
+        Donnees.noticesFiltrees.forEach((n) => {
             // console.log(n);
             const dc = n.dc;
             const media = n.media;
@@ -117,33 +115,16 @@ export class Collections extends CustomHTML {
             ar.addEventListener('click', () => {
                 this.slide();
                 this.indexN = parseInt(ar.dataset.i);
-                this.notice = new Notice(this.noticeEl, n);
+                this.notice = new Notice(this.noticeEl, i);
             });
             /** Lazy loading sur les images */
             this.lazyImages.push(ar);
             this.setLazy();
         });
         // Activer le diaporama des notices
-        this.setDiaporama();
+        // this.setDiaporama();
         // Afficher les séries de la collection
-        this.setSeries();
-    }
-    /**
-     * Activer le diaporama pour faire défiler les notices
-     */
-    setDiaporama() {
-        const gauche = this.noticeEl.querySelector('i.gauche');
-        const droite = this.noticeEl.querySelector('i.droite');
-        gauche.addEventListener('click', (e) => {
-            if (this.indexN > 0) {
-                // this.notice = new Notices(this.noticeEl, Donnees.notices[--this.indexN]);
-            }
-        });
-        droite.addEventListener('click', (e) => {
-            if (this.indexN < Donnees.notices.length) {
-                // this.notice = new Notices(this.noticeEl, Donnees.notices[++this.indexN]);
-            }
-        });
+        this.setSeriesFiltre();
     }
     /**
      * Renseigner la collection
@@ -171,47 +152,67 @@ export class Collections extends CustomHTML {
         this.cEl.appendChild(ar);
         // this.setSeries();
     }
-    /**
-     * Afficher les séries de la collection
-     */
-    setSeries() {
-        console.log('Création des séries', this.collection);
-        if (this.collection.series && Array.isArray(this.collection.series)) {
-            this.seriesEl.innerHTML = ''; // Header de la liste des notices
-            const ul = document.createElement('ul');
-            const h4 = document.createElement('h4');
-            h4.textContent = "Filtrer les notices par séries";
-            ul.className = 'series';
-            this.collection.series.forEach((s) => {
-                let li = document.createElement('li');
-                li.textContent = s;
-                ul.appendChild(li);
-                li.addEventListener('click', () => {
-                    this.setNotices(this.setNoticesSeriees(s));
-                });
+    /** Créer une liste de séries cliquables */
+    setSeriesFiltre() {
+        this.seriesEl.innerHTML = '';
+        // const h3 = document.createElement('h3');
+        const btn = document.createElement('button');
+        btn.className = 'accordeon';
+        btn.textContent = 'Filtrer les notices par séries';
+        this.accordeon(btn);
+        const ul = document.createElement('ul');
+        ul.className = 'panneau series';
+        this.collection.series.forEach(d => {
+            const li = document.createElement('li');
+            li.textContent = d;
+            li.addEventListener('click', (e) => {
+                e.currentTarget.classList.toggle('actif');
+                console.log(this.filtres.series.indexOf(d));
+                this.filtres.series.includes(d) ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
+                this.filtreNotices();
             });
-            this.seriesEl.appendChild(h4);
-            this.seriesEl.appendChild(ul);
-        }
-    }
-    filtreNotices(filtre) {
-        return Donnees.notices.filter((n) => {
-            const f = filtre.toLowerCase();
-            if (n.dublincore.title && n.dublincore.title.toLowerCase().indexOf(f) !== -1)
-                return n;
-            if (n.dublincore.description && n.dublincore.description.toLowerCase().indexOf(f) !== -1)
-                return n;
-            if (n.dublincore.subject && n.dublincore.subject.toString().toLowerCase().indexOf(f) !== -1)
-                return n;
+            ul.appendChild(li);
         });
-        // return Donnees.notices;
+        this.seriesEl.appendChild(btn);
+        this.seriesEl.appendChild(ul);
     }
-    /**
-     * Récupérer les notices d'une série
-     * @param {string} s Nom de la série servant de tri
-     */
-    setNoticesSeriees(s) {
-        return Donnees.notices.filter((n) => n.nemateria.serie && n.nemateria.serie.serie == s);
+    /** Filtrer les notices de la collection */
+    filtreNotices() {
+        if (this.filtres.libre.length < 3 && this.filtres.series.length == 0) {
+            Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
+        }
+        else {
+            Donnees.noticesFiltrees = [];
+            const libre = this.filtres.libre.toLocaleLowerCase(); // Ramener toutes les recherches en lowercase
+            let result = new Set();
+            Donnees.notices[this.collection.idcollections].forEach((n) => {
+                // Filtres dans les séries sélectionnées
+                this.filtres.series.forEach(f => {
+                    if (Array.isArray(n.nema.series)) {
+                        if (n.nema.series.includes(f))
+                            result.add(n);
+                    }
+                    else {
+                        if (n.nema.series.indexOf(f) != -1)
+                            result.add(n);
+                    }
+                });
+                if (this.filtres.libre.length > 2) {
+                    if (n.dc.title && n.dc.title.toLowerCase().indexOf(libre) !== -1)
+                        result.add(n);
+                    if (n.dc.description && n.dc.description.toLowerCase().indexOf(libre) !== -1)
+                        result.add(n);
+                    if (n.dc.subject && n.dc.subject.toString().toLowerCase().indexOf(libre) !== -1)
+                        result.add(n);
+                    if (n.nema.id && n.nema.id.toLowerCase().indexOf(libre) !== -1)
+                        result.add(n);
+                }
+            });
+            Donnees.noticesFiltrees = [...result];
+        }
+        ;
+        // Une fois le tri opérer, afficher les notices
+        this.setNotices();
     }
     /** Ecrire un article des collections
      * @param {CollectionI} c Une collection à détailler

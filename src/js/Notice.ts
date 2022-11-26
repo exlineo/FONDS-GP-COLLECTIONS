@@ -1,27 +1,32 @@
 import { CustomHTML } from "./HTML.js";
 import { gsap } from "gsap";
 import { NoticeI } from "./models/ModelesI.js";
+import { Donnees } from "./data/Donnees.js";
 
 
 export class Notice extends CustomHTML {
     metas: any; // Métadonnées de la notice
-    n; // Elément HTML
+    el; // Elément HTML
     va: any; // Au cas ou des médias de type vidéo ou audio soient créés
     mediaEl: HTMLElement;
     donneesEl: HTMLElement;
-    notice:NoticeI;
+    notice:NoticeI = <NoticeI>{};
+    index:number = 0;
 
-    constructor(n: HTMLElement, metas: any) {
-        console.log(metas);
+    constructor(el: HTMLElement, index:number = 0) {
         super();
-        this.n = n;
-        this.mediaEl = n.querySelector('#media')!; // Element HTML pour afficher le média
+        this.el = el;
+        this.mediaEl = el.querySelector('#media')!; // Element HTML pour afficher le média
         this.mediaEl.innerHTML = '';
 
-        this.donneesEl = n.querySelector('#donnees')!; // Element HTML pour lister les données
+        this.donneesEl = el.querySelector('#donnees')!; // Element HTML pour lister les données
         this.donneesEl.innerHTML = '';
 
-        this.notice = metas; // Métadonnées de la notice
+        this.setNoticeEl();
+    }
+    /** Initier la notice */
+    setNoticeEl(){
+        this.notice = Donnees.noticesFiltrees[this.index]; // Métadonnées de la notice
         // Affichage du titre du document
         const titre = document.createElement('h1');
         titre.textContent = this.notice.dc.title;
@@ -60,7 +65,7 @@ export class Notice extends CustomHTML {
         btn.textContent = "Informations sur le média";
         ar.appendChild(btn);
         this.decortiqueObj(this.notice.media, ar);
-        this.mediaEl.appendChild(ar);
+        this.donneesEl.appendChild(ar);
     }
     /**
      * Afficher les métadonnées
@@ -150,17 +155,26 @@ export class Notice extends CustomHTML {
     }
     setAccordeon() {
         // ACCORDEON
-        const acc = this.n.getElementsByClassName("accordeon");
+        const acc:HTMLCollection = this.el.getElementsByClassName("accordeon");
         for (let i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", (e: any) => {
-                e.target.classList.toggle("active");
-                let pan = e.target.nextElementSibling;
-                if (pan.style.maxHeight) {
-                    pan.style.maxHeight = null;
-                } else {
-                    pan.style.maxHeight = pan.scrollHeight + "px";
-                }
-            });
+            this.accordeon(acc[i]);
         }
+    }
+    /**
+     * Activer le diaporama pour faire défiler les notices
+     */
+     setDiaporama() {
+        const gauche = this.el.querySelector('i.gauche');
+        const droite = this.el.querySelector('i.droite');
+        gauche!.addEventListener('click', (e) => {
+            if (this.indexN > 0) {
+                // this.notice = new Notices(this.noticeEl, Donnees.notices[--this.indexN]);
+            }
+        });
+        droite!.addEventListener('click', (e) => {
+            if (this.indexN < Donnees.notices.length) {
+                // this.notice = new Notices(this.noticeEl, Donnees.notices[++this.indexN]);
+            }
+        });
     }
 }

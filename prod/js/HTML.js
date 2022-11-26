@@ -171,6 +171,21 @@ export class CustomHTML {
     setPdf(url) {
         return ``;
     }
+    /** Evénements sur les accordéons */
+    accordeon(el) {
+        el.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.currentTarget.classList.toggle("active");
+            // e.stopPropagation();
+            let pan = e.currentTarget.nextElementSibling;
+            if (pan.style.maxHeight) {
+                pan.style.maxHeight = null;
+            }
+            else {
+                pan.style.maxHeight = pan.scrollHeight + "px";
+            }
+        });
+    }
     slide() {
         this.noticeEl.classList.toggle('vu');
     }

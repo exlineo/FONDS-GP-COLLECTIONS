@@ -60,7 +60,7 @@ export class BDD {
             this.setLocalData('collections', j);
             Donnees.collections = j;
             // Gérer la liste des collections
-            new Collections(document.querySelector('.notices>section'), document.querySelector('article#filtres'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
+            new Collections(document.querySelector('.notices>section'), document.querySelector('#filtres'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
             dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
             // Classe pour faire des recherches
             new Recherche(document.querySelector('#recherche > form'));
@@ -70,7 +70,8 @@ export class BDD {
     /** Récupérer les notices dans la base de données à partir  */
     getNotices(e) {
         this.collection = e.detail;
-        if (!this.listeNotices[this.collection.idcollections]) {
+        console.log(this.collection);
+        if (!Donnees.notices[this.collection.idcollections]) {
             return fetch(Donnees.config.g.notices, {
                 method: 'POST',
                 body: JSON.stringify(this.collection.notices)
@@ -78,12 +79,13 @@ export class BDD {
                 .then(d => d.json())
                 .then(n => {
                 Donnees.notices[this.collection.idcollections] = n.Responses.notices;
-                console.log(this.listeNotices);
+                Donnees.noticesFiltrees = n.Responses.notices;
                 dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n.Responses.notices }));
             })
                 .catch(er => console.log(er));
         }
         else {
+            Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
             dispatchEvent(new CustomEvent('SET-NOTICES', { detail: Donnees.notices[this.collection.idcollections] }));
         }
     }

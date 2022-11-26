@@ -49,10 +49,11 @@ export class Donnees extends BDD {
     setFonds() {
     }
 }
-Donnees.collections = [];
-Donnees.fonds = [];
-Donnees.notices = [];
+Donnees.collections = []; // Liste des collections récupérer de la base
+Donnees.fonds = []; // Liste des fonds disponibles (pas utilisé)
+Donnees.notices = []; // Notices des collections affichées (pour éviter de recharger les données)
+Donnees.noticesFiltrees = []; // Liste des notices après avoir été filtrées
 Donnees.page = {};
 Donnees.menu = [];
-Donnees.config = {};
-Donnees.lazyObserv = [];
+Donnees.config = {}; // Données de configuration
+Donnees.lazyObserv = []; // Lazy loading sur les images

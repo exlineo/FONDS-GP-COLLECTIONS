@@ -2,13 +2,14 @@ import { CollectionI, NoticeI, ConfigI } from "../models/ModelesI.js";
 import { BDD } from "./BDD.js";
 
 export class Donnees extends BDD {
-    static collections: Array<CollectionI> = [];
-    static fonds:Array<any> = [];
-    static notices: Array<NoticeI> = [];
+    static collections: Array<CollectionI> = []; // Liste des collections récupérer de la base
+    static fonds:Array<any> = []; // Liste des fonds disponibles (pas utilisé)
+    static notices: any = []; // Notices des collections affichées (pour éviter de recharger les données)
+    static noticesFiltrees: Array<NoticeI> = []; // Liste des notices après avoir été filtrées
     static page: any = {};
     static menu: Array<any> = [];
-    static config: ConfigI = <ConfigI>{};
-    static lazyObserv:Array<HTMLElement> = [];
+    static config: ConfigI = <ConfigI>{}; // Données de configuration
+    static lazyObserv:Array<HTMLElement> = []; // Lazy loading sur les images
     
     contact = {
         mail: "contact@exlineo.com",
