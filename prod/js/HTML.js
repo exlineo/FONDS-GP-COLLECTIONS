@@ -1,10 +1,10 @@
+import { FR } from './trads/fr.js';
 import { Donnees } from './data/Donnees.js';
 export class CustomHTML {
-    constructor(n, o) {
-        if (n)
-            this.noticesEl = n; // HTML des notices 
-        if (o)
-            this.noticeEl = o; // Notice à afficher
+    constructor() {
+        this.noticesEl = document.querySelector('#notices>section');
+        this.noticeEl = document.getElementById('notice'); // HTML des notices
+        this.listeNoticesEl = this.noticeEl.querySelector('div');
     }
     /**
          * Décomposer un objet et ses enfants
@@ -16,7 +16,7 @@ export class CustomHTML {
         for (let i in o) {
             let li = document.createElement('li');
             if (typeof o[i] == 'string') {
-                li.innerHTML = `${i} : <strong>${o[i].toString()}</strong>`;
+                li.innerHTML = `${FR[i]} : <strong>${o[i].toString()}</strong>`;
                 ul.appendChild(li);
             }
             else if (Array.isArray(o[i])) {

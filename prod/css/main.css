@@ -103,7 +103,7 @@ body>main>header{
     transition:all .3s ease;
     /* height: var(--head); */
     box-sizing: border-box;
-    padding:0 10%;
+    padding:0 5%;
 }
 body>main>header.open{
     margin-top:0;
@@ -580,7 +580,7 @@ input[type=radio] {
 /* FILTRES ET SERIES */
 #filtres{
     display:flex;
-    flex-flow:column nowrap;
+    flex-flow:row nowrap;
 }
 #filtres .accordeon{
     width:max-content;
@@ -627,7 +627,7 @@ input[type=radio] {
     background-color: var(--s);
 }
 /* NOTICE */
-.notice {
+#notice {
     visibility: hidden;
     position: absolute;
     left: 100vw;
@@ -637,14 +637,32 @@ input[type=radio] {
     background-color: rgb(255, 255, 255);
     transition: all .3s ease;
     z-index: 100;
+    box-sizing: border-box;
+    /* display:flex;
+    flex-flow:row nowrap; */
+    overflow:hidden;
+}
+#notice>div{
     overflow-x: hidden;
+    /* width:auto; */
+    position:absolute;
+    left:0;
+    display: flex;
+    flex-flow:row nowrap;
+    transition:all .3s ease;
     padding-left:40px;
     padding-right:80px;
+    height:100%;
     box-sizing: border-box;
-    display:flex;
-    flex-flow:row nowrap;
 }
-
+.notice{
+    display: flex;
+    flex-flow:row nowrap;
+    width : calc(100vw - var(--w) - 120px);
+    height:100%;
+    margin-right:120px;
+    overflow-x:hidden;
+}
 .notice h1,
 .notice blockquote {
     margin: 20px 0 10px;
@@ -660,18 +678,12 @@ input[type=radio] {
     /* box-shadow: 0px 0px 4px black; */
     filter: drop-shadow(0px 0px 3px black);
 }
-.notice>div {
-    display: flex;
-    flex-flow:row nowrap;
-    width:100%;
-    overflow-y:auto;
-}
-.notice>div>section {
+.notice>section {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.notice>div>section>article {
+.notice>section>article {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -728,7 +740,7 @@ input[type=radio] {
 }
 
 .notice #donnees {
-    padding: 20px;
+    padding: 100px 20px 20px;
     width: 30%;
     box-sizing: border-box;
     flex-flow:column nowrap;
@@ -782,8 +794,8 @@ audio.media {
 }
 
 .vu {
-    left: var(--w);
-    visibility: visible;
+    left: var(--w) !important;
+    visibility: visible !important;
 }
 
 .visible {
@@ -799,6 +811,9 @@ audio.media {
 .actif{
     background-color: var(--s) !important;
     color: var(--clair) !important;
+}
+.actif:after{
+    content:'+';
 }
 .ouvert {
     width: 40vw;
@@ -864,6 +879,7 @@ audio.media {
 /* Créer des fléches */
 .arrow {
     position:absolute;
+    z-index:2000;
     top:50%;
     transform:translate(-50%);
     border: solid var(--t);
@@ -996,12 +1012,12 @@ audio.media {
         width: 100vw;
     }
 
-    .notice {
+    #notice {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
     }
-
+    
     .notices,
     .notices>header,
     .notices>section {
@@ -1025,7 +1041,7 @@ audio.media {
     }
 
     .vu {
-        left: 0;
+        left: 0 !important;
     }
 
     .burger {

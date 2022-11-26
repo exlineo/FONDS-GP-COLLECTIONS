@@ -60,7 +60,7 @@ export class BDD {
             this.setLocalData('collections', j);
             Donnees.collections = j;
             // Gérer la liste des collections
-            new Collections(document.querySelector('.notices>section'), document.querySelector('#filtres'), document.getElementById('collections'), document.querySelector('.notice'), document.querySelector('#look'));
+            new Collections(document.querySelector('#filtres'), document.getElementById('collections'), document.querySelector('#look'));
             dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
             // Classe pour faire des recherches
             new Recherche(document.querySelector('#recherche > form'));

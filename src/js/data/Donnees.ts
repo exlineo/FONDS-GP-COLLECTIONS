@@ -10,7 +10,8 @@ export class Donnees extends BDD {
     static menu: Array<any> = [];
     static config: ConfigI = <ConfigI>{}; // Données de configuration
     static lazyObserv:Array<HTMLElement> = []; // Lazy loading sur les images
-    
+    static indexN:number = 0; // Index de la notice en cours
+
     contact = {
         mail: "contact@exlineo.com",
         sujet: "Merci de remplir les champs requis",

@@ -2,76 +2,95 @@ import { CustomHTML } from "./HTML.js";
 import { gsap } from "gsap";
 import { NoticeI } from "./models/ModelesI.js";
 import { Donnees } from "./data/Donnees.js";
-
+import { FR } from './trads/fr.js';
 
 export class Notice extends CustomHTML {
     metas: any; // Métadonnées de la notice
-    el; // Elément HTML
     va: any; // Au cas ou des médias de type vidéo ou audio soient créés
-    mediaEl: HTMLElement;
-    donneesEl: HTMLElement;
-    notice:NoticeI = <NoticeI>{};
-    index:number = 0;
+    notice: NoticeI = <NoticeI>{};
+    index: number = 0;
+    ids:Array<number> = [];
 
-    constructor(el: HTMLElement, index:number = 0) {
+    constructor() {
         super();
-        this.el = el;
-        this.mediaEl = el.querySelector('#media')!; // Element HTML pour afficher le média
-        this.mediaEl.innerHTML = '';
-
-        this.donneesEl = el.querySelector('#donnees')!; // Element HTML pour lister les données
-        this.donneesEl.innerHTML = '';
-
-        this.setNoticeEl();
+        this.initNotice(); // Initier la première notice
     }
-    /** Initier la notice */
+    initNotice(){
+        // Vérifir la notice qu'on affiche si elle a déjà été ajoutée dans le DOM ou pas
+        if(this.ids.includes(Donnees.indexN)) {
+            this.index = this.ids.indexOf(Donnees.indexN);
+        }else{
+            this.ids.push(Donnees.indexN);
+            this.index = this.ids.length-1;
+            this.setNoticeEl();
+        };
+        this.setPosition();
+    }
+    /** Création d'une notice */
     setNoticeEl(){
-        this.notice = Donnees.noticesFiltrees[this.index]; // Métadonnées de la notice
-        // Affichage du titre du document
+        console.log("Notice appelée");
+        const section = document.createElement('section');
+        section.className = 'notice';
+
+        const media = document.createElement('section');
+        media.id = 'media'; 
+        const donnees = document.createElement('section');
+        donnees.id = 'donnees';
+
+        section.appendChild(media);
+        section.appendChild(donnees);
+
+        this.notice = Donnees.noticesFiltrees[Donnees.indexN]; // Métadonnées de la notice
+        
         const titre = document.createElement('h1');
         titre.textContent = this.notice.dc.title;
-        this.mediaEl.appendChild(titre);
+        media.appendChild(titre);
+
         const description = document.createElement('blockquote');
         description.textContent = this.notice.dc.description;
+        media.appendChild(description);
 
         let f = this.notice.dc.format;
         if (f.indexOf('image') != -1) {
-            this.mediaEl.appendChild(this.setNoticeImageEl(this.notice));
+            media.appendChild(this.setNoticeImageEl(this.notice));
         } else if (f.indexOf('video') != -1) {
-            this.mediaEl.appendChild(this.setVideoEl(this.notice.media.url, f));
+            media.appendChild(this.setVideoEl(this.notice.media.url, f));
         } else if (f.indexOf('audio') != -1) {
-            this.mediaEl.appendChild(this.setAudioEl(this.notice.media.url, f));
+            media.appendChild(this.setAudioEl(this.notice.media.url, f));
         } else {
-            this.mediaEl.appendChild(this.setPdfEl(this.notice.media.url));
+            media.appendChild(this.setPdfEl(this.notice.media.url));
         }
 
-        // Affichage de la description après le média 
-        this.mediaEl.appendChild(description);
-        // Afficher les données du média
-        this.setMedia();
+        this.setMedia(donnees);
         // Ecrire les données dans les médias
-        this.setDatas(this.notice.dc, "Métadonnées normalisées (Dublin Core)");
-        this.setDatas(this.notice.nema, "Métadonnées du document");
-        this.setAccordeon();
+        this.setDatas(donnees, this.notice.dc, FR.dublin_metas);
+        this.setDatas(donnees, this.notice.nema, FR.metas);
+        this.setAccordeon(section);
+
+        this.listeNoticesEl.appendChild(section);
+    }
+    /** Indiquer le mouvement que doivent faire les notices pour afficher la notice qu'il faut */
+    setPosition(){
+        // this.noticeEl.style.right = 0;
+        this.listeNoticesEl.style.left = -(this.noticeEl.offsetWidth * this.index) + 'px' ;
     }
     /**
      * Afficher les informations du document
      * @param {Element} doc Element HTML du document
      */
-    setMedia() {
+    setMedia(el:HTMLElement) {
         const ar = document.createElement('article');
         const btn = document.createElement('button');
         btn.className = 'accordeon';
-        btn.textContent = "Informations sur le média";
+        btn.textContent = FR.media_infos;
         ar.appendChild(btn);
         this.decortiqueObj(this.notice.media, ar);
-        this.donneesEl.appendChild(ar);
+        el.appendChild(ar);
     }
     /**
      * Afficher les métadonnées
      */
-    setDatas(o: any, t: string) {
-        console.log(o, t);
+    setDatas(el:HTMLElement, o: any, t: string) {
         const ar = document.createElement('article');
         // const h3 = document.createElement('h3');
         const h3 = document.createElement('button');
@@ -79,19 +98,18 @@ export class Notice extends CustomHTML {
         h3.textContent = t;
         ar.appendChild(h3);
         this.decortiqueObj(o, ar);
-        this.donneesEl.appendChild(ar);
+        el.appendChild(ar);
     }
     /**
      * Afficher les séquences d'un document multimédia
      */
-    setSequences() {
-        console.log(this.notice.nema.sequences);
+    setSequences(el:HTMLElement) {
         if (this.notice.nema.sequences) {
             const s = this.notice.nema.sequences;
 
             const ar = document.createElement('article');
             const h3 = document.createElement('h3');
-            h3.textContent = "Séquences du média";
+            h3.textContent = FR.sequences;
             ar.appendChild(h3);
             const time = s.time_code.indexOf(',') != -1 ? s.time_code.split(',') : [];
             const seq = s.sequence.indexOf(',') != -1 ? s.sequence.split(',') : [];
@@ -108,12 +126,11 @@ export class Notice extends CustomHTML {
                 a.setAttribute('data-timecode', time[i].trim())
                 ar.appendChild(a);
                 a.addEventListener('click', (e: any) => {
-                    console.log(e.currentTarget.dataset.timecode / 1000, this.va);
                     this.va.currentTime = e.currentTarget.dataset.timecode / 1000;
                     this.va.play();
                 })
             }
-            this.mediaEl.appendChild(ar);
+            el.appendChild(ar);
         }
     }
     /**
@@ -153,28 +170,11 @@ export class Notice extends CustomHTML {
     jumpSequence() {
 
     }
-    setAccordeon() {
+    setAccordeon(el:HTMLElement) {
         // ACCORDEON
-        const acc:HTMLCollection = this.el.getElementsByClassName("accordeon");
+        const acc: HTMLCollection = el.getElementsByClassName("accordeon");
         for (let i = 0; i < acc.length; i++) {
             this.accordeon(acc[i]);
         }
-    }
-    /**
-     * Activer le diaporama pour faire défiler les notices
-     */
-     setDiaporama() {
-        const gauche = this.el.querySelector('i.gauche');
-        const droite = this.el.querySelector('i.droite');
-        gauche!.addEventListener('click', (e) => {
-            if (this.indexN > 0) {
-                // this.notice = new Notices(this.noticeEl, Donnees.notices[--this.indexN]);
-            }
-        });
-        droite!.addEventListener('click', (e) => {
-            if (this.indexN < Donnees.notices.length) {
-                // this.notice = new Notices(this.noticeEl, Donnees.notices[++this.indexN]);
-            }
-        });
     }
 }

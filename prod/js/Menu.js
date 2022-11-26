@@ -1,12 +1,16 @@
 import { Donnees } from './data/Donnees.js';
 export class Menu {
-    // collecEvent:CustomEvent; // Evenement déclenché lorsque la liste des collections a été chargée
     constructor(el, c) {
         this.data = []; // Données de navigation
-        this.aside = el;
-        this.nav = this.aside.querySelector('section > nav');
-        this.corps = c;
-        // this.collecEvent = new CustomEvent('SET-COLLECTIONS');
+        this.aside = el; // Partie gauche du site
+        this.nav = this.aside.querySelector('section > nav'); // Navigation du site
+        this.corps = c; // Corps de la page
+        this.noticeEl = document.querySelector('#notice'); // Element HTML pour afficher les notices
+        /** Fermer la notice avec la croix */
+        this.noticeEl.querySelector('.close').addEventListener('click', () => {
+            this.noticeEl.classList.toggle('vu');
+            this.noticeEl.querySelector('div').innerHTML = '';
+        });
     }
     ;
     // Ecrire le menu dans le HTML

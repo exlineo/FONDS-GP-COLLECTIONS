@@ -57,3 +57,4 @@ Donnees.page = {};
 Donnees.menu = [];
 Donnees.config = {}; // Données de configuration
 Donnees.lazyObserv = []; // Lazy loading sur les images
+Donnees.indexN = 0; // Index de la notice en cours
