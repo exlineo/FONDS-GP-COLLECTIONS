@@ -29,8 +29,7 @@ export class Collections extends CustomHTML {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
             });
             // Affichage de la première collection de la liste
-            this.collection = e.detail[0];
-            dispatchEvent(new CustomEvent('GET-NOTICES', { detail: e.detail[0] }));
+            this.initCollection(e.detail[0]);
         });
         /** Créer les notices une fois les données reçues */
         addEventListener("SET-NOTICES", (e) => this.setNotices());
@@ -61,6 +60,14 @@ export class Collections extends CustomHTML {
             this.imagesObserver.observe(image);
         });
     }
+    /** Afficher les noties et filtres de la collection */
+    initCollection(c) {
+        this.collection = c;
+        dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
+        // Afficher les séries de la collection
+        this.setSeriesFiltre();
+    }
+    ;
     /**
      * Créer les notices à la volée dans le DOM
      */
@@ -127,9 +134,6 @@ export class Collections extends CustomHTML {
             this.lazyImages.push(ar);
             this.setLazy();
         });
-        // Activer le diaporama des notices
-        // Afficher les séries de la collection
-        this.setSeriesFiltre();
     }
     /**
      * Renseigner la collection
@@ -155,26 +159,21 @@ export class Collections extends CustomHTML {
         u.innerHTML = li;
         ar.appendChild(u);
         this.cEl.appendChild(ar);
-        // this.setSeries();
     }
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
         this.seriesEl.innerHTML = '';
         const h4 = document.createElement('h4');
-        // const btn = document.createElement('button');
-        // h4.className = 'accordeon';
         h4.textContent = FR.filtre_series;
-        // this.accordeon(h4);
         const ul = document.createElement('ul');
         ul.className = 'series';
         this.collection.series.forEach(d => {
             const li = document.createElement('li');
             li.textContent = d;
+            console.log("Redesine les séries");
             li.addEventListener('click', (e) => {
-                // e.currentTarget.classList.toggle('actif');
-                e.currentTarget.className = 'actif';
-                this.filtres.series.includes(d) ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
-                console.log(e.currentTarget, e.currentTarget.classList, this.filtres);
+                e.currentTarget.classList.toggle('actif');
+                this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
                 this.filtreNotices();
             });
             ul.appendChild(li);
@@ -255,8 +254,7 @@ export class Collections extends CustomHTML {
         div.appendChild(aN);
         // Cliquer sur l'image des notices pour afficher les notices de la collection
         aN.addEventListener('click', () => {
-            this.collection = c;
-            dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
+            this.initCollection(c);
         });
         // Infos
         const ul = this.setTextEl('ul');
