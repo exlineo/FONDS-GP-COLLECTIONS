@@ -36,10 +36,10 @@ export class Notice extends CustomHTML {
         this.notice = Donnees.noticesFiltrees[Donnees.indexN]; // Métadonnées de la notice
         const titre = document.createElement('h1');
         titre.textContent = this.notice.dc.title;
-        media.appendChild(titre);
+        donnees.appendChild(titre);
         const description = document.createElement('blockquote');
         description.textContent = this.notice.dc.description;
-        media.appendChild(description);
+        donnees.appendChild(description);
         let f = this.notice.dc.format;
         if (f.indexOf('image') != -1) {
             media.appendChild(this.setNoticeImageEl(this.notice));

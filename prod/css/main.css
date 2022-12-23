@@ -29,7 +29,7 @@ body {
 body {
     display: flex;
     flex-flow: row nowrap;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
@@ -493,6 +493,7 @@ input[type=radio] {
     background-size: 100%;
     transition: all .3s ease;
     position: relative;
+    overflow:hidden;
 }
 
 .notices a>video,
@@ -519,7 +520,7 @@ input[type=radio] {
     background-size: 120%;
 }
 
-.notices a>p {
+.notices a > p {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -531,7 +532,7 @@ input[type=radio] {
     padding: 0;
 }
 
-.notices a>p>span {
+.notices a > p > span {
     display: flex;
     margin: auto;
     padding: 20px 25px;
@@ -539,7 +540,7 @@ input[type=radio] {
     border-radius: 15%;
 }
 
-.notices a:hover>p {
+.notices a:hover > p {
     opacity: 1;
 }
 
@@ -548,22 +549,35 @@ input[type=radio] {
     transform: scale(1.2);
 }
 
-.notices article>p {
+.notices article > p {
     color: white;
     text-shadow: 0px 1px 3px black;
     padding: 10px;
-    font-weight: bold;
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 30;
+    z-index: 10;
     pointer-events: none;
+    width:100%;
+    transition:all .3s ease;
+    box-sizing: border-box;
+    margin:0;
+    margin-bottom:-20px;
+    padding:0px 10px 10px;
 }
-
-.notices article>p>h3 {
+.notices article > p > h4 {
     text-align: left;
+    font-variation-settings: 'wght' 600;
+    transition:all .3s ease;
 }
-
+.notices article:hover > p {
+    background-color: rgba(0,0,0,.7);
+    margin-bottom:0;
+    margin-top:0;
+}
+.notices article:hover > p > h4 {
+    margin-bottom:10px;
+}
 /* COLLECTIONS */
 
 .collection {
@@ -663,8 +677,7 @@ input[type=radio] {
     margin-right:120px;
     overflow-x:hidden;
 }
-.notice h1,
-.notice blockquote {
+.notice h1 {
     margin: 20px 0 10px;
 }
 
@@ -740,12 +753,14 @@ input[type=radio] {
 }
 
 .notice #donnees {
-    padding: 100px 20px 20px;
+    padding: 20px;
     width: 30%;
     box-sizing: border-box;
     flex-flow:column nowrap;
 }
-
+.notice #donnees blockquote{
+    margin:20px 0;
+}
 .notice #donnees>article {
     padding: 0;
     width:100%;
@@ -759,7 +774,9 @@ input[type=radio] {
     height: auto;
     width: 100%;
 }
-
+.b{
+    font-variation-settings: 'wght' 600;
+}
 img.media {
     max-width: 100%;
 }

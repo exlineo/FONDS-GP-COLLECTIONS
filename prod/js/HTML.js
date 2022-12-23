@@ -16,7 +16,7 @@ export class CustomHTML {
         for (let i in o) {
             let li = document.createElement('li');
             if (typeof o[i] == 'string') {
-                li.innerHTML = `${FR[i]} : <strong>${o[i].toString()}</strong>`;
+                li.innerHTML = `${FR[i]} : <span class="b">${o[i].toString()}</span>`;
                 ul.appendChild(li);
             }
             else if (Array.isArray(o[i])) {
@@ -124,7 +124,7 @@ export class CustomHTML {
     setNoticeImageEl(n) {
         const ar = document.createElement('article');
         let img = new Image();
-        img.src = n.media.url.indexOf('https://') != -1 ? n.media.url : `${Donnees.config.g.s3}${n.nema.set_name}/${n.media.file}`;
+        img.src = n.media.url.indexOf('https://') != -1 && n.media.url.indexOf('.s3') != -1 ? n.media.url : `${Donnees.config.g.s3}${n.nema.set_name}/${n.media.file}`;
         ;
         img.className = 'media';
         img.setAttribute('loading', 'lazy');

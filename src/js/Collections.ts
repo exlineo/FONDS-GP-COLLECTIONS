@@ -89,8 +89,7 @@ export class Collections extends CustomHTML {
             const dc = n.dc;
             const media = n.media;
             const nema = n.nema;
-            const url = media.url.indexOf('https://') != -1 ? media.url : `${Donnees.config.g.s3}${nema.set_name}/${media.file}`;
-            // const url = `${Donnees.config.g.s3}${nema.set_name}/${media.file}`;
+            const url = media.url.indexOf('https://') != -1 && media.url.indexOf('.s3') != -1 ? media.url : `${Donnees.config.g.s3}${nema.set_name}/${media.file}`;
             const ar = document.createElement('article');
             ar.className = 'lazy';
             ar.dataset.i = String(i);
@@ -124,12 +123,14 @@ export class Collections extends CustomHTML {
             // ar.style.backgroundImage = `url(${media.url})`;
             const p = document.createElement('p');
             p.setAttribute('title', dc.title);
-            // console.log(dc.hasOwnProperty('description'), dc.hasOwnProperty('description') ? `<span>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</span>` : '');
-            p.innerHTML = `<h3>${dc.title}</h3>` + dc.hasOwnProperty('description') ? `<span>${dc.description}...</span>` : '';
-
+            const resume = 'description' in dc ? `<p>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</p>` : '';
+            console.log(dc.hasOwnProperty('description'), dc.hasOwnProperty('description') ? `<span>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</span>` : '');
+            p.innerHTML = `<h4>${dc.title}</h4> ${resume}`;
+            
             a.appendChild(pict);
-            ar.appendChild(p);
             ar.appendChild(a);
+            ar.appendChild(p); 
+            
             this.noticesEl.appendChild(ar);
             // Ouvrir les détails de la notice cliquée
             ar.addEventListener('click', (e) => {
@@ -177,11 +178,11 @@ export class Collections extends CustomHTML {
 
         const ul = document.createElement('ul');
         ul.className = 'series';
-
+        
+        console.log(this.collection.series!);
         this.collection.series!.forEach(d => {
             const li = document.createElement('li');
             li.textContent = d;
-            console.log("Redesine les séries");
             li.addEventListener('click', (e:any) => {
                 e.currentTarget.classList.toggle('actif');
                 this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);

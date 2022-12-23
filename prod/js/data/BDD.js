@@ -78,9 +78,10 @@ export class BDD {
             })
                 .then(d => d.json())
                 .then(n => {
-                Donnees.notices[this.collection.idcollections] = n.Responses.notices;
-                Donnees.noticesFiltrees = n.Responses.notices;
-                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n.Responses.notices }));
+                console.log(n);
+                Donnees.notices[this.collection.idcollections] = n;
+                Donnees.noticesFiltrees = n;
+                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n }));
             })
                 .catch(er => console.log(er));
         }
