@@ -9,6 +9,7 @@ export class BDD {
         this.collection = {};
         this.notice = {};
         addEventListener('GET-NOTICES', (e) => { this.getNotices(e); });
+        addEventListener('RECHERCHE', (e) => { this.rechercher(e); });
     }
     /**
      * Etablir la racine de la page en cours
@@ -50,6 +51,16 @@ export class BDD {
         })
             .catch(er => console.log(er));
     }
+    /** (déprécié) Récupérer les traductions en préparation d'un multilangues */
+    getTrad() {
+        fetch(PARAMS.CONFIG)
+            .then(d => d.json())
+            .then(d => {
+            Donnees.t = d;
+            this.getCollections();
+        })
+            .catch(er => console.log(er));
+    }
     /**
      * Get Collections
      */
@@ -70,7 +81,6 @@ export class BDD {
     /** Récupérer les notices dans la base de données à partir  */
     getNotices(e) {
         this.collection = e.detail;
-        console.log(this.collection);
         if (!Donnees.notices[this.collection.idcollections]) {
             return fetch(Donnees.config.g.notices, {
                 method: 'POST',
@@ -78,7 +88,6 @@ export class BDD {
             })
                 .then(d => d.json())
                 .then(n => {
-                console.log(n);
                 Donnees.notices[this.collection.idcollections] = n;
                 Donnees.noticesFiltrees = n;
                 dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n }));
@@ -89,5 +98,28 @@ export class BDD {
             Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
             dispatchEvent(new CustomEvent('SET-NOTICES', { detail: Donnees.notices[this.collection.idcollections] }));
         }
+    }
+    /** Rechercher dans la base de données */
+    rechercher(e) {
+        const search = e.detail;
+        search.notices ? this.searchNotices(search) : this.searchCollections(search);
+    }
+    /** Rechercher dans les notices */
+    searchNotices(r) {
+        fetch(Donnees.config.g.search)
+            .then(d => d.json())
+            .then(j => {
+            this.setLocalData('collections', j);
+            Donnees.collections = j;
+            // Gérer la liste des collections
+            new Collections(document.querySelector('#filtres'), document.getElementById('collections'), document.querySelector('#look'));
+            dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
+            // Classe pour faire des recherches
+            // new Recherche(document.querySelector('#recherche > form')!);
+        })
+            .catch(er => console.log(er));
+    }
+    /** Rechercher dans les collections */
+    searchCollections(r) {
     }
 }

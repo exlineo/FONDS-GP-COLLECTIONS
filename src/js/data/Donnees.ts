@@ -11,6 +11,8 @@ export class Donnees extends BDD {
     static config: ConfigI = <ConfigI>{}; // Données de configuration
     static lazyObserv:Array<HTMLElement> = []; // Lazy loading sur les images
     static indexN:number = 0; // Index de la notice en cours
+    static lang:any = 'fr'; // Langue en cours sur le site
+    static t:any = {}; // Traductions chargées
 
     contact = {
         mail: "contact@exlineo.com",

@@ -33,7 +33,7 @@ body {
     font-weight: 400;
 }
 
-body>* {
+body> * {
     padding: 0;
     margin: 0;
     /* display: flex; */
@@ -41,16 +41,16 @@ body>* {
     border-right: 1px solid var(--t);
     scroll-behavior: smooth;
 }
-
+* {
+    box-sizing: border-box;
+}
 h2,
 h3, h4 {
     font-variation-settings: 'wght' 400;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
 }
 h1 {
-    font-family: 'Poppins', sans-serif;
     font-variation-settings: 'wght' 100;
     font-weight: 100;
 }
@@ -192,7 +192,7 @@ aside>section>nav a {
     /* position:relative; */
 }
 
-aside>section>nav span {
+aside>section>nav>span {
     position: absolute;
     padding: 10px 16px;
     background-color: var(--s);
@@ -400,6 +400,7 @@ fieldset {
     display: flex;
     flex-flow: column nowrap;
     margin: 10px 0;
+    /* width:100%; */
 }
 
 form>div {
@@ -407,15 +408,34 @@ form>div {
     flex-direction: row;
     justify-content: flex-end;
 }
-
+label{
+    margin:5px 0;
+}
 input {
     transition: all .3s ease;
     border: 1px solid yellowgreen;
     border-bottom: 1px solid black;
     padding: 10px 16px;
     margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
-
+select {
+    transition: all .3s ease;
+    border: 1px solid yellowgreen;
+    border-bottom: 1px solid black;
+    padding: 10px 16px;
+    font-family: 'Raleway', sans-serif;
+}
+#recherche input[type=text], #recherche select{
+    width:100%;
+}
+#recherche form span{
+    width:100%;
+    font-style: italic;
+    font-size: small;
+    margin:5px;
+    text-align: center;
+}
 input[type=submit] {
     border: none;
     background-color: var(--v);
@@ -1089,28 +1109,18 @@ audio.media {
 
 
 /* width */
-
 ::-webkit-scrollbar {
     width: 10px;
 }
-
-
 /* Track */
-
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-
-
 /* Handle */
-
 ::-webkit-scrollbar-thumb {
     background: yellow;
 }
-
-
 /* Handle on hover */
-
 ::-webkit-scrollbar-thumb:hover {
     background: yellowgreen;
 }

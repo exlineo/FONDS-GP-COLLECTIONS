@@ -18,13 +18,13 @@ export class Collections extends CustomHTML {
         this.notice = {};
         this.lazyImages = []; // Liste des éléments HTML recevant un lazyloading
         this.filtres = { libre: '', series: [] };
-        // console.log("Collection", n, s, c, o, f);
         this.seriesEl = s;
-        console.log(this.noticeEl);
         this.cEl = c; // HTML pour écrire la liste des collections
         this.f = f; // Formulaire de recherche
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e) => {
+            this.cEl.appendChild(this.setTextEl('h2', FR.COLLECTIONS));
+            // Ajouter la description des collections
             e.detail.forEach((c, i) => {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
             });
@@ -36,7 +36,6 @@ export class Collections extends CustomHTML {
         // Filtrer les notices
         this.f.addEventListener('input', () => {
             this.filtres.libre = this.f.value;
-            console.log("Données insérées");
             this.filtreNotices();
         });
         /** Ecouteur sur le focus des contenus pour charger ou pas les médias */
@@ -77,7 +76,6 @@ export class Collections extends CustomHTML {
         let i = 0;
         // Créer les notices sur l'interface
         Donnees.noticesFiltrees.forEach((n, index) => {
-            // console.log(n);
             const dc = n.dc;
             const media = n.media;
             const nema = n.nema;
@@ -117,7 +115,6 @@ export class Collections extends CustomHTML {
             const p = document.createElement('p');
             p.setAttribute('title', dc.title);
             const resume = 'description' in dc ? `<p>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</p>` : '';
-            console.log(dc.hasOwnProperty('description'), dc.hasOwnProperty('description') ? `<span>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</span>` : '');
             p.innerHTML = `<h4>${dc.title}</h4> ${resume}`;
             a.appendChild(pict);
             ar.appendChild(a);
@@ -125,7 +122,6 @@ export class Collections extends CustomHTML {
             this.noticesEl.appendChild(ar);
             // Ouvrir les détails de la notice cliquée
             ar.addEventListener('click', (e) => {
-                console.log("Vignette appelées", index, ar.dataset.i);
                 this.slide();
                 Donnees.indexN = index;
                 this.notice = new Notice();
@@ -167,7 +163,6 @@ export class Collections extends CustomHTML {
         h4.textContent = FR.filtre_series;
         const ul = document.createElement('ul');
         ul.className = 'series';
-        console.log(this.collection.series);
         this.collection.series.forEach(d => {
             const li = document.createElement('li');
             li.textContent = d;

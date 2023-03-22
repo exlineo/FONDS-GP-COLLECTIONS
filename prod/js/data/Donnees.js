@@ -1,5 +1,5 @@
 import { BDD } from "./BDD.js";
-export class Donnees extends BDD {
+class Donnees extends BDD {
     constructor() {
         super(...arguments);
         this.contact = {
@@ -58,3 +58,6 @@ Donnees.menu = [];
 Donnees.config = {}; // Données de configuration
 Donnees.lazyObserv = []; // Lazy loading sur les images
 Donnees.indexN = 0; // Index de la notice en cours
+Donnees.lang = 'fr'; // Langue en cours sur le site
+Donnees.t = {}; // Traductions chargées
+export { Donnees };

@@ -80,9 +80,11 @@ export abstract class CustomHTML {
         return btn;
     }
     /** Créer une liste déroulante */
-    setSelect(options:Array<{nom:string, val:any}>){
+    setSelect(options:Array<{nom:string, val:any}>, name?:string, multiple?:boolean){
         const sel = document.createElement('select');
         let html = ''
+        if(name) sel.setAttribute('name', name);
+        if(multiple) sel.setAttribute('multiple', 'true');
         options.forEach(op => {
             html += `<option value="${op.val}">${op.nom}</option>`
         });

@@ -11,9 +11,7 @@ window.addEventListener("load", function () {
         document.querySelector('main').classList.toggle('ouvert');
     });
 });
-/**
- * Lancer l'application
- */
+/** Lancer l'application */
 function launch() {
     const persiste = new Persistance(document.querySelector('body>aside'), document.querySelector('body>main'));
 }

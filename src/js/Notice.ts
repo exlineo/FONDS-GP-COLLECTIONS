@@ -28,7 +28,6 @@ export class Notice extends CustomHTML {
     }
     /** Création d'une notice */
     setNoticeEl(){
-        console.log("Notice appelée");
         const section = document.createElement('section');
         section.className = 'notice';
 

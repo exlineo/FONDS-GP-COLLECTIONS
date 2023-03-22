@@ -5,6 +5,12 @@ export interface ConfigI{
     g:any; // Tous les liens pour obtenir les données
     contact?:any; // Les informations de contact
 }
+/** Effectuer une recherche dans les notices ou les collections */
+export interface SearchI {
+    collections:string;
+    notices:boolean;
+    libre:Array<string>;
+}
 /** Notices génériques */
 export interface NoticeI {
     _id?:any;

@@ -23,7 +23,7 @@ export class Menu {
     setMenu() {
         // this.setMenuItems();
         for (let i in this.nav) {
-            console.log(i);
+            console.log("Elements dans Nav", i, this.nav);
         }
     };
     /**
@@ -32,10 +32,11 @@ export class Menu {
     setMenuItems() {
         const ul = document.createElement('ul');
         let i = 0;
+        console.log("Data menus", this.data);
         // Boucle le menu pour générer les balises
         this.data.forEach(
             m => {
-                console.log(m);
+                console.log("Menu items", m);
                 const li = document.createElement('li');
                 const a = document.createElement('a');
 
@@ -47,6 +48,7 @@ export class Menu {
                 ul.appendChild(li);
                 // Gérer le clic sur un lien
                 a.onclick = (i) => {
+                    console.log("Evénement", i);
                     this.setCollection(i);
                 };
                 // li.onclick = li.dispatchEvent(this.collecEvent);

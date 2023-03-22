@@ -1,6 +1,6 @@
 import { Donnees } from './Donnees.js';
 import PARAMS from "./params.js";
-import { CollectionI, NoticeI, ConfigI } from "../models/ModelesI.js";
+import { CollectionI, NoticeI, ConfigI, SearchI } from "../models/ModelesI.js";
 import { Collections } from '../Collections.js';
 import { Recherche } from '../Recherche.js';
 
@@ -14,6 +14,7 @@ export abstract class BDD {
 
     constructor() {
         addEventListener('GET-NOTICES', (e) => { this.getNotices(e) });
+        addEventListener('RECHERCHE', (e) => { this.rechercher(e) });
     }
     /**
      * Etablir la racine de la page en cours
@@ -52,6 +53,16 @@ export abstract class BDD {
             })
             .catch(er => console.log(er));
     }
+    /** (déprécié) Récupérer les traductions en préparation d'un multilangues */
+    getTrad() {
+        fetch(PARAMS.CONFIG)
+            .then(d => d.json())
+            .then(d => {
+                Donnees.t = d;
+                this.getCollections();
+            })
+            .catch(er => console.log(er));
+    }
     /**
      * Get Collections
      */
@@ -72,7 +83,6 @@ export abstract class BDD {
     /** Récupérer les notices dans la base de données à partir  */
     getNotices(e: any) {
         this.collection = e.detail;
-        console.log(this.collection);
         if (!Donnees.notices[this.collection.idcollections]) {
             return fetch(Donnees.config.g.notices, {
                 method: 'POST',
@@ -80,7 +90,6 @@ export abstract class BDD {
             })
                 .then(d => d.json())
                 .then(n => {
-                    console.log(n);
                     Donnees.notices[this.collection.idcollections] = n;
                     Donnees.noticesFiltrees = n;
                     dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n }));
@@ -91,5 +100,29 @@ export abstract class BDD {
             dispatchEvent(new CustomEvent('SET-NOTICES', { detail: Donnees.notices[this.collection.idcollections] }));
         }
 
+    }
+    /** Rechercher dans la base de données */
+    rechercher(e: any) {
+        const search: SearchI = e.detail;
+        search.notices ? this.searchNotices(search) : this.searchCollections(search);
+    }
+    /** Rechercher dans les notices */
+    searchNotices(r: SearchI) {
+        fetch(Donnees.config.g.search)
+            .then(d => d.json())
+            .then(j => {
+                this.setLocalData('collections', j);
+                Donnees.collections = j;
+                // Gérer la liste des collections
+                new Collections(document.querySelector('#filtres'), document.getElementById('collections'), document.querySelector('#look'));
+                dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: j }));
+                // Classe pour faire des recherches
+                // new Recherche(document.querySelector('#recherche > form')!);
+            })
+            .catch(er => console.log(er));
+    }
+    /** Rechercher dans les collections */
+    searchCollections(r: SearchI) {
+        
     }
 }
