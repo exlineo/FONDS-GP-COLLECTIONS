@@ -3,16 +3,16 @@ import { BDD } from "./BDD.js";
 
 export class Donnees extends BDD {
     static collections: Array<CollectionI> = []; // Liste des collections récupérer de la base
-    static fonds:Array<any> = []; // Liste des fonds disponibles (pas utilisé)
+    static fonds: Array<any> = []; // Liste des fonds disponibles (pas utilisé)
     static notices: any = []; // Notices des collections affichées (pour éviter de recharger les données)
     static noticesFiltrees: Array<NoticeI> = []; // Liste des notices après avoir été filtrées
     static page: any = {};
     static menu: Array<any> = [];
     static config: ConfigI = <ConfigI>{}; // Données de configuration
-    static lazyObserv:Array<HTMLElement> = []; // Lazy loading sur les images
-    static indexN:number = 0; // Index de la notice en cours
-    static lang:any = 'fr'; // Langue en cours sur le site
-    static t:any = {}; // Traductions chargées
+    static lazyObserv: Array<HTMLElement> = []; // Lazy loading sur les images
+    static indexN: number = 0; // Index de la notice en cours
+    static lang: any = 'fr'; // Langue en cours sur le site
+    static t: any = {}; // Traductions chargées
 
     contact = {
         mail: "contact@exlineo.com",
@@ -39,10 +39,13 @@ export class Donnees extends BDD {
                 break;
         }
     }
-    static setStatic(i: string, data: any){
+    static setStatic(i: string, data: any) {
         switch (i) {
             case ('collections'):
                 Donnees.collections = data;
+                break;
+            case ('noticesFiltrees'):
+                Donnees.noticesFiltrees = data;
                 break;
             case ('notices'):
                 Donnees.notices = data;
@@ -53,11 +56,14 @@ export class Donnees extends BDD {
             case ('menu'):
                 Donnees.menu = data;
                 break;
+            case ('config'):
+                Donnees.config.g = data;
+                break;
             default:
                 break;
         }
     }
-    setFonds(){
-        
+    setFonds() {
+
     }
 }

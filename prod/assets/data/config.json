@@ -3,6 +3,7 @@
         "collections":"https://gogeazy2jqijtkjhdyz6xv6j640zlwfw.lambda-url.eu-west-3.on.aws/",
         "notices":"https://xick6ler3y6zdohj6cyxru4vxa0gbalc.lambda-url.eu-west-3.on.aws/",
         "oaipmh":"./assets/data/collections.json",
+        "search":"https://ghgo7llnc6wflpudg2wie3tbw40zdmev.lambda-url.eu-west-3.on.aws/",
         "s3":"https://fondsgpinfrastack-sets45bdfb13-3ng1gftpoppq.s3.eu-west-3.amazonaws.com/"
     }
 }

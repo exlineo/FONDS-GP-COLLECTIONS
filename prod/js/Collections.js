@@ -24,6 +24,7 @@ export class Collections extends CustomHTML {
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e) => {
             this.cEl.appendChild(this.setTextEl('h2', FR.COLLECTIONS));
+            console.log(e.detail);
             // Ajouter la description des collections
             e.detail.forEach((c, i) => {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
@@ -32,7 +33,7 @@ export class Collections extends CustomHTML {
             this.initCollection(e.detail[0]);
         });
         /** Créer les notices une fois les données reçues */
-        addEventListener("SET-NOTICES", (e) => this.setNotices());
+        addEventListener('SET-NOTICES', (e) => this.setNotices());
         // Filtrer les notices
         this.f.addEventListener('input', () => {
             this.filtres.libre = this.f.value;
@@ -63,8 +64,6 @@ export class Collections extends CustomHTML {
     initCollection(c) {
         this.collection = c;
         dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
-        // Afficher les séries de la collection
-        this.setSeriesFiltre();
     }
     ;
     /**
@@ -130,6 +129,8 @@ export class Collections extends CustomHTML {
             this.lazyImages.push(ar);
             this.setLazy();
         });
+        // Afficher les séries de la collection
+        this.setSeriesFiltre();
     }
     /**
      * Renseigner la collection
@@ -158,23 +159,26 @@ export class Collections extends CustomHTML {
     }
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
+        console.log("Set séries appelée", this.seriesEl, this.collection);
         this.seriesEl.innerHTML = '';
-        const h4 = document.createElement('h4');
-        h4.textContent = FR.filtre_series;
-        const ul = document.createElement('ul');
-        ul.className = 'series';
-        this.collection.series.forEach(d => {
-            const li = document.createElement('li');
-            li.textContent = d;
-            li.addEventListener('click', (e) => {
-                e.currentTarget.classList.toggle('actif');
-                this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
-                this.filtreNotices();
+        if (this.collection.series.length > 0) {
+            const h4 = document.createElement('h4');
+            h4.textContent = FR.filtre_series;
+            const ul = document.createElement('ul');
+            ul.className = 'series';
+            this.collection.series.forEach(d => {
+                const li = document.createElement('li');
+                li.textContent = d;
+                li.addEventListener('click', (e) => {
+                    e.currentTarget.classList.toggle('actif');
+                    this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
+                    this.filtreNotices();
+                });
+                ul.appendChild(li);
             });
-            ul.appendChild(li);
-        });
-        // this.seriesEl.appendChild(h4);
-        this.seriesEl.appendChild(ul);
+            // this.seriesEl.appendChild(h4);
+            this.seriesEl.appendChild(ul);
+        }
     }
     /** Filtrer les notices de la collection */
     filtreNotices() {

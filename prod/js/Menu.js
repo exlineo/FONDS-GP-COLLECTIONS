@@ -24,30 +24,30 @@ export class Menu {
     /**
      * Lister les collections et créer les liens de menu
      */
-    setMenuItems() {
-        const ul = document.createElement('ul');
-        let i = 0;
-        console.log("Data menus", this.data);
-        // Boucle le menu pour générer les balises
-        this.data.forEach(m => {
-            console.log("Menu items", m);
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.setAttribute('title', m.infos);
-            a.setAttribute('data-index', String(i));
-            a.innerHTML = `<strong>${m.titre}</strong><br><em>(fonds ${m.data.fonds})</em>`;
-            li.appendChild(a);
-            ul.appendChild(li);
-            // Gérer le clic sur un lien
-            a.onclick = (i) => {
-                console.log("Evénement", i);
-                this.setCollection(i);
-            };
-            // li.onclick = li.dispatchEvent(this.collecEvent);
-            ++i;
-        });
-        this.nav.appendChild(ul);
-    }
+    // setMenuItems() {
+    //     const ul = document.createElement('ul');
+    //     let i = 0;
+    //     console.log("Data menus", this.data);
+    //     // Boucle le menu pour générer les balises
+    //     this.data.forEach(
+    //         m => {
+    //             console.log("Menu items", m);
+    //             const li = document.createElement('li');
+    //             const a = document.createElement('a');
+    //             a.setAttribute('title', m.infos);
+    //             a.setAttribute('data-index', String(i));
+    //             a.innerHTML = `<strong>${m.titre}</strong><br><em>(fonds ${m.data.fonds})</em>`;
+    //             li.appendChild(a);
+    //             ul.appendChild(li);
+    //             // Gérer le clic sur un lien
+    //             a.onclick = (i) => {
+    //                 console.log("Evénement", i);
+    //                 this.setCollection(i);
+    //             };
+    //             ++i;
+    //         });
+    //     this.nav.appendChild(ul);
+    // }
     // Charger un template HTML
     loadTemplate() {
         console.log("template load");
@@ -61,11 +61,11 @@ export class Menu {
      * @param {Event} e Evénement reçu
      * @param {Object} m Collection à gérer
      */
-    setCollection(i) {
-        i.preventDefault();
-        // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
-        dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: i.currentTarget.dataset.index }));
-    }
+    // setCollection(i: any) {
+    //     i.preventDefault();
+    //     // Créer un événement pour envoyer l'information qu'une case a été cochée avec son ID (cf. Mecanique)
+    //     dispatchEvent(new CustomEvent('SET-COLLECTIONS', { detail: i.currentTarget.dataset.index }));
+    // }
     // Ecrire un template dans le DOM
     getTemplate(p, i) {
         fetch('./pages/' + p.lien)

@@ -21,9 +21,9 @@ export class Recherche extends CustomHTML{
         this.form.addEventListener('submit', (e:any)=>{
             e.preventDefault();
             const search:SearchI = <SearchI>{};
-            // e.target.elements['CorN'].value == 'Notices' ? true : false;
+            search.notices = e.target.elements['CorN'].value == 'Notices' ? true : false;
             search.libre = e.target.elements['libre'].value.split(',');
-            search.collections = e.target.elements['collections'].value;
+            search.collection = e.target.elements['collections'].value;
             // search.collections = e.target.elements['collections'].selectedOptions.map((o:any) => o.value);
             // for(let o of e.target.elements['collections'].selectedOptions){ search.collections.push(o.value)};
             console.log(search);
@@ -71,7 +71,7 @@ export class Recherche extends CustomHTML{
     setCollections(){
         const field = document.createElement('fieldset');
         const label = this.setTextEl('label', FR.RECHERCHE_COLLECTIONS)
-        const options:any = [{nom:'Chercher dans une collection', val:''}];
+        const options:any = [{nom:FR.RECHERCHE_COLLECTIONS, val:''}];
         Donnees.collections.forEach(c => {
             options.push({nom:c.title, val:c.title});
         });

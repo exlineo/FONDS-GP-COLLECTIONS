@@ -7,7 +7,7 @@ export interface ConfigI{
 }
 /** Effectuer une recherche dans les notices ou les collections */
 export interface SearchI {
-    collections:string;
+    collection:string;
     notices:boolean;
     libre:Array<string>;
 }
@@ -35,6 +35,19 @@ export interface CollectionI{
     notices?:Array<string>;
     series?:Array<string>;
     selected?:boolean;
+}
+export class Collection implements CollectionI {
+    idcollections = '';
+    title = '';
+    alias = '';
+    description = '';
+    type = '';
+    creator = '';
+    funds = '';
+    language? = '';
+    date = '';
+    notices =  [];
+    series = [];
 }
 /** Modèle d'un Set de données */
 export interface SetI {

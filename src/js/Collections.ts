@@ -34,7 +34,7 @@ export class Collections extends CustomHTML {
         addEventListener('SET-COLLECTIONS', (e: any) => {
 
             this.cEl.appendChild(this.setTextEl('h2', FR.COLLECTIONS));
-
+            console.log(e.detail);
             // Ajouter la description des collections
             e.detail.forEach((c: CollectionI, i: number) => {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
@@ -43,8 +43,8 @@ export class Collections extends CustomHTML {
             this.initCollection(e.detail[0]);
         });
         /** Créer les notices une fois les données reçues */
-        addEventListener("SET-NOTICES", (e: any) => this.setNotices());
-        
+        addEventListener('SET-NOTICES', (e: any) => this.setNotices());
+
         // Filtrer les notices
         this.f.addEventListener('input', () => {
             this.filtres.libre = this.f.value;
@@ -72,11 +72,9 @@ export class Collections extends CustomHTML {
         });
     }
     /** Afficher les noties et filtres de la collection */
-    initCollection(c:any){
+    initCollection(c: any) {
         this.collection = c;
         dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
-        // Afficher les séries de la collection
-        this.setSeriesFiltre();
     };
     /**
      * Créer les notices à la volée dans le DOM
@@ -86,7 +84,7 @@ export class Collections extends CustomHTML {
         this.noticesEl!.innerHTML = '';
         let i = 0;
         // Créer les notices sur l'interface
-        Donnees.noticesFiltrees.forEach((n: any, index:number) => {
+        Donnees.noticesFiltrees.forEach((n: any, index: number) => {
             const dc = n.dc;
             const media = n.media;
             const nema = n.nema;
@@ -126,11 +124,11 @@ export class Collections extends CustomHTML {
             p.setAttribute('title', dc.title);
             const resume = 'description' in dc ? `<p>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</p>` : '';
             p.innerHTML = `<h4>${dc.title}</h4> ${resume}`;
-            
+
             a.appendChild(pict);
             ar.appendChild(a);
-            ar.appendChild(p); 
-            
+            ar.appendChild(p);
+
             this.noticesEl.appendChild(ar);
             // Ouvrir les détails de la notice cliquée
             ar.addEventListener('click', (e) => {
@@ -142,6 +140,9 @@ export class Collections extends CustomHTML {
             this.lazyImages.push(ar);
             this.setLazy();
         });
+
+        // Afficher les séries de la collection
+        this.setSeriesFiltre();
     }
     /**
      * Renseigner la collection
@@ -171,25 +172,28 @@ export class Collections extends CustomHTML {
     }
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
+        console.log("Set séries appelée", this.seriesEl, this.collection);
         this.seriesEl.innerHTML = '';
-        const h4 = document.createElement('h4');
-        h4.textContent = FR.filtre_series;
+        if (this.collection.series!.length > 0) {
+            const h4 = document.createElement('h4');
+            h4.textContent = FR.filtre_series;
 
-        const ul = document.createElement('ul');
-        ul.className = 'series';
-        
-        this.collection.series!.forEach(d => {
-            const li = document.createElement('li');
-            li.textContent = d;
-            li.addEventListener('click', (e:any) => {
-                e.currentTarget.classList.toggle('actif');
-                this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
-                this.filtreNotices();
-            })
-            ul.appendChild(li);
-        });
-        // this.seriesEl.appendChild(h4);
-        this.seriesEl.appendChild(ul);
+            const ul = document.createElement('ul');
+            ul.className = 'series';
+
+            this.collection.series!.forEach(d => {
+                const li = document.createElement('li');
+                li.textContent = d;
+                li.addEventListener('click', (e: any) => {
+                    e.currentTarget.classList.toggle('actif');
+                    this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
+                    this.filtreNotices();
+                })
+                ul.appendChild(li);
+            });
+            // this.seriesEl.appendChild(h4);
+            this.seriesEl.appendChild(ul);
+        }
     }
     /** Filtrer les notices de la collection */
     filtreNotices() {
@@ -202,10 +206,10 @@ export class Collections extends CustomHTML {
             Donnees.notices[this.collection.idcollections].forEach((n: any) => {
                 // Filtres dans les séries sélectionnées
                 this.filtres.series.forEach(f => {
-                    if(Array.isArray(n.nema.series)){
-                        if(n.nema.series.includes(f)) result.add(n);
-                    }else{
-                        if(n.nema.series.indexOf(f) != -1) result.add(n);
+                    if (Array.isArray(n.nema.series)) {
+                        if (n.nema.series.includes(f)) result.add(n);
+                    } else {
+                        if (n.nema.series.indexOf(f) != -1) result.add(n);
                     }
                 });
                 if (this.filtres.libre.length > 2) {
@@ -217,7 +221,7 @@ export class Collections extends CustomHTML {
             });
             Donnees.noticesFiltrees = [...result];
         };
-        
+
         // Une fois le tri opérer, afficher les notices
         this.setNotices();
     }

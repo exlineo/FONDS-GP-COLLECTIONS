@@ -33,6 +33,9 @@ class Donnees extends BDD {
             case ('collections'):
                 Donnees.collections = data;
                 break;
+            case ('noticesFiltrees'):
+                Donnees.noticesFiltrees = data;
+                break;
             case ('notices'):
                 Donnees.notices = data;
                 break;
@@ -41,6 +44,9 @@ class Donnees extends BDD {
                 break;
             case ('menu'):
                 Donnees.menu = data;
+                break;
+            case ('config'):
+                Donnees.config.g = data;
                 break;
             default:
                 break;
