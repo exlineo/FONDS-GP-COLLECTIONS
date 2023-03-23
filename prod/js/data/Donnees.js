@@ -1,3 +1,4 @@
+import { Collection } from "../models/ModelesI.js";
 import { BDD } from "./BDD.js";
 class Donnees extends BDD {
     constructor() {
@@ -56,6 +57,7 @@ class Donnees extends BDD {
     }
 }
 Donnees.collections = []; // Liste des collections récupérer de la base
+Donnees.collection = new Collection(); // Liste des collections récupérer de la base
 Donnees.fonds = []; // Liste des fonds disponibles (pas utilisé)
 Donnees.notices = []; // Notices des collections affichées (pour éviter de recharger les données)
 Donnees.noticesFiltrees = []; // Liste des notices après avoir été filtrées

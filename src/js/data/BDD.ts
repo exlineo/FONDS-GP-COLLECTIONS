@@ -11,8 +11,6 @@ export abstract class BDD {
     listeNotices: any = <{ idcollections: Array<NoticeI> }>{};
     collection: CollectionI = <CollectionI>{};
     notice: NoticeI = <NoticeI>{};
-    load: boolean = false;
-
     constructor() {
         addEventListener('GET-NOTICES', (e) => { this.getNotices(e) });
         addEventListener('RECHERCHE', (e) => { this.rechercher(e) });
@@ -51,7 +49,6 @@ export abstract class BDD {
             .then(d => {
                 // Donnees.config.g = d.getters;
                 this.setLocalData('config', d.getters);
-                console.log(Donnees.config);
                 this.getCollections();
             })
             .catch(er => console.log(er));
@@ -74,31 +71,28 @@ export abstract class BDD {
     }
     /** Récupérer les notices dans la base de données à partir  */
     async getNotices(e: any = null) {
+        this.load(); // Afficher le loader
         if(e){
-            console.log(e.detail);
             e.stopImmediatePropagation();
-            this.collection = e.detail;
         }
         // Récupérer les données
-        if (!Donnees.notices[this.collection.idcollections]) {
+        if (!Donnees.notices[Donnees.collection.idcollections]) {
             return await fetch(Donnees.config.g.notices, {
                 method: 'POST',
-                body: JSON.stringify(this.collection.notices)
+                body: JSON.stringify(Donnees.collection.notices)
             })
                 .then(d => d.json())
                 .then(n => {
-                    Donnees.notices[this.collection.idcollections] = n;
-                    console.log(Donnees.notices);
-                    // Donnees.noticesFiltrees = n;
-                    this.setLocalData('noticesFiltrees', Donnees.notices[this.collection.idcollections]);
+                    Donnees.notices[Donnees.collection.idcollections] = n;
+                    this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
                     this.setLocalData('notices', Donnees.notices); // Enregistrer les données en local pour éviter les requêtes
-                    dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n }));
+                    dispatchEvent(new CustomEvent('SET-NOTICES', { detail: {collection:Donnees.collection, notices:n} }));
                 })
                 .catch(er => console.log(er));
         } else {
-            // Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
-            this.setLocalData('noticesFiltrees', Donnees.notices[this.collection.idcollections]);
-            dispatchEvent(new CustomEvent('SET-NOTICES', { detail: Donnees.notices[this.collection.idcollections] }));
+            // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollections];
+            this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
+            dispatchEvent(new CustomEvent('SET-NOTICES', { detail: {collection:Donnees.collection, notices:Donnees.notices[Donnees.collection.idcollections]} }));
         }
     }
     /** Rechercher dans la base de données */
@@ -110,27 +104,27 @@ export abstract class BDD {
     /** Rechercher dans les notices */
     async searchNotices(r: SearchI) {
         await fetch(Donnees.config.g.search, {
-            method: "POST", // *GET, POST, PUT, DELETE, etc.
-            mode: "cors", // no-cors, *cors, same-origin
-            headers: {"Content-Type": "application/json"},
+            method: "POST",
             body: JSON.stringify(r), // body data type must match "Content-Type" header
           })
             .then(d => d.json())
             .then(j => {
                 this.setLocalData('noticesFiltrees', j);
-                this.collection = new Collection();
+                Donnees.collection = new Collection();
                 // Gérer la liste des collections
-                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: j }));
+                dispatchEvent(new CustomEvent('SET-NOTICES'));
             })
             .catch(er => console.log(er));
     }
     /** Rechercher dans les collections */
     searchCollections(r: SearchI) {
-        console.log(r);
         if (r.collection && r.collection.length > 0) {
-            this.collection = Donnees.collections.find(c => c.title == r.collection)!;
+            Donnees.collection = Donnees.collections.find(c => c.title == r.collection)!;
             this.getNotices();
-            // dispatchEvent(new CustomEvent('GET-NOTICES', { detail: this.collection }));
         }
+    }
+    /** Afficher un loader dans la page */
+    load(){
+        document.getElementById('loader')!.style.display = 'flex';
     }
 }

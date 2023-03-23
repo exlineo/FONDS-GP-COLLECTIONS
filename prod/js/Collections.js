@@ -24,7 +24,6 @@ export class Collections extends CustomHTML {
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e) => {
             this.cEl.appendChild(this.setTextEl('h2', FR.COLLECTIONS));
-            console.log(e.detail);
             // Ajouter la description des collections
             e.detail.forEach((c, i) => {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
@@ -62,7 +61,7 @@ export class Collections extends CustomHTML {
     }
     /** Afficher les noties et filtres de la collection */
     initCollection(c) {
-        this.collection = c;
+        Donnees.collection = c;
         dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
     }
     ;
@@ -70,6 +69,7 @@ export class Collections extends CustomHTML {
      * Créer les notices à la volée dans le DOM
      */
     setNotices() {
+        // Transmettre la collection avec les notices à afficher
         this.lazyImages = []; // Initialisation de la liste des images à suivre dans le load
         this.noticesEl.innerHTML = '';
         let i = 0;
@@ -131,6 +131,7 @@ export class Collections extends CustomHTML {
         });
         // Afficher les séries de la collection
         this.setSeriesFiltre();
+        this.deload();
     }
     /**
      * Renseigner la collection
@@ -139,18 +140,18 @@ export class Collections extends CustomHTML {
         this.cEl.innerHTML = '';
         const ar = document.createElement('article');
         let details = `
-                <h3>${this.collection.title}</h3>
-                <p>${this.collection.description}</p>
+                <h3>${Donnees.collection.title}</h3>
+                <p>${Donnees.collection.description}</p>
             `;
         ar.innerHTML = details;
         const u = document.createElement('ul');
         // let li = document.createElement('li');
         let li = `
                 <ul>
-                    ${this.collection.creator ? `<li>${FR.creator} : ${this.collection.creator}</li>` : null}
-                    ${this.collection.funds ? `<li>${FR.collection_funds} : ${this.collection.funds}</li>` : null}
-                    ${this.collection.type ? `<li>${FR.type} : ${this.collection.type}</li>` : null}
-                    ${this.collection.language ? `<li>${FR.language} : ${this.collection.language}</li>` : null}
+                    ${Donnees.collection.creator ? `<li>${FR.creator} : ${Donnees.collection.creator}</li>` : null}
+                    ${Donnees.collection.funds ? `<li>${FR.collection_funds} : ${Donnees.collection.funds}</li>` : null}
+                    ${Donnees.collection.type ? `<li>${FR.type} : ${Donnees.collection.type}</li>` : null}
+                    ${Donnees.collection.language ? `<li>${FR.language} : ${Donnees.collection.language}</li>` : null}
                 </ul>
             `;
         u.innerHTML = li;
@@ -159,14 +160,13 @@ export class Collections extends CustomHTML {
     }
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
-        console.log("Set séries appelée", this.seriesEl, this.collection);
         this.seriesEl.innerHTML = '';
-        if (this.collection.series.length > 0) {
+        if (Donnees.collection.series.length > 0) {
             const h4 = document.createElement('h4');
             h4.textContent = FR.filtre_series;
             const ul = document.createElement('ul');
             ul.className = 'series';
-            this.collection.series.forEach(d => {
+            Donnees.collection.series.forEach(d => {
                 const li = document.createElement('li');
                 li.textContent = d;
                 li.addEventListener('click', (e) => {
@@ -183,13 +183,13 @@ export class Collections extends CustomHTML {
     /** Filtrer les notices de la collection */
     filtreNotices() {
         if (this.filtres.libre.length < 3 && this.filtres.series.length == 0) {
-            Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
+            Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollections];
         }
         else {
             Donnees.noticesFiltrees = [];
             const libre = this.filtres.libre.toLocaleLowerCase(); // Ramener toutes les recherches en lowercase
             let result = new Set();
-            Donnees.notices[this.collection.idcollections].forEach((n) => {
+            Donnees.notices[Donnees.collection.idcollections].forEach((n) => {
                 // Filtres dans les séries sélectionnées
                 this.filtres.series.forEach(f => {
                     if (Array.isArray(n.nema.series)) {

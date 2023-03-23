@@ -1086,7 +1086,20 @@ audio.media {
     }
 }
 
-
+#loader{
+    position:absolute;
+    z-index:199;
+    top:0;
+    left:var(--w);
+    width:calc(100vw - var(--w));
+    height:100vh;
+    display:none;
+    background-color: rgba(255,255,255,0.5);
+}
+#loader > img {
+    width:150px;
+    margin:auto;
+}
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1000px) and (max-width: 1400px) {

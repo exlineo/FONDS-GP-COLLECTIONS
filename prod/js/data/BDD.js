@@ -18,7 +18,6 @@ export class BDD {
         this.listeNotices = {};
         this.collection = {};
         this.notice = {};
-        this.load = false;
         addEventListener('GET-NOTICES', (e) => { this.getNotices(e); });
         addEventListener('RECHERCHE', (e) => { this.rechercher(e); });
     }
@@ -59,7 +58,6 @@ export class BDD {
             .then(d => {
             // Donnees.config.g = d.getters;
             this.setLocalData('config', d.getters);
-            console.log(Donnees.config);
             this.getCollections();
         })
             .catch(er => console.log(er));
@@ -85,32 +83,29 @@ export class BDD {
     /** Récupérer les notices dans la base de données à partir  */
     getNotices(e = null) {
         return __awaiter(this, void 0, void 0, function* () {
+            this.load(); // Afficher le loader
             if (e) {
-                console.log(e.detail);
                 e.stopImmediatePropagation();
-                this.collection = e.detail;
             }
             // Récupérer les données
-            if (!Donnees.notices[this.collection.idcollections]) {
+            if (!Donnees.notices[Donnees.collection.idcollections]) {
                 return yield fetch(Donnees.config.g.notices, {
                     method: 'POST',
-                    body: JSON.stringify(this.collection.notices)
+                    body: JSON.stringify(Donnees.collection.notices)
                 })
                     .then(d => d.json())
                     .then(n => {
-                    Donnees.notices[this.collection.idcollections] = n;
-                    console.log(Donnees.notices);
-                    // Donnees.noticesFiltrees = n;
-                    this.setLocalData('noticesFiltrees', Donnees.notices[this.collection.idcollections]);
+                    Donnees.notices[Donnees.collection.idcollections] = n;
+                    this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
                     this.setLocalData('notices', Donnees.notices); // Enregistrer les données en local pour éviter les requêtes
-                    dispatchEvent(new CustomEvent('SET-NOTICES', { detail: n }));
+                    dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: n } }));
                 })
                     .catch(er => console.log(er));
             }
             else {
-                // Donnees.noticesFiltrees = Donnees.notices[this.collection.idcollections];
-                this.setLocalData('noticesFiltrees', Donnees.notices[this.collection.idcollections]);
-                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: Donnees.notices[this.collection.idcollections] }));
+                // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollections];
+                this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
+                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: Donnees.notices[Donnees.collection.idcollections] } }));
             }
         });
     }
@@ -125,27 +120,27 @@ export class BDD {
         return __awaiter(this, void 0, void 0, function* () {
             yield fetch(Donnees.config.g.search, {
                 method: "POST",
-                mode: "cors",
-                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(r), // body data type must match "Content-Type" header
             })
                 .then(d => d.json())
                 .then(j => {
                 this.setLocalData('noticesFiltrees', j);
-                this.collection = new Collection();
+                Donnees.collection = new Collection();
                 // Gérer la liste des collections
-                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: j }));
+                dispatchEvent(new CustomEvent('SET-NOTICES'));
             })
                 .catch(er => console.log(er));
         });
     }
     /** Rechercher dans les collections */
     searchCollections(r) {
-        console.log(r);
         if (r.collection && r.collection.length > 0) {
-            this.collection = Donnees.collections.find(c => c.title == r.collection);
+            Donnees.collection = Donnees.collections.find(c => c.title == r.collection);
             this.getNotices();
-            // dispatchEvent(new CustomEvent('GET-NOTICES', { detail: this.collection }));
         }
+    }
+    /** Afficher un loader dans la page */
+    load() {
+        document.getElementById('loader').style.display = 'flex';
     }
 }

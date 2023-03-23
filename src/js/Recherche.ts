@@ -20,13 +20,11 @@ export class Recherche extends CustomHTML{
 
         this.form.addEventListener('submit', (e:any)=>{
             e.preventDefault();
+            this.load();
             const search:SearchI = <SearchI>{};
             search.notices = e.target.elements['CorN'].value == 'Notices' ? true : false;
             search.libre = e.target.elements['libre'].value.split(',');
             search.collection = e.target.elements['collections'].value;
-            // search.collections = e.target.elements['collections'].selectedOptions.map((o:any) => o.value);
-            // for(let o of e.target.elements['collections'].selectedOptions){ search.collections.push(o.value)};
-            console.log(search);
             dispatchEvent(new CustomEvent('RECHERCHE', { detail: search }));
         });
         

@@ -14,13 +14,12 @@ export class Menu {
     }
     ;
     // Ecrire le menu dans le HTML
-    setMenu() {
-        // this.setMenuItems();
-        for (let i in this.nav) {
-            console.log("Elements dans Nav", i, this.nav);
-        }
-    }
-    ;
+    // setMenu() {
+    //     // this.setMenuItems();
+    //     for (let i in this.nav) {
+    //         console.log("Elements dans Nav", i, this.nav);
+    //     }
+    // };
     /**
      * Lister les collections et créer les liens de menu
      */

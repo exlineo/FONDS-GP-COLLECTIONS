@@ -199,7 +199,16 @@ export abstract class CustomHTML {
             }
         });
     }
+    /** Ouvrir un slide */
     slide() {
         this.noticeEl.classList.toggle('vu');
+    }
+    /** Afficher un loader dans la page */
+    load(){
+        document.getElementById('loader')!.style.display = 'flex';
+    }
+    /** Enlever le loader de la page */
+    deload(){
+        document.getElementById('loader')!.style.display = 'none';
     }
 }
