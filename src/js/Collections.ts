@@ -30,6 +30,8 @@ export class Collections extends CustomHTML {
         this.cEl = c; // HTML pour écrire la liste des collections
         this.f = f; // Formulaire de recherche
 
+        console.log("Séries", this.seriesEl);
+
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e: any) => {
 
