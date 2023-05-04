@@ -111,7 +111,6 @@ body>main>header.open{
 body>main>header>a {
     width: calc(100vw - 40px);
 }
-
 body>main>header img {
     width: 200px;
 }
@@ -119,7 +118,8 @@ body>main>header>article{
     display:flex;
     flex-flow: row nowrap;
     padding : 0;
-    /* height:var(--head); */
+    width:calc(100vw - var(--w));
+    justify-content: space-between;
 }
 body>main>header>article>*{
     text-align: center;
@@ -237,6 +237,8 @@ aside>section>nav section {
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--clair);
+    color:var(--fonce);
+    pointer-events: none;
 }
 
 aside>section>nav section article {
@@ -259,6 +261,7 @@ aside>section>nav a+section:hover {
     width: 20vw;
     min-width:250px;
     opacity: 1;
+    pointer-events: all;
 }
 
 aside>section>nav a:hover span {
@@ -639,7 +642,24 @@ input[type=radio] {
 /* FILTRES ET SERIES */
 #filtres{
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
+}
+#filtes h1, #filtres h2{
+    width:100%;
+    text-align: center;
+    margin:0;
+}
+#filtes h1 > em, #filtres h2 > em{
+    font-size:70%;
+}
+#filtres ul.series{
+    display:flex;
+    flex-flow:row wrap;
+}
+#filtres select{
+    width:fit-content;
+    margin:10px auto;
+    display:none;
 }
 #filtres .accordeon{
     width:max-content;
@@ -697,6 +717,7 @@ input[type=radio] {
     transition: all .3s ease;
     z-index: 100;
     overflow:hidden;
+    color:var(--fonce);
 }
 #notice>div{
     overflow-x: hidden;
@@ -1027,6 +1048,7 @@ audio.media {
 /* TEMPLATE */
 .contraste, .contraste .notices{
     background-color: var(--fonce);
+    color:var(--clair);
 }
 .lignes{
     /* flex-flow:row wrap !important; */
@@ -1042,6 +1064,7 @@ audio.media {
     color:var(--fonce);
     cursor: pointer;
     margin:10px;
+    border-bottom: 1px solid var(--fonce);
 }
 .lignes > article > figure{
     width:40% !important;
@@ -1065,36 +1088,35 @@ audio.media {
     body {
         overflow-y: auto;
     }
-
     body>main {
         width: 100vw;
     }
-
     body>aside {
         width: 60vw;
     }
-
     body>main>header {
         margin-top: 0px;
     }
-
     body>main>section:nth-child(1),
     body>main>section:nth-child(2) {
         width: 100vw;
     }
-
     #notice {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
     }
-    
     .notices,
     .notices>header,
     .notices>section {
         width: 100vw;
     }
-
+    #filtres ul.series{
+        display:none;
+    }
+    #filtres select{
+        display:block;
+    }
     .notice #media,
     .notice #donnees {
         width: 100vw;
@@ -1102,18 +1124,18 @@ audio.media {
         padding: 0 20px;
         border-right: 0;
     }
-
     .notices>section>article {
         width: 50%;
     }
     .notice .fleche.droite {
         right: 0;
     }
-
+    #vues{
+        flex-direction: column;
+    }
     .vu {
         left: 0 !important;
     }
-
     .burger {
         display: inline-block;
     }
@@ -1140,7 +1162,7 @@ audio.media {
         width: 33.33%;
     }
     .lignes > article{
-        width:50% !important;
+        width:45% !important;
     }
 }
 
@@ -1149,7 +1171,7 @@ audio.media {
         width: 25%;
     }
     .lignes > article{
-        width:100% !important;
+        width:45% !important;
     }
 }
 

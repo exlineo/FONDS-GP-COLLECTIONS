@@ -198,23 +198,36 @@ export class Collections extends CustomHTML {
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
         this.seriesEl.innerHTML = '';
+        const h2 = document.createElement('h2');
+        // h2.textContent = Donnees.collection.title;
+        h2.innerHTML = `<em>(Collection)</em><br>${Donnees.collection.title}`;
+        this.seriesEl.appendChild(h2);
         if (Donnees.collection.series.length > 0) {
             const h4 = document.createElement('h4');
             h4.textContent = FR.filtre_series;
+            // Vue ordinateur
             const ul = document.createElement('ul');
             ul.className = 'series';
+            // Vue mobile
+            const select = document.createElement('select');
+            select.addEventListener('change', (e) => {
+                console.log(e, e.target.value);
+            });
             Donnees.collection.series.forEach(d => {
                 const li = document.createElement('li');
-                li.textContent = d;
+                const option = document.createElement('option');
+                li.textContent = option.textContent = option.value = d;
                 li.addEventListener('click', (e) => {
                     e.currentTarget.classList.toggle('actif');
                     this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
                     this.filtreNotices();
                 });
                 ul.appendChild(li);
+                select.appendChild(option);
             });
             // this.seriesEl.appendChild(h4);
             this.seriesEl.appendChild(ul);
+            this.seriesEl.appendChild(select);
         }
     }
     /** Filtrer les notices de la collection */
