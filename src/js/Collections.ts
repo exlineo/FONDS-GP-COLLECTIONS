@@ -16,6 +16,7 @@ export class Collections extends CustomHTML {
     lazyImages: Array<HTMLElement> = []; // Liste des éléments HTML recevant un lazyloading
     imagesObserver: any;
     filtres: FiltreI = { libre: '', series: [] };
+    templateImg:NodeList;
     /**
      * 
      * @param n La balise pour écrire la liste des notices
@@ -31,7 +32,7 @@ export class Collections extends CustomHTML {
         this.f = f; // Formulaire de recherche
 
         console.log("Séries", this.seriesEl);
-
+        this.templateImg = document.querySelectorAll('[data-vignettes]');
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e: any) => {
 
@@ -51,6 +52,28 @@ export class Collections extends CustomHTML {
             this.filtres.libre = this.f.value;
             this.filtreNotices();
         });
+        /** Interactions sur les boutons du menu pour changer la présentation des notices */
+        document.getElementById('lignes')?.addEventListener('click', (e:any) => {
+            if(this.noticesEl.className.indexOf('lignes') == -1)  this.noticesEl.className = 'lignes';
+        });
+        document.getElementById('vignettes')?.addEventListener('click', (e:any) => {
+            if(this.noticesEl.className.indexOf('vignettes') == -1)  this.noticesEl.className = 'vignettes';
+        });
+        document.getElementById('template')?.addEventListener('click', (e:any) => {
+            document.body.classList.toggle('contraste');
+            this.templateImg.forEach( (i:any) => {
+                if(document.body.className == 'contraste'){
+                    i.src = i.dataset.lignes;
+                }else {
+                    i.src = i.dataset.vignettes;
+                }
+            })
+        });
+        /** Scroller horizontallement dans la section des notices */
+        // this.noticesEl.addEventListener("wheel", (evt) => {
+        //     evt.preventDefault();
+        //     this.noticesEl.scrollLeft += evt.deltaY;
+        // });
         /** Ecouteur sur le focus des contenus pour charger ou pas les médias */
         if ("IntersectionObserver" in window) {
             this.imagesObserver = new IntersectionObserver((entries, observer) => {
@@ -87,38 +110,45 @@ export class Collections extends CustomHTML {
         let i = 0;
         // Créer les notices sur l'interface
         Donnees.noticesFiltrees.forEach((n: any, index: number) => {
+            // Simplification des métadonnées
             const dc = n.dc;
             const media = n.media;
             const nema = n.nema;
+
             const url = media.url.indexOf('https://') != -1 && media.url.indexOf('.s3') != -1 ? media.url : `${Donnees.config.g.s3}${nema.set_name}/${media.file}`;
             const ar = document.createElement('article');
-            ar.className = 'lazy';
+            // Figure avec l'image en arriere plan
+            const fig = document.createElement('figure');
+            fig.className = 'lazy';
+            // Identifier la notice
             ar.dataset.i = String(i);
             ++i;
+            const div = document.createElement('div');
             const a = document.createElement('a');
-
             // Adapter l'affichage en fonction du format du document
             if (dc.format) {
                 if (dc.format.indexOf('image') != -1) {
-                    ar.style.backgroundImage = `url(${url})`;
+                    fig.style.backgroundImage = `url(${url})`;
                 } else if (dc.format.indexOf('application') != -1) {
-                    ar.style.backgroundImage = `url(assets/img/icones/picto_docs.png)`;
+                    fig.style.backgroundImage = `url(assets/img/icones/picto_docs.png)`;
                 } else {
                     // let c = document.createElement('div');
                     if (dc.format.indexOf('video') != -1) {
-                        a.innerHTML = this.setVideo(`${url}`, dc.format);
+                        fig.innerHTML = this.setVideo(`${url}`, dc.format);
                     } else if (dc.format.indexOf('audio') != -1) {
-                        a.innerHTML = this.setAudio(`${url}`, dc.format);
+                        fig.innerHTML = this.setAudio(`${url}`, dc.format);
                     }
-                    a.addEventListener('mouseenter', (e: any) => {
+                    fig.addEventListener('mouseenter', (e: any) => {
                         e.currentTarget.childNodes[0].play();
                     });
-                    a.addEventListener('mouseleave', (e: any) => {
+                    fig.addEventListener('mouseleave', (e: any) => {
                         e.currentTarget.childNodes[0].pause();
                     })
                 }
             }
-
+            // Ajouter la figure à l'article
+            ar.appendChild(fig);
+            // Contenu
             const pict = document.createElement('p');
             pict.innerHTML = `<span><img src="assets/img/icones/icone_oeil.svg" alt="${dc.title}" class="icone"></span>`;
             // ar.style.backgroundImage = `url(${media.url})`;
@@ -128,8 +158,10 @@ export class Collections extends CustomHTML {
             p.innerHTML = `<h4>${dc.title}</h4> ${resume}`;
 
             a.appendChild(pict);
-            ar.appendChild(a);
-            ar.appendChild(p);
+            div.appendChild(a);
+            div.appendChild(p);
+
+            ar.appendChild(div);
 
             this.noticesEl.appendChild(ar);
             // Ouvrir les détails de la notice cliquée
@@ -139,7 +171,7 @@ export class Collections extends CustomHTML {
                 this.notice = new Notice();
             });
             /** Lazy loading sur les images */
-            this.lazyImages.push(ar);
+            this.lazyImages.push(fig);
             this.setLazy();
         });
 

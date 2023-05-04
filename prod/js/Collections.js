@@ -12,6 +12,7 @@ export class Collections extends CustomHTML {
      * @param f L'input de recherche dans les notices d'une collection
      */
     constructor(s, c, f) {
+        var _a, _b, _c;
         super();
         this.indexC = -1; // Index de la collection
         this.collection = {};
@@ -22,6 +23,7 @@ export class Collections extends CustomHTML {
         this.cEl = c; // HTML pour écrire la liste des collections
         this.f = f; // Formulaire de recherche
         console.log("Séries", this.seriesEl);
+        this.templateImg = document.querySelectorAll('[data-vignettes]');
         // Les collections ont été chargées depuis la base de données
         addEventListener('SET-COLLECTIONS', (e) => {
             this.cEl.appendChild(this.setTextEl('h2', FR.COLLECTIONS));
@@ -39,6 +41,31 @@ export class Collections extends CustomHTML {
             this.filtres.libre = this.f.value;
             this.filtreNotices();
         });
+        /** Interactions sur les boutons du menu pour changer la présentation des notices */
+        (_a = document.getElementById('lignes')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', (e) => {
+            if (this.noticesEl.className.indexOf('lignes') == -1)
+                this.noticesEl.className = 'lignes';
+        });
+        (_b = document.getElementById('vignettes')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (e) => {
+            if (this.noticesEl.className.indexOf('vignettes') == -1)
+                this.noticesEl.className = 'vignettes';
+        });
+        (_c = document.getElementById('template')) === null || _c === void 0 ? void 0 : _c.addEventListener('click', (e) => {
+            document.body.classList.toggle('contraste');
+            this.templateImg.forEach((i) => {
+                if (document.body.className == 'contraste') {
+                    i.src = i.dataset.lignes;
+                }
+                else {
+                    i.src = i.dataset.vignettes;
+                }
+            });
+        });
+        /** Scroller horizontallement dans la section des notices */
+        // this.noticesEl.addEventListener("wheel", (evt) => {
+        //     evt.preventDefault();
+        //     this.noticesEl.scrollLeft += evt.deltaY;
+        // });
         /** Ecouteur sur le focus des contenus pour charger ou pas les médias */
         if ("IntersectionObserver" in window) {
             this.imagesObserver = new IntersectionObserver((entries, observer) => {
@@ -76,39 +103,47 @@ export class Collections extends CustomHTML {
         let i = 0;
         // Créer les notices sur l'interface
         Donnees.noticesFiltrees.forEach((n, index) => {
+            // Simplification des métadonnées
             const dc = n.dc;
             const media = n.media;
             const nema = n.nema;
             const url = media.url.indexOf('https://') != -1 && media.url.indexOf('.s3') != -1 ? media.url : `${Donnees.config.g.s3}${nema.set_name}/${media.file}`;
             const ar = document.createElement('article');
-            ar.className = 'lazy';
+            // Figure avec l'image en arriere plan
+            const fig = document.createElement('figure');
+            fig.className = 'lazy';
+            // Identifier la notice
             ar.dataset.i = String(i);
             ++i;
+            const div = document.createElement('div');
             const a = document.createElement('a');
             // Adapter l'affichage en fonction du format du document
             if (dc.format) {
                 if (dc.format.indexOf('image') != -1) {
-                    ar.style.backgroundImage = `url(${url})`;
+                    fig.style.backgroundImage = `url(${url})`;
                 }
                 else if (dc.format.indexOf('application') != -1) {
-                    ar.style.backgroundImage = `url(assets/img/icones/picto_docs.png)`;
+                    fig.style.backgroundImage = `url(assets/img/icones/picto_docs.png)`;
                 }
                 else {
                     // let c = document.createElement('div');
                     if (dc.format.indexOf('video') != -1) {
-                        a.innerHTML = this.setVideo(`${url}`, dc.format);
+                        fig.innerHTML = this.setVideo(`${url}`, dc.format);
                     }
                     else if (dc.format.indexOf('audio') != -1) {
-                        a.innerHTML = this.setAudio(`${url}`, dc.format);
+                        fig.innerHTML = this.setAudio(`${url}`, dc.format);
                     }
-                    a.addEventListener('mouseenter', (e) => {
+                    fig.addEventListener('mouseenter', (e) => {
                         e.currentTarget.childNodes[0].play();
                     });
-                    a.addEventListener('mouseleave', (e) => {
+                    fig.addEventListener('mouseleave', (e) => {
                         e.currentTarget.childNodes[0].pause();
                     });
                 }
             }
+            // Ajouter la figure à l'article
+            ar.appendChild(fig);
+            // Contenu
             const pict = document.createElement('p');
             pict.innerHTML = `<span><img src="assets/img/icones/icone_oeil.svg" alt="${dc.title}" class="icone"></span>`;
             // ar.style.backgroundImage = `url(${media.url})`;
@@ -117,8 +152,9 @@ export class Collections extends CustomHTML {
             const resume = 'description' in dc ? `<p>${dc.description.substring(0, dc.description.length > 100 ? 100 : dc.description.length)}...</p>` : '';
             p.innerHTML = `<h4>${dc.title}</h4> ${resume}`;
             a.appendChild(pict);
-            ar.appendChild(a);
-            ar.appendChild(p);
+            div.appendChild(a);
+            div.appendChild(p);
+            ar.appendChild(div);
             this.noticesEl.appendChild(ar);
             // Ouvrir les détails de la notice cliquée
             ar.addEventListener('click', (e) => {
@@ -127,7 +163,7 @@ export class Collections extends CustomHTML {
                 this.notice = new Notice();
             });
             /** Lazy loading sur les images */
-            this.lazyImages.push(ar);
+            this.lazyImages.push(fig);
             this.setLazy();
         });
         // Afficher les séries de la collection

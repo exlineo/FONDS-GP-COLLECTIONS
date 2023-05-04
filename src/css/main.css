@@ -534,7 +534,7 @@ input[type=radio] {
     overflow: hidden;
 }
 
-.notices article:hover {
+.notices article:hover figure {
     background-size: 120%;
 }
 

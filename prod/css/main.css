@@ -3,7 +3,7 @@
 :root {
     /* Variables */
     --clair: white;
-    --fonce: black;
+    --fonce: #212121;
     --s: #17456B;
     --p: #0F1D2B;
     --t: #FFB000;
@@ -12,8 +12,6 @@
     --r: red;
     --w: 75px;
     --head:75px;
-    --template:black;
-    --contraste:white;
 }
 
 html,
@@ -33,6 +31,7 @@ body {
     flex-flow: row nowrap;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    transition: all .3s ease;
 }
 
 body> * {
@@ -104,7 +103,6 @@ body>main>header{
     flex-flow: column nowrap;
     transition:all .3s ease;
     /* height: var(--head); */
-    box-sizing: border-box;
     padding:0 10px;
 }
 body>main>header.open{
@@ -246,7 +244,6 @@ aside>section>nav section article {
     padding: 5px 10px;
     margin-bottom: 10px;
     flex-flow: column nowrap;
-    box-sizing: border-box;
 }
 
 aside nav a:hover {
@@ -260,6 +257,7 @@ aside nav a:hover .cls-2 {
 aside>section>nav a:hover+section,
 aside>section>nav a+section:hover {
     width: 20vw;
+    min-width:250px;
     opacity: 1;
 }
 
@@ -324,7 +322,6 @@ aside>footer {
     padding: 0 8px;
     width: 100%;
     align-items: flex-end;
-    box-sizing: border-box;
 }
 
 aside>footer>nav {
@@ -491,8 +488,9 @@ input[type=radio] {
 
 .notices {
     flex-flow: column nowrap;
-    width: calc(100vw - var(--w));
-    overflow: hidden;
+    /* width: calc(100vw - var(--w)); */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .notices>header {
@@ -502,7 +500,6 @@ input[type=radio] {
     flex-flow: row wrap;
     justify-content: space-around;
     padding: 5px 20px;
-    box-sizing: border-box;
     margin-bottom: 0;
 }
 
@@ -522,31 +519,44 @@ input[type=radio] {
 .notices>section {
     display: flex;
     flex-flow: row wrap;
-    overflow-y: auto;
 }
 
-.notices>section>article {
+.notices article {
     display: flex;
     flex-flow: column nowrap;
     min-height: 200px;
     width: 50%;
-    box-sizing: border-box;
-    background: 50% no-repeat;
-    background-size: 100%;
     transition: all .3s ease;
     position: relative;
     overflow:hidden;
+    color:var(--clair);
 }
-
+.notices article figure {
+    width:100%;
+    height: 100%;
+    min-height:200px;
+    margin:0;
+    padding:0;
+    background: 50% no-repeat;
+    background-size: 100%;
+    transition: all .3s ease;
+}
+.notices article div {
+    width:100%;
+    height: 100%;
+    min-height:200px;
+    margin:0;
+    padding:0;
+    position:absolute;
+}
 .notices a>video,
 .notices a>audio {
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: 10;
-    transition: transform .3s ease;
+    transition: all .3s ease;
 }
-
 .notices a {
     display: flex;
     background: 50% no-repeat;
@@ -557,11 +567,9 @@ input[type=radio] {
     position: relative;
     overflow: hidden;
 }
-
-.notices article:hover {
+.notices article:hover > figure {
     background-size: 120%;
 }
-
 .notices a > p {
     position: absolute;
     width: 100%;
@@ -573,7 +581,6 @@ input[type=radio] {
     margin: 0;
     padding: 0;
 }
-
 .notices a > p > span {
     display: flex;
     margin: auto;
@@ -581,18 +588,15 @@ input[type=radio] {
     background-color: rgba(0, 0, 0, .7);
     border-radius: 15%;
 }
-
 .notices a:hover > p {
     opacity: 1;
 }
-
 .notices a:hover>video,
 .notices a:hover>audio {
     transform: scale(1.2);
 }
 
-.notices article > p {
-    color: white;
+.notices article > div > p {
     text-shadow: 0px 1px 3px black;
     padding: 10px;
     position: absolute;
@@ -602,22 +606,21 @@ input[type=radio] {
     pointer-events: none;
     width:100%;
     transition:all .3s ease;
-    box-sizing: border-box;
     margin:0;
     margin-bottom:-20px;
     padding:0px 10px 10px;
 }
-.notices article > p > h4 {
+.notices article > div > p > h4 {
     text-align: left;
     font-variation-settings: 'wght' 600;
     transition:all .3s ease;
 }
-.notices article:hover > p {
+.notices article:hover > div > p {
     background-color: rgba(0,0,0,.7);
     margin-bottom:0;
     margin-top:0;
 }
-.notices article:hover > p > h4 {
+.notices article:hover > div > p > h4 {
     margin-bottom:10px;
 }
 /* COLLECTIONS */
@@ -693,9 +696,6 @@ input[type=radio] {
     background-color: rgb(255, 255, 255);
     transition: all .3s ease;
     z-index: 100;
-    box-sizing: border-box;
-    /* display:flex;
-    flex-flow:row nowrap; */
     overflow:hidden;
 }
 #notice>div{
@@ -709,7 +709,6 @@ input[type=radio] {
     padding-left:40px;
     padding-right:80px;
     height:100%;
-    box-sizing: border-box;
 }
 .notice{
     display: flex;
@@ -742,11 +741,6 @@ input[type=radio] {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    box-sizing: border-box;
-}
-
-.notice article>* {
-    box-sizing: border-box;
 }
 
 .notice #media {
@@ -754,7 +748,6 @@ input[type=radio] {
     border-right: black dashed 1px;
     width: 70%;
     position: relative;
-    box-sizing: border-box;
 }
 
 .notice .fleche {
@@ -797,7 +790,6 @@ input[type=radio] {
 .notice #donnees {
     padding: 20px;
     width: 30%;
-    box-sizing: border-box;
     flex-flow:column nowrap;
 }
 .notice #donnees blockquote{
@@ -806,7 +798,6 @@ input[type=radio] {
 .notice #donnees>article {
     padding: 0;
     width:100%;
-    box-sizing: border-box;
 }
 /* DIVERS */
 .lazy {
@@ -837,7 +828,6 @@ audio.media {
     margin: auto;
     transition: transform .3s ease;
 }
-
 .icone:hover {
     transform: rotate(30deg);
 }
@@ -894,10 +884,7 @@ audio.media {
 .sequence>span:nth-child(2) {
     width: 80%;
 }
-
-
 /* MENU BURGER */
-
 .burger {
     display: none;
     cursor: pointer;
@@ -916,25 +903,20 @@ audio.media {
     margin: 6px 0;
     transition: 0.4s;
 }
-
 .croix {}
-
 .croix .bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
     background-color: yellowgreen;
 }
-
 .croix .bar2 {
     opacity: 0;
 }
-
 .croix .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -6px);
     transform: rotate(45deg) translate(-6px, -6px);
     background-color: yellowgreen;
 }
-
 /* Créer des fléches */
 .arrow {
     position:absolute;
@@ -982,12 +964,10 @@ audio.media {
     opacity: 0.3;
     z-index: 1002;
 }
-
 .close:hover {
     opacity: 1;
     transform: rotate(90deg);
 }
-
 .close:before,
 .close:after {
     position: absolute;
@@ -1021,12 +1001,10 @@ audio.media {
     position:relative;
     text-transform: uppercase;
 }
-
 .active,
 .accordeon:hover {
     background-color: #ccc;
 }
-
 .accordeon:after {
     content: '\002B';
     color: #777;
@@ -1046,9 +1024,43 @@ audio.media {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
+/* TEMPLATE */
+.contraste, .contraste .notices{
+    background-color: var(--fonce);
+}
+.lignes{
+    /* flex-flow:row wrap !important; */
+    justify-content: space-around;
+    /* width: calc(100vw - var(--w)); */
+}
+.lignes > article{
+    width:45% !important;
+    background-color: var(--clair);
+    color: var(--fonce);
+    flex-flow:row nowrap;
+    padding:15px;
+    color:var(--fonce);
+    cursor: pointer;
+    margin:10px;
+}
+.lignes > article > figure{
+    width:40% !important;
+}
+.lignes > article > div{
+    position: relative;
+    width:60% !important;
+}
+.lignes > article > div > p{
+    position:relative !important;
+    text-shadow: none;
+}
+.lignes > article > div > a{
+    display:none;
+}
+.lignes > article:hover > div > p{
+    background: none;
+}
 /* MEDIA QUERIES */
-
 @media (max-width: 960px) {
     body {
         overflow-y: auto;
@@ -1094,7 +1106,6 @@ audio.media {
     .notices>section>article {
         width: 50%;
     }
-
     .notice .fleche.droite {
         right: 0;
     }
@@ -1128,11 +1139,17 @@ audio.media {
     .notices>section>article {
         width: 33.33%;
     }
+    .lignes > article{
+        width:50% !important;
+    }
 }
 
 @media screen and (min-width: 1401px) and (max-width: 1700px) {
     .notices>section>article {
         width: 25%;
+    }
+    .lignes > article{
+        width:100% !important;
     }
 }
 
