@@ -714,7 +714,7 @@ input[type=radio] {
     left: 100vw;
     width: calc(100vw - var(--w));
     height: calc(100vh - 50px);
-    top: 50px;
+    top: 60px;
     background-color: rgb(255, 255, 255);
     transition: all .3s ease;
     z-index: 100;
@@ -963,7 +963,7 @@ audio.media {
     right: 10px;
 }
 .arrowleft {
-    left: 0px;
+    left: 10px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
@@ -973,19 +973,20 @@ audio.media {
     right: 5px;
 }
 .arrowleft:hover {
-    left: -5px;
+    left: 5px;
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
 }
 /* Croix de fermeture */
 .close {
     position: absolute;
-    right: 16px;
-    top: 16px;
+    right: 10px;
+    top: 10px;
     width: 32px;
     height: 32px;
-    opacity: 0.3;
+    opacity: 0.8;
     z-index: 1002;
+    background-color: var(--clair);
 }
 .close:hover {
     opacity: 1;
@@ -998,7 +999,7 @@ audio.media {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: var(--s);
+    background-color: var(--t);
 }
 
 .close:before {
@@ -1160,6 +1161,7 @@ audio.media {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
+        top:0;
     }
     #notice>div{
         padding:0;
@@ -1178,6 +1180,7 @@ audio.media {
     .notice, .notice>section{
         flex-flow: column nowrap;
         width:100vw;
+        margin-right:0;
     }
     .notice #media,
     .notice #donnees {
