@@ -43,7 +43,10 @@ export class Collections extends CustomHTML {
             this.initCollection(e.detail[0]);
         });
         /** Créer les notices une fois les données reçues */
-        addEventListener('SET-NOTICES', (e:any) => this.setNotices());
+        addEventListener('SET-NOTICES', (e:any) => {
+            this.setNotices();
+            this.setSeriesFiltre();
+        });
 
         // Filtrer les notices
         this.f.addEventListener('input', () => {
@@ -172,9 +175,6 @@ export class Collections extends CustomHTML {
             this.lazyImages.push(fig);
             this.setLazy();
         });
-
-        // Afficher les séries de la collection
-        this.setSeriesFiltre();
         this.deload();
     }
     /**
@@ -205,6 +205,7 @@ export class Collections extends CustomHTML {
     }
     /** Créer une liste de séries cliquables */
     setSeriesFiltre() {
+        console.log("serie filtrées");
         this.seriesEl.innerHTML = '';
         const h2 = document.createElement('h2');
         // h2.textContent = Donnees.collection.title;
@@ -220,8 +221,15 @@ export class Collections extends CustomHTML {
 
             // Vue mobile
             const select = document.createElement('select');
+            const option = document.createElement('option');
+            option.textContent = 'Filtrez par séries';
+            option.value = '';
+            select.appendChild(option);
+
             select.addEventListener('change', (e:any)=>{
                 console.log(e, e.target.value);
+                e.target.value.length > 0 ? this.filtres.series = [e.target.value] : this.filtres.series = [];
+                this.filtreNotices();
             });
 
             Donnees.collection.series!.forEach(d => {
@@ -308,11 +316,14 @@ export class Collections extends CustomHTML {
         const imgN = this.setImgEl('./assets/img/icones/notices.png')
         aN.setAttribute('title', FR.notices_collec);
         aN.setAttribute('data-i', String(i));
-        // aN.appendChild(pN);
         aN.appendChild(imgN);
         div.appendChild(aN);
         // Cliquer sur l'image des notices pour afficher les notices de la collection
-        aN.addEventListener('click', () => {
+        aN.addEventListener('click', (e:any) => {
+            console.log("Coucou clic", e.target, e.currentTarget.parentNode );
+            // document.body.dispatchEvent(new Event('onmouseover'));
+            // document.body.focus({preventScroll:true});
+            // e.currentTarget.parentNode.style.pointerEvents = "none";
             this.initCollection(c);
         });
 

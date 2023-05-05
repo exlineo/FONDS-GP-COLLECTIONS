@@ -1087,7 +1087,7 @@ audio.media {
     background: none;
 }
 /* MEDIA QUERIES */
-@media (max-width: 960px) {
+@media (max-width: 940px) {
     body {
         flex-flow:column nowrap;
     }
@@ -1110,6 +1110,9 @@ audio.media {
     }
     body>aside>section>nav {
         flex-flow:row nowrap;
+    }
+    body>aside>section>nav>section {
+        left:0;
     }
     aside>section>nav a img{
         max-height: 80px;
