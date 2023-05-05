@@ -1098,6 +1098,7 @@ audio.media {
         flex-flow:row nowrap;
         justify-content: space-between;
         padding-right:25px;
+        max-height:75px;
     }
     body>aside>header {
         width: 75px;
@@ -1109,24 +1110,59 @@ audio.media {
     body>aside>section>nav {
         flex-flow:row nowrap;
     }
-    body>aside>footer, body>aside>footer>nav {
-        flex-flow:column nowrap;
-        width:20px;
+    aside>section>nav a img{
+        max-height: 80px;
+    }
+    body>aside>footer{
+        position:absolute;
+        bottom:0;
+        /* justify-content: flex-end; */
+        z-index:100;
+    }
+    body>aside>footer>nav{
+        margin-left:auto;
+        justify-content: flex-end;
+    }
+    body>aside>footer>nav>*{
+        width:35px;
+        padding:0 10px;
     }
     body>main{
         height:calc(100vh - var(--w));
     }
     body>main>header {
         margin-top: 0px;
+        max-height:120px;
     }
     body>main>section:nth-child(1),
     body>main>section:nth-child(2) {
         width: 100vw;
     }
+    body>main>header>article {
+        /* flex-flow: column nowrap; */
+        width:100vw;
+        padding-right:20px;
+    }
+    body>main>header>article>* {
+        padding:0;
+        border:0;
+    }
+    body>main>header>article > div:nth-child(1) {
+        display: none;
+    }
+    body>main>header>article > div:nth-child(2) {
+        width:calc(100vw - 30px);
+    }
+    body>main>header>article > nav {
+        width:30px
+    }
     #notice {
         width: 100vw;
         display: flex;
         flex-flow: column nowrap;
+    }
+    #notice>div{
+        padding:0;
     }
     .notices,
     .notices>header,
@@ -1138,6 +1174,10 @@ audio.media {
     }
     #filtres select{
         display:block;
+    }
+    .notice, .notice>section{
+        flex-flow: column nowrap;
+        width:100vw;
     }
     .notice #media,
     .notice #donnees {
@@ -1151,6 +1191,9 @@ audio.media {
     }
     .notice .fleche.droite {
         right: 0;
+    }
+    .lignes > article {
+        width:100vw !important;
     }
     #vues{
         flex-direction: column;
