@@ -48,6 +48,7 @@ export abstract class BDD {
             .then(d => d.json())
             .then(d => {
                 // Donnees.config.g = d.getters;
+                // dispatchEvent('NEMATERIA-INIT')
                 this.setLocalData('config', d.getters);
                 this.getCollections();
             })

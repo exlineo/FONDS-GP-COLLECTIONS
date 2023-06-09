@@ -1,5 +1,4 @@
 import { CustomHTML } from "./HTML.js";
-import { gsap } from "gsap";
 import { NoticeI } from "./models/ModelesI.js";
 import { Donnees } from "./data/Donnees.js";
 import { FR } from './trads/fr.js';
@@ -20,9 +19,9 @@ export class Notice extends CustomHTML {
         if(this.ids.includes(Donnees.indexN)) {
             this.index = this.ids.indexOf(Donnees.indexN);
         }else{
-            this.ids.push(Donnees.indexN);
-            this.index = this.ids.length-1;
-            this.setNoticeEl();
+            this.ids.push(Donnees.indexN); // Liste des notices écrites dans le DOM
+            this.index = this.ids.length-1; // Nombre total de notices inscrites dans le DOM
+            this.setNoticeEl(); // Ecrire une notice
         };
         this.setPosition();
     }
@@ -66,7 +65,11 @@ export class Notice extends CustomHTML {
         this.setDatas(donnees, this.notice.nema, FR.metas);
         this.setAccordeon(section);
 
-        this.listeNoticesEl.appendChild(section);
+        // this.listeNoticesEl.appendChild(section);
+        const nemaNot = document.createElement('nema-notice');
+        nemaNot.dataset.index = Donnees.indexN.toString();
+        nemaNot.dataset.params = '{"coucou":"Et ouais"}';
+        this.listeNoticesEl.appendChild(nemaNot);
     }
     /** Indiquer le mouvement que doivent faire les notices pour afficher la notice qu'il faut */
     setPosition(){
@@ -131,43 +134,6 @@ export class Notice extends CustomHTML {
             }
             el.appendChild(ar);
         }
-    }
-    /**
-     * Afficher une vidéo
-     * @param {string} url Lien de la vidéo
-     * @param {string} f Format de la vidéo
-     
-    setVideo(url: string, f: string) {
-        this.media.appendChild(this.setVideoEl(url, f));
-        this.setSequences();
-        this.va = document.querySelector('#va');
-    }*/
-    /**
-     * 
-     * @param {string} url Adresse du média
-     * @param {string} f Format de l'audio
-     
-    setAudio(url: string, f: string) {
-        this.media.appendChild(this.setAudioEl(url, f));
-        this.setSequences();
-        this.va = document.querySelector('#va');
-    }*/
-    /**
-     * Afficher une image
-     * @param {string} url Lien vers le document
-     
-    setImage(url: string) {
-        this.media.appendChild(this.setNoticeImageEl(url));
-    }*/
-    /**
-     * Afficher un fichier PDF
-     * @param {string} url Lien vers le document
-     
-    setPdf(url: string) {
-        this.media.appendChild(this.setPdfEL(url));
-    }*/
-    jumpSequence() {
-
     }
     setAccordeon(el:HTMLElement) {
         // ACCORDEON

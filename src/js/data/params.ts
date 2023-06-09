@@ -21,6 +21,6 @@ const PARAMS = {
         }
     },
     // Liste des liens pour la gestion des collections et des notices (on gardera que le get à la fin, c'est pour garder)
-    CONFIG : './assets/data/config.json'
+    CONFIG : './assets/data/config.json',
 };
 export default PARAMS;
