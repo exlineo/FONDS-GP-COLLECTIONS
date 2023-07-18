@@ -1,4 +1,4 @@
-import { ConfigI } from "../models/NoticeI";
+import { ConfigI, NoticeI } from "../models/NoticeI";
 
 /** Store to store shared data */
 export class Store {
@@ -8,15 +8,20 @@ export class Store {
     s3: string = ''; // Base to call ressources from Cloud
     config:ConfigI = {s3:''};
 
+    list:Array<NoticeI> = []; // List of notices shared between components
+    notice:NoticeI  = <NoticeI>{}; // Notice shown at screen
+
     private constructor() {
         this.config = this.getLocalStore('config');
+        
+        this.list = this.getLocalStore('noticeFiltrees');
+
         addEventListener('NEMATERIA-INIT', (e: any) => {
             this.setLocalStore('config', JSON.stringify(e.detail))
         })
     }
     /**
      * The static method that controls the access to the Store instance.
-     *
      * This implementation let you subclass the Store class while keeping
      * just one instance of each subclass around.
      */
@@ -70,4 +75,5 @@ export class Store {
                 .catch(er => console.log(er))
         }
     }
+    /** create */
 }

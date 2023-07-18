@@ -23,7 +23,7 @@ export interface NoticeI {
 }
 /** Modèle d'une collection */
 export interface CollectionI{
-    idcollections?: any;
+    idcollection?: any;
     title: string;
     alias: string;
     description: string;
@@ -37,7 +37,7 @@ export interface CollectionI{
     selected?:boolean;
 }
 export class Collection implements CollectionI {
-    idcollections = '';
+    idcollection = '';
     title = '';
     alias = '';
     description = '';

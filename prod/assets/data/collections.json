@@ -72,7 +72,7 @@
             "02 - Châteaux",
             "03 - Ville"
         ],
-        "idcollections": "601eb9c5fb52c91f1f1f47f6",
+        "idcollection": "601eb9c5fb52c91f1f1f47f6",
         "title": "Cassel",
         "alias": "cassel",
         "description": "Set composé pour la collection Cassel",
@@ -107,7 +107,7 @@
             "Océan",
             "plage"
         ],
-        "idcollections": "6043ebaddcb9f435d90f5599",
+        "idcollection": "6043ebaddcb9f435d90f5599",
         "title": "Ocean",
         "alias": "ocean",
         "description": "Set de vidéos de démo",
@@ -124,7 +124,7 @@
             "60491433dcb9f435d90f55a4"
         ],
         "series": [],
-        "idcollections": "60491433dcb9f435d90f55a5",
+        "idcollection": "60491433dcb9f435d90f55a5",
         "title": "Baudelaire",
         "alias": "baudelaire",
         "description": "Set des oeuvres de Charles Baudelaire",
@@ -154,7 +154,7 @@
             "Saisons",
             "Affiches"
         ],
-        "idcollections": "60591340dcb9f435d90f55c2",
+        "idcollection": "60591340dcb9f435d90f55c2",
         "title": "Mucha",
         "alias": "mucha",
         "description": "Numérisations d'estampes d'Alphonse Mucha",

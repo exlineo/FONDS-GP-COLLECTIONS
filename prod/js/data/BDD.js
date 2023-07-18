@@ -56,7 +56,6 @@ export class BDD {
         fetch(PARAMS.CONFIG)
             .then(d => d.json())
             .then(d => {
-            // Donnees.config.g = d.getters;
             // dispatchEvent('NEMATERIA-INIT')
             this.setLocalData('config', d.getters);
             this.getCollections();
@@ -68,7 +67,7 @@ export class BDD {
      */
     getCollections() {
         return __awaiter(this, void 0, void 0, function* () {
-            yield fetch(Donnees.config.g.collections)
+            yield fetch(Donnees.config.g.api + 'collections')
                 .then(d => d.json())
                 .then(j => {
                 this.setLocalData('collections', j);
@@ -89,24 +88,24 @@ export class BDD {
                 e.stopImmediatePropagation();
             }
             // Récupérer les données
-            if (!Donnees.notices[Donnees.collection.idcollections]) {
-                return yield fetch(Donnees.config.g.notices, {
+            if (!Donnees.notices[Donnees.collection.idcollection]) {
+                return yield fetch(Donnees.config.g.api + 'notices', {
                     method: 'POST',
                     body: JSON.stringify(Donnees.collection.notices)
                 })
                     .then(d => d.json())
                     .then(n => {
-                    Donnees.notices[Donnees.collection.idcollections] = n;
-                    this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
+                    Donnees.notices[Donnees.collection.idcollection] = n;
+                    this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollection]);
                     this.setLocalData('notices', Donnees.notices); // Enregistrer les données en local pour éviter les requêtes
                     dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: n } }));
                 })
                     .catch(er => console.log(er));
             }
             else {
-                // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollections];
-                this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollections]);
-                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: Donnees.notices[Donnees.collection.idcollections] } }));
+                // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollection];
+                this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollection]);
+                dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: Donnees.notices[Donnees.collection.idcollection] } }));
             }
         });
     }
@@ -119,7 +118,7 @@ export class BDD {
     /** Rechercher dans les notices */
     searchNotices(r) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield fetch(Donnees.config.g.search, {
+            yield fetch(Donnees.config.g.api + 'search', {
                 method: "POST",
                 body: JSON.stringify(r), // body data type must match "Content-Type" header
             })

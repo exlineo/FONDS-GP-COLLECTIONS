@@ -1,6 +1,6 @@
 export class Collection {
     constructor() {
-        this.idcollections = '';
+        this.idcollection = '';
         this.title = '';
         this.alias = '';
         this.description = '';

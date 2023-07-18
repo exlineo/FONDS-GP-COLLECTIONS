@@ -7,10 +7,14 @@ export class CustomHTML extends HTMLElement {
         this.shadow = this.attachShadow({ mode: 'open' });
         this.addStyles();
     }
+    // Adding style in the page
     addStyles() {
-        const style = document.createElement('style');
-        style.innerHTML = "@import url('./css/nemateria-components.css')";
-        this.shadow.append(style);
+        if (!document.querySelector('[nemateria]')) {
+            const style = document.createElement('style');
+            style.setAttribute('nemateria', '');
+            style.innerHTML = "@import url('./css/nemateria-components.css')";
+            this.shadow.append(style);
+        }
     }
     /**
          * Get key/ values from object

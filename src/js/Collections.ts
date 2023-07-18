@@ -255,12 +255,12 @@ export class Collections extends CustomHTML {
     /** Filtrer les notices de la collection */
     filtreNotices() {
         if (this.filtres.libre.length < 3 && this.filtres.series.length == 0) {
-            Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollections];
+            Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollection];
         } else {
             Donnees.noticesFiltrees = [];
             const libre = this.filtres.libre.toLocaleLowerCase(); // Ramener toutes les recherches en lowercase
             let result = new Set<NoticeI>();
-            Donnees.notices[Donnees.collection.idcollections].forEach((n: any) => {
+            Donnees.notices[Donnees.collection.idcollection].forEach((n: any) => {
                 // Filtres dans les séries sélectionnées
                 this.filtres.series.forEach(f => {
                     if (Array.isArray(n.nema.series)) {

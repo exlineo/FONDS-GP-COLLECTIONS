@@ -4,14 +4,16 @@ export class Store {
         this.t = {}; // Selected language
         this.s3 = ''; // Base to call ressources from Cloud
         this.config = { s3: '' };
+        this.list = []; // List of notices shared between components
+        this.notice = {}; // Notice shown at screen
         this.config = this.getLocalStore('config');
+        this.list = this.getLocalStore('noticeFiltrees');
         addEventListener('NEMATERIA-INIT', (e) => {
             this.setLocalStore('config', JSON.stringify(e.detail));
         });
     }
     /**
      * The static method that controls the access to the Store instance.
-     *
      * This implementation let you subclass the Store class while keeping
      * just one instance of each subclass around.
      */
