@@ -53,9 +53,7 @@ export abstract class BDD {
             })
             .catch(er => console.log(er));
     }
-    /**
-     * Get Collections
-     */
+    /** Get Collections */
     async getCollections() {
         await fetch(Donnees.config.g.api + 'collections')
             .then(d => d.json())
@@ -74,7 +72,7 @@ export abstract class BDD {
         this.load(); // Afficher le loader
         if(e){
             e.stopImmediatePropagation();
-        }
+        };
         // Récupérer les données
         if (!Donnees.notices[Donnees.collection.idcollection]) {
             return await fetch(Donnees.config.g.api + 'notices', {
@@ -90,7 +88,6 @@ export abstract class BDD {
                 })
                 .catch(er => console.log(er));
         } else {
-            // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollection];
             this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollection]);
             dispatchEvent(new CustomEvent('SET-NOTICES', { detail: {collection:Donnees.collection, notices:Donnees.notices[Donnees.collection.idcollection]} }));
         }

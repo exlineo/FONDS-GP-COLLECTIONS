@@ -12,41 +12,22 @@
     --w: 75px;
     --head:75px;
 }
-/* NOTICE */
-/* #notice {
-    visibility: hidden;
-    position: absolute;
-    left: 100vw;
-    width: calc(100vw - var(--w));
-    height: calc(100vh - 50px);
-    top: 60px;
-    background-color: rgb(255, 255, 255);
-    transition: all .3s ease;
-    z-index: 100;
-    overflow:hidden;
-    color:var(--fonce);
+* {
+    box-sizing: border-box;
 }
-#notice>div{
-    overflow-x: hidden;
-    position:absolute;
-    left:0;
-    display: flex;
-    flex-flow:row nowrap;
-    transition:all .3s ease;
-    padding-left:40px;
-    padding-right:80px;
-    height:100%;
-} */
+/* NOTICE */
 .notice{
     display: flex;
     flex-flow:row nowrap;
     width : calc(100vw - var(--w) - 120px);
-    height:100%;
+    height:100vh;
     margin-right:120px;
     overflow-x:hidden;
+    touch-action: pan-left;
 }
 .notice h1 {
     margin: 20px 0 10px;
+    font-weight: bold;
 }
 
 .notice>i {
@@ -124,6 +105,9 @@
     padding: 0;
     width:100%;
 }
+.notice #donnees>article > * {
+    width:100%;
+}
 /* ACCORDEON CLASSIQUE */
 .accordeon {
     background-color: #eee;
@@ -177,4 +161,25 @@
 
 .sequence>span:nth-child(2) {
     width: 80%;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 940px) {
+    .notice{
+        width:100vw;
+        flex-direction : column;
+        margin-right:0;
+    }
+    .notice > section{
+        width:100%;
+    }
+    .notice .media{
+        width:100%;
+        margin:0;
+    }
+    .notice #donnees{
+        padding:0 35px;
+        width:100%;
+    }
 }

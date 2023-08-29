@@ -40,6 +40,7 @@ export class Collections extends CustomHTML {
                 this.cEl.appendChild(this.setCollectionArticle(c, i));
             });
             // Affichage de la première collection de la liste
+            console.log("Set collection, init la première", e.detail[0]);
             this.initCollection(e.detail[0]);
         });
         /** Créer les notices une fois les données reçues */
@@ -99,7 +100,9 @@ export class Collections extends CustomHTML {
     /** Afficher les noties et filtres de la collection */
     initCollection(c: any) {
         Donnees.collection = c;
-        dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
+        console.log("Initialisation première collection", Donnees.collection);
+        // dispatchEvent(new CustomEvent('GET-NOTICES', { detail: c }));
+        dispatchEvent(new CustomEvent('GET-NOTICES'));
     };
     /**
      * Créer les notices à la volée dans le DOM
@@ -225,13 +228,13 @@ export class Collections extends CustomHTML {
             option.textContent = 'Filtrez par séries';
             option.value = '';
             select.appendChild(option);
-
+            // Select sur mobile pour les séries
             select.addEventListener('change', (e:any)=>{
                 console.log(e, e.target.value);
                 e.target.value.length > 0 ? this.filtres.series = [e.target.value] : this.filtres.series = [];
                 this.filtreNotices();
             });
-
+            // Liste des séries affichées
             Donnees.collection.series!.forEach(d => {
                 const li = document.createElement('li');
                 const option = document.createElement('option');
@@ -239,6 +242,7 @@ export class Collections extends CustomHTML {
                 li.textContent = option.textContent = option.value = d;
 
                 li.addEventListener('click', (e: any) => {
+                    console.log("Notices filtrées");
                     e.currentTarget.classList.toggle('actif');
                     this.filtres.series.indexOf(d) != -1 ? this.filtres.series.splice(this.filtres.series.indexOf(d), 1) : this.filtres.series.push(d);
                     this.filtreNotices();
@@ -265,7 +269,7 @@ export class Collections extends CustomHTML {
                 this.filtres.series.forEach(f => {
                     if (Array.isArray(n.nema.series)) {
                         if (n.nema.series.includes(f)) result.add(n);
-                    } else {
+                    } else if(typeof n.nema.series === 'string'){
                         if (n.nema.series.indexOf(f) != -1) result.add(n);
                     }
                 });
@@ -277,9 +281,11 @@ export class Collections extends CustomHTML {
                 }
             });
             Donnees.noticesFiltrees = [...result];
+            // Sauvegarder la nouvelle liste des notices filtrées dans le localstorage
+            localStorage.setItem('noticesFiltrees', JSON.stringify(Donnees.noticesFiltrees));
         };
 
-        // Une fois le tri opérer, afficher les notices
+        // Une fois le tri opéré, afficher les notices
         this.setNotices();
     }
     /** Ecrire un article des collections

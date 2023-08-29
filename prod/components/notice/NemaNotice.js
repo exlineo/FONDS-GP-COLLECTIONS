@@ -1,4 +1,5 @@
 import { CustomHTML } from '../common/HTML.js';
+import { FR } from '../trads/fr.js';
 export class Notice extends CustomHTML {
     constructor() {
         super();
@@ -6,12 +7,10 @@ export class Notice extends CustomHTML {
     ;
     /** Web component initiate */
     connectedCallback() {
-        // this.setInit();
         this.params = this.dataset.params;
         console.log(this.dataset.params, this.dataset.index, this.store.list);
         this.store.list = this.store.getLocalStore('noticesFiltrees');
         this.store.notice = this.store.list[parseInt(this.dataset.index)];
-        // if(!this.store.list || this.store.list.length == 0) this.store.list = 
         this.init();
     }
     ;
@@ -45,10 +44,11 @@ export class Notice extends CustomHTML {
         else {
             media.appendChild(this.setPdfEl(this.store.notice.media.url));
         }
-        this.setMedia(donnees);
+        // this.setMedia(donnees);
         // Ecrire les données dans les médias
-        this.setDatas(donnees, this.store.notice.dc, this.store.t.dc);
-        this.setDatas(donnees, this.store.notice.nema, this.store.t.meta);
+        this.setDatas(donnees, this.store.notice.media, FR.media_infos);
+        this.setDatas(donnees, this.store.notice.dc, FR.dublin_infos);
+        this.setDatas(donnees, this.store.notice.nema, FR.metas_infos);
         this.setAccordeon(section);
         this.shadow.appendChild(section);
     }
@@ -61,6 +61,7 @@ export class Notice extends CustomHTML {
         const btn = document.createElement('button');
         btn.className = 'accordeon';
         btn.textContent = this.store.t.media_infos;
+        console.log(this.store.notice);
         ar.appendChild(btn);
         this.decortiqueObj(this.store.notice.media, ar);
         el.appendChild(ar);

@@ -19,22 +19,4 @@ export class Persistance extends BDD{
         // Récupération des données d'AWS
         this.donnees = new Donnees();
     }
-    /**
-     * Paramétrer le menu des collections à partir des données reçues
-     */
-    // setMenuData() {
-    //     this.menu.data = new Array();
-    //     Donnees.collections.forEach(
-    //         m => this.menu.data.push({
-    //             titre: m.title,
-    //             alias: m.alias,
-    //             lien: "collection.html",
-    //             infos: "Voir la collection",
-    //             data: m
-    //         })
-    //     );
-    //     // this.menu.setMenu();
-    // }
-
-    
 }

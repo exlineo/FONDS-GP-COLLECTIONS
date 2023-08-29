@@ -39,7 +39,8 @@ export class Notice extends CustomHTML {
         const description = document.createElement('blockquote');
         description.textContent = this.notice.dc.description;
         donnees.appendChild(description);
-        let f = this.notice.dc.format;
+        // Traiter le format des notices
+        let f = this.getFormat(this.notice);
         if (f.indexOf('image') != -1) {
             media.appendChild(this.setNoticeImageEl(this.notice));
         }
@@ -52,15 +53,16 @@ export class Notice extends CustomHTML {
         else {
             media.appendChild(this.setPdfEl(this.notice.media.url));
         }
-        this.setMedia(donnees);
+        // this.setMedia(donnees);
         // Ecrire les données dans les médias
+        this.setDatas(donnees, this.notice.media, FR.media_infos);
         this.setDatas(donnees, this.notice.dc, FR.dublin_metas);
-        this.setDatas(donnees, this.notice.nema, FR.metas);
+        this.setDatas(donnees, this.notice.nema, FR.metas_infos);
         this.setAccordeon(section);
         // this.listeNoticesEl.appendChild(section);
         const nemaNot = document.createElement('nema-notice');
         nemaNot.dataset.index = Donnees.indexN.toString();
-        nemaNot.dataset.params = '{"coucou":"Et ouais"}';
+        // nemaNot.dataset.params = '{"coucou":"Et ouais"}';
         this.listeNoticesEl.appendChild(nemaNot);
     }
     /** Indiquer le mouvement que doivent faire les notices pour afficher la notice qu'il faut */
@@ -69,8 +71,8 @@ export class Notice extends CustomHTML {
         this.listeNoticesEl.style.left = -(this.noticeEl.offsetWidth * this.index) + 'px';
     }
     /**
-     * Afficher les informations du document
-     * @param {Element} doc Element HTML du document
+     * Showing informations of the document (deprecated)
+     * @param {Element} doc HTML Element of the document
      */
     setMedia(el) {
         const ar = document.createElement('article');
@@ -81,22 +83,17 @@ export class Notice extends CustomHTML {
         this.decortiqueObj(this.notice.media, ar);
         el.appendChild(ar);
     }
-    /**
-     * Afficher les métadonnées
-     */
+    /** Show metadatas */
     setDatas(el, o, t) {
         const ar = document.createElement('article');
-        // const h3 = document.createElement('h3');
-        const h3 = document.createElement('button');
-        h3.className = 'accordeon';
-        h3.textContent = t;
-        ar.appendChild(h3);
+        const btn = document.createElement('button');
+        btn.className = 'accordeon';
+        btn.textContent = t;
+        ar.appendChild(btn);
         this.decortiqueObj(o, ar);
         el.appendChild(ar);
     }
-    /**
-     * Afficher les séquences d'un document multimédia
-     */
+    /** Show sequences in media */
     setSequences(el) {
         if (this.notice.nema.sequences) {
             const s = this.notice.nema.sequences;
@@ -125,6 +122,7 @@ export class Notice extends CustomHTML {
             el.appendChild(ar);
         }
     }
+    /** Create an accordeon */
     setAccordeon(el) {
         // ACCORDEON
         const acc = el.getElementsByClassName("accordeon");

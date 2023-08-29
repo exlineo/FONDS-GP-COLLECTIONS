@@ -1,4 +1,5 @@
 import { Store } from './Store.js';
+import { FR } from '../trads/fr.js';
 
 export abstract class CustomHTML extends HTMLElement {
 
@@ -37,7 +38,7 @@ export abstract class CustomHTML extends HTMLElement {
             let li = document.createElement('li');
             if (typeof o[i] == 'string') {
                 // li.innerHTML = `${FR[i]} : <span class="b">${o[i].toString()}</span>`;
-                li.innerHTML = `${i} : <span class="b">${o[i].toString()}</span>`;
+                li.innerHTML = `${FR[i]} : <span class="b">${o[i].toString()}</span>`;
                 ul.appendChild(li);
             } else if (Array.isArray(o[i])) {
                 this.decortiqueObj(o[i], li);

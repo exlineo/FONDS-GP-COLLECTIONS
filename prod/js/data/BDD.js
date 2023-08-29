@@ -62,9 +62,7 @@ export class BDD {
         })
             .catch(er => console.log(er));
     }
-    /**
-     * Get Collections
-     */
+    /** Get Collections */
     getCollections() {
         return __awaiter(this, void 0, void 0, function* () {
             yield fetch(Donnees.config.g.api + 'collections')
@@ -87,6 +85,7 @@ export class BDD {
             if (e) {
                 e.stopImmediatePropagation();
             }
+            ;
             // Récupérer les données
             if (!Donnees.notices[Donnees.collection.idcollection]) {
                 return yield fetch(Donnees.config.g.api + 'notices', {
@@ -103,7 +102,6 @@ export class BDD {
                     .catch(er => console.log(er));
             }
             else {
-                // Donnees.noticesFiltrees = Donnees.notices[Donnees.collection.idcollection];
                 this.setLocalData('noticesFiltrees', Donnees.notices[Donnees.collection.idcollection]);
                 dispatchEvent(new CustomEvent('SET-NOTICES', { detail: { collection: Donnees.collection, notices: Donnees.notices[Donnees.collection.idcollection] } }));
             }

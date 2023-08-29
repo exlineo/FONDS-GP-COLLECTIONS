@@ -211,4 +211,35 @@ export abstract class CustomHTML {
     deload(){
         document.getElementById('loader')!.style.display = 'none';
     }
+    /** Get media format */
+    getFormat(n:NoticeI){
+        let f = '';
+        if(n.dc.format) {
+            f = n.dc.format
+        }else if(n.media.file){
+            switch(n.media.file.substring(n.media.file.length-3, 3)){
+                case "jpg":
+                case "png":
+                case "jpeg":
+                case "gif":
+                    f = 'image';
+                    break;
+                case "wav":
+                case "aac":
+                case "mp3":
+                    f = 'audio';
+                    break;
+                case "mp4":
+                case "webm":
+                    f = 'video';
+                    break;
+                case 'pdf':
+                case 'txt':
+                case 'rtf':
+                    f = 'document';
+                    break;
+            }
+        }
+        return f;
+    }
 }

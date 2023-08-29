@@ -1,3 +1,4 @@
+import { FR } from '../trads/fr.js';
 /** Store to store shared data */
 export class Store {
     constructor() {
@@ -11,6 +12,7 @@ export class Store {
         addEventListener('NEMATERIA-INIT', (e) => {
             this.setLocalStore('config', JSON.stringify(e.detail));
         });
+        this.t = FR;
     }
     /**
      * The static method that controls the access to the Store instance.
